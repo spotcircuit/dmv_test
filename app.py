@@ -31,6 +31,10 @@ QUESTION_DISTRIBUTION = {
     'Alcohol and Drugs': 3
 }
 
+# Mode constants
+PRACTICE_MODE = 'practice'
+TEST_MODE = 'test'
+
 # Load questions from JSON file
 def load_questions():
     try:
@@ -130,6 +134,10 @@ def get_wrong_answer_roast(wrong_count):
 # Defining the Index Route
 @app.route('/')
 def index():
+    # If mode not set, redirect to mode selection
+    if 'mode' not in session:
+        return redirect(url_for('select_mode'))
+        
     global sections
     
     # If sections failed to load, try again
@@ -171,9 +179,42 @@ def index():
     return render_template('test.html',
                          question=question['question'],
                          choices=question['choices'],
-                         image_path=question.get('image', ''))
+                         image_path=question.get('image', ''),
+                         mode=session['mode'])
 
-# Defining the Submit Answer Route
+@app.route('/select_mode')
+def select_mode():
+    return render_template('select_mode.html')
+
+@app.route('/set_mode/<mode>')
+def set_mode(mode):
+    if mode not in [PRACTICE_MODE, TEST_MODE]:
+        return redirect(url_for('select_mode'))
+    
+    # Clear any existing session data
+    session.clear()
+    session['mode'] = mode
+    
+    # Load new questions
+    global sections
+    sections = load_questions()
+    
+    return redirect(url_for('index'))
+
+@app.route('/reload_questions')
+def reload_questions():
+    # Preserve the current mode
+    current_mode = session.get('mode', PRACTICE_MODE)
+    
+    # Clear session and reload questions
+    session.clear()
+    session['mode'] = current_mode
+    
+    global sections
+    sections = load_questions()
+    
+    return redirect(url_for('index'))
+
 @app.route('/submit_answer', methods=['POST'])
 def submit_answer():
     data = request.get_json()
@@ -192,12 +233,22 @@ def submit_answer():
     
     if is_correct:
         session['score'] += 1
-        # Only advance to next question if answer is correct
+    
+    if session['mode'] == PRACTICE_MODE:
+        # In practice mode, only advance if correct
+        if is_correct:
+            session['current_question'] += 1
+            if session['current_question'] >= len(sections[current_section]['question_ids']):
+                session['current_section'] += 1
+                session['current_question'] = 0
+    else:
+        # In test mode, always advance
         session['current_question'] += 1
         if session['current_question'] >= len(sections[current_section]['question_ids']):
             session['current_section'] += 1
             session['current_question'] = 0
-    else:
+    
+    if not is_correct:
         session['wrong_count'] += 1
     
     session.modified = True
@@ -207,7 +258,8 @@ def submit_answer():
     return jsonify({
         'correct': is_correct,
         'explanation': question.get('explanation', 'No explanation available'),
-        'quiz_complete': quiz_complete
+        'quiz_complete': quiz_complete,
+        'mode': session['mode']
     })
 
 # Defining the Results Route

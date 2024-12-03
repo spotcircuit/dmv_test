@@ -155,10 +155,82 @@
             font-size: 1.2em;
             margin: 0 0.2em;
         }
+
+        .test-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .mode-indicator {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .mode-indicator.test-mode {
+            background: var(--primary);
+            color: white;
+        }
+
+        .mode-indicator.practice-mode {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .reload-btn, .mode-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: white;
+        }
+
+        .reload-btn:hover, .mode-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-content.correct {
+            border-left: 5px solid var(--correct);
+        }
+
+        .modal-content.wrong {
+            border-left: 5px solid var(--wrong);
+        }
+
+        .modal-content.wrong .next-btn {
+            display: {% if mode == 'practice' %}block{% else %}none{% endif %};
+        }
     </style>
 </head>
 <body>
     <div class="question-container">
+        <div class="test-header">
+            <div class="mode-indicator {% if mode == 'test' %}test-mode{% else %}practice-mode{% endif %}">
+                <i class="fas {% if mode == 'test' %}fa-clipboard-check{% else %}fa-book{% endif %}"></i>
+                {{ mode|title }} Mode
+            </div>
+            <button onclick="window.location.href='{{ url_for('reload_questions') }}'" class="reload-btn">
+                <i class="fas fa-sync-alt"></i> New Questions
+            </button>
+            <button onclick="window.location.href='{{ url_for('select_mode') }}'" class="mode-btn">
+                <i class="fas fa-exchange-alt"></i> Change Mode
+            </button>
+        </div>
+
         <h3>{{ question }}</h3>
         
         {% if image_path %}

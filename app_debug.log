@@ -25832,3 +25832,1155 @@ s a red octagonal sign indicate?
 2024-12-03 17:47:09,684 - INFO - 127.0.0.1 - - [03/Dec/2024 17:47:09] "GET /static/dmv_images/deer_crossing.jpg HTTP/1.1" 200 -
 2024-12-03 17:47:30,701 - INFO - 127.0.0.1 - - [03/Dec/2024 17:47:30] "POST /submit_answer HTTP/1.1" 200 -
 2024-12-03 17:47:34,023 - INFO - 127.0.0.1 - - [03/Dec/2024 17:47:34] "POST /submit_answer HTTP/1.1" 200 -
+2024-12-03 17:48:26,128 - DEBUG - Sections loaded: [{'name': 'Road Signs', 'question_ids': ['1', '17', '32', '34', '31', '5', '6', '4', '16']}, {'name': 'Traffic Signals', 'question_ids': ['15', '12', '13', '14']}, {'name': 'Rules of the Road', 'question_ids': ['44', '71', '41', '43', '68', '23', '22']}, {'name': 'Safe Driving', 'question_ids': ['58', '65', '47', '73', '79', '70', '57']}, {'name': 'Penalties and Insurance', 'question_ids': ['69', '81', '51', '59']}, {'name': 'Alcohol and Drugs', 'question_ids': ['63', '62', '72']}]
+2024-12-03 17:48:26,128 - DEBUG - Session data: dict_items([('current_question', 5), ('current_section', 0), ('score', 3), ('sections', [{'name': 'Road Signs', 'question_ids': ['1', '7', '0', '8', '31', '2', '35', '33', '34']}, {'name': 'Traffic Signals', 'question_ids': ['14', '15', '13', '12']}, {'name': 'Rules of the Road', 'question_ids': ['71', '39', '41', '77', '38', '22', '40']}, {'name': 'Safe Driving', 'question_ids': ['48', '56', '58', '79', '55', '65', '24']}, {'name': 'Penalties and Insurance', 'question_ids': ['50', '69', '81', '66']}, {'name': 'Alcohol and Drugs', 'question_ids': ['28', '53', '54']}]), ('wrong_count', 4)])
+2024-12-03 17:48:26,128 - DEBUG - Current section index: 0, Total sections: 6
+2024-12-03 17:48:26,129 - DEBUG - Current question index: 5, Total questions in current section: 9
+2024-12-03 17:48:26,131 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:26] "GET / HTTP/1.1" 200 -
+2024-12-03 17:48:26,149 - INFO - 127.0.0.1 - - [03/Dec/2024 17:48:26] "[36mGET /static/dmv_images/deer_crossing.jpg HTTP/1.1[0m" 304 -
+2024-12-03 17:52:29,261 - INFO -  * Detected change in 'c:\\Users\\Big Daddy Pyatt\\CascadeProjects\\virginia_permit_test\\app.py', reloading
+2024-12-03 17:52:29,304 - INFO -  * Restarting with stat
+2024-12-03 17:52:29,442 - INFO -  * Detected change in 'c:\\Users\\Big Daddy Pyatt\\CascadeProjects\\virginia_permit_test\\app.py', reloading
+2024-12-03 17:52:29,474 - INFO -  * Restarting with stat
+2024-12-03 17:52:29,618 - INFO - Starting to load questions from new_questions.json
+2024-12-03 17:52:29,619 - INFO - Loaded 82 questions from file
+2024-12-03 17:52:29,619 - INFO - Processing question 0: What does a red octagonal sign indicate?
+2024-12-03 17:52:29,619 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 1: A yellow diamond-shaped sign with a black cross warns drivers of:
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 2: What does a white rectangular sign with black letters stating 'Speed Limit 55' mean?
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 3: A circular yellow sign with a black 'X' and two 'R's indicates:
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 4: What does a pentagon-shaped sign with two figures walking signify?
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 5: What does a yellow sign with a deer symbol mean?
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 6: A sign with a curved arrow means:
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 7: What does a triangular red and white sign pointing downward mean?
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 8: What does a rectangular blue sign with a white 'H' symbolize?
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 9: What does a diamond-shaped sign with a truck going downhill warn of:
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 10: What does a sign with a curved arrow and a red circle with a slash through it mean?
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 11: A sign showing two arrows, one pointing up and the other down, indicates:
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,620 - INFO - Processing question 12: What should you do when the traffic light turns green?
+2024-12-03 17:52:29,620 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,620 - INFO - Processing question 13: What does a green left-turn arrow signal?
+2024-12-03 17:52:29,620 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,620 - INFO - Processing question 14: What does this red X symbol above a lane indicate?
+2024-12-03 17:52:29,620 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,620 - INFO - Processing question 15: What does a yellow X symbol above a lane indicate?
+2024-12-03 17:52:29,620 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,620 - INFO - Processing question 16: What does a blue sign with a white 'H' symbolize?
+2024-12-03 17:52:29,620 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,621 - INFO - Processing question 17: What does this sign with a truck going downhill indicate?
+2024-12-03 17:52:29,621 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,621 - INFO - Processing question 18: What does a sign with a U-turn symbol and a red slash indicate?
+2024-12-03 17:52:29,621 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,621 - INFO - Processing question 19: What does a sign with two arrows pointing in opposite directions signify?
+2024-12-03 17:52:29,621 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,621 - INFO - Processing question 20: When driving behind another car, what is the recommended safe following distance?
+2024-12-03 17:52:29,621 - INFO - Question category: General Knowledge
+2024-12-03 17:52:29,621 - INFO - Processing question 21: When merging onto a highway, who has the right of way?
+2024-12-03 17:52:29,621 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,621 - INFO - Processing question 22: What is the proper following distance in ideal conditions?
+2024-12-03 17:52:29,621 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,621 - INFO - Processing question 23: What should you do when approaching a yellow traffic light?
+2024-12-03 17:52:29,621 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,621 - INFO - Processing question 24: What should you do if your brakes fail?
+2024-12-03 17:52:29,621 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,621 - INFO - Processing question 25: When are you required to use your headlights in Virginia?
+2024-12-03 17:52:29,621 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,621 - INFO - Processing question 26: What is the minimum liability insurance coverage required in Virginia?
+2024-12-03 17:52:29,621 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,621 - INFO - Processing question 27: How many points does a speeding ticket (10-19 mph over) add to your driving record?
+2024-12-03 17:52:29,621 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,621 - INFO - Processing question 28: What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in Virginia?
+2024-12-03 17:52:29,621 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,621 - INFO - Processing question 29: What is the BAC limit for drivers under 21 in Virginia?
+2024-12-03 17:52:29,621 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,621 - INFO - Processing question 30: What should you do if you start to skid?
+2024-12-03 17:52:29,621 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,621 - INFO - Processing question 31: When must you come to a complete stop at a STOP sign?
+2024-12-03 17:52:29,621 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,621 - INFO - Processing question 32: What should you do after stopping at a STOP sign?
+2024-12-03 17:52:29,622 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,622 - INFO - Processing question 33: What color and shape is a railroad crossing advance warning sign?
+2024-12-03 17:52:29,622 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,622 - INFO - Processing question 34: What is the speed limit in a school zone when children are present?
+2024-12-03 17:52:29,622 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,622 - INFO - Processing question 35: When should you be especially alert for deer crossing the road?
+2024-12-03 17:52:29,622 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,622 - INFO - Processing question 36: What's the difference between a YIELD sign and a STOP sign?
+2024-12-03 17:52:29,622 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,622 - INFO - Processing question 37: What action is required when you see a steep grade warning sign?
+2024-12-03 17:52:29,622 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,622 - INFO - Processing question 38: When changing lanes, you must:
+2024-12-03 17:52:29,622 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,622 - INFO - Processing question 39: When making a right turn on red, you must:
+2024-12-03 17:52:29,622 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,622 - INFO - Processing question 40: What is the speed limit in a residential area unless otherwise posted?
+2024-12-03 17:52:29,622 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,622 - INFO - Processing question 41: When emergency vehicles with sirens and lights are approaching, you must:
+2024-12-03 17:52:29,622 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,622 - INFO - Processing question 42: What is the proper procedure at a four-way stop?
+2024-12-03 17:52:29,622 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,622 - INFO - Processing question 43: When is it legal to pass on the right in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,622 - INFO - Processing question 44: What does a solid white line between lanes mean?
+2024-12-03 17:52:29,622 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,622 - INFO - Processing question 45: When driving in fog, you should:
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 46: What is the first thing you should do in case of a tire blowout?
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 47: When should you turn on your headlights?
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 48: What should you do if your car starts to hydroplane?
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 49: What happens if you're caught driving without insurance in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,622 - INFO - Processing question 50: How long does a DUI conviction stay on your Virginia driving record?
+2024-12-03 17:52:29,622 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,622 - INFO - Processing question 51: How many points are deducted from your license for passing a stopped school bus?
+2024-12-03 17:52:29,622 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,622 - INFO - Processing question 52: What is the penalty for a first-time DUI offense in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,622 - INFO - Processing question 53: What happens if you refuse a breath test in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,622 - INFO - Processing question 54: What is the 'Zero Tolerance' law in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,622 - INFO - Processing question 55: When driving at night, you should:
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 56: When merging onto a highway, you should:
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 57: What is the proper way to park on a hill with a curb, facing downhill?
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 58: What should you do in a work zone?
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,622 - INFO - Processing question 59: How can you get demerit points removed from your license in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,622 - INFO - Processing question 60: What is an SR-22 in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,622 - INFO - Processing question 61: How long must you maintain SR-22 insurance in Virginia after a DUI?
+2024-12-03 17:52:29,622 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,622 - INFO - Processing question 62: What is Virginia's open container law?
+2024-12-03 17:52:29,622 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,622 - INFO - Processing question 63: What happens after a second DUI conviction in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,622 - INFO - Processing question 64: When is an ignition interlock device required in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,622 - INFO - Processing question 65: What is the 'Move Over' law in Virginia?
+2024-12-03 17:52:29,622 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,624 - INFO - Processing question 66: When must you report a crash to police in Virginia?
+2024-12-03 17:52:29,624 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,624 - INFO - Processing question 67: When driving in foggy conditions, you should:
+2024-12-03 17:52:29,624 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,624 - INFO - Processing question 68: When must you yield the right-of-way to an emergency vehicle?
+2024-12-03 17:52:29,624 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,624 - INFO - Processing question 69: What is the minimum liability insurance coverage required in Virginia for bodily injury or death of one person?
+2024-12-03 17:52:29,624 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,624 - INFO - Processing question 70: What should you do if you experience a tire blowout while driving?
+2024-12-03 17:52:29,624 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,624 - INFO - Processing question 71: In Virginia, what is the maximum speed limit on interstate highways in rural areas?
+2024-12-03 17:52:29,624 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,624 - INFO - Processing question 72: What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?
+2024-12-03 17:52:29,624 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,624 - INFO - Processing question 73: When driving in heavy rain, what is the recommended following distance?
+2024-12-03 17:52:29,624 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,624 - INFO - Processing question 74: When merging onto a highway, what is the correct procedure?
+2024-12-03 17:52:29,624 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,624 - INFO - Processing question 75: What is the penalty for driving without valid insurance in Virginia?
+2024-12-03 17:52:29,624 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,624 - INFO - Processing question 76: What should you do if you encounter black ice while driving?
+2024-12-03 17:52:29,624 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,624 - INFO - Processing question 77: When must you stop for a school bus?
+2024-12-03 17:52:29,624 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,624 - INFO - Processing question 78: What does a yellow diamond sign with black arrows curving to the right mean?
+2024-12-03 17:52:29,624 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,624 - INFO - Processing question 79: What should you do if your brakes fail while driving?
+2024-12-03 17:52:29,624 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,624 - INFO - Processing question 80: What is the proper procedure when an emergency vehicle approaches with lights and sirens?
+2024-12-03 17:52:29,624 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,624 - INFO - Processing question 81: What happens if you're caught street racing in Virginia?
+2024-12-03 17:52:29,624 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,624 - INFO - Categories found: ['Road Signs', 'Traffic Signals', 'General Knowledge', 'Rules of the Road', 'Safe Driving', 'Penalties and Insurance', 'Alcohol and Drugs']
+2024-12-03 17:52:29,625 - INFO - Question counts per category: [('Road Signs', 24), ('Traffic Signals', 4), ('General Knowledge', 1), ('Rules of the Road', 15), ('Safe Driving', 17), ('Penalties and Insurance', 12), ('Alcohol and Drugs', 9)]
+2024-12-03 17:52:29,625 - INFO - Processing category Road Signs, want 9 questions
+2024-12-03 17:52:29,625 - INFO - Found 24 questions in category Road Signs, selecting 9
+2024-12-03 17:52:29,625 - INFO - Added 9 questions from Road Signs
+2024-12-03 17:52:29,625 - INFO - Processing category Traffic Signals, want 5 questions
+2024-12-03 17:52:29,625 - INFO - Found 4 questions in category Traffic Signals, selecting 4
+2024-12-03 17:52:29,625 - INFO - Added 4 questions from Traffic Signals
+2024-12-03 17:52:29,625 - INFO - Processing category Rules of the Road, want 7 questions
+2024-12-03 17:52:29,625 - INFO - Found 15 questions in category Rules of the Road, selecting 7
+2024-12-03 17:52:29,625 - INFO - Added 7 questions from Rules of the Road
+2024-12-03 17:52:29,625 - INFO - Processing category Safe Driving, want 7 questions
+2024-12-03 17:52:29,625 - INFO - Found 17 questions in category Safe Driving, selecting 7
+2024-12-03 17:52:29,625 - INFO - Added 7 questions from Safe Driving
+2024-12-03 17:52:29,625 - INFO - Processing category Penalties and Insurance, want 4 questions
+2024-12-03 17:52:29,625 - INFO - Found 12 questions in category Penalties and Insurance, selecting 4
+2024-12-03 17:52:29,625 - INFO - Added 4 questions from Penalties and Insurance
+2024-12-03 17:52:29,625 - INFO - Processing category Alcohol and Drugs, want 3 questions
+2024-12-03 17:52:29,625 - INFO - Found 9 questions in category Alcohol and Drugs, selecting 3
+2024-12-03 17:52:29,625 - INFO - Added 3 questions from Alcohol and Drugs
+2024-12-03 17:52:29,625 - INFO - Successfully loaded 34 questions across 6 sections
+2024-12-03 17:52:29,642 - WARNING -  * Debugger is active!
+2024-12-03 17:52:29,652 - INFO -  * Debugger PIN: 139-578-246
+2024-12-03 17:52:29,773 - INFO -  * Detected change in 'c:\\Users\\Big Daddy Pyatt\\CascadeProjects\\virginia_permit_test\\app.py', reloading
+2024-12-03 17:52:29,811 - INFO -  * Restarting with stat
+2024-12-03 17:52:29,814 - INFO - Starting to load questions from new_questions.json
+2024-12-03 17:52:29,814 - INFO - Loaded 82 questions from file
+2024-12-03 17:52:29,815 - INFO - Processing question 0: What does a red octagonal sign indicate?
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 1: A yellow diamond-shaped sign with a black cross warns drivers of:
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 2: What does a white rectangular sign with black letters stating 'Speed Limit 55' mean?
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 3: A circular yellow sign with a black 'X' and two 'R's indicates:
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 4: What does a pentagon-shaped sign with two figures walking signify?
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 5: What does a yellow sign with a deer symbol mean?
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 6: A sign with a curved arrow means:
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 7: What does a triangular red and white sign pointing downward mean?
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 8: What does a rectangular blue sign with a white 'H' symbolize?
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 9: What does a diamond-shaped sign with a truck going downhill warn of:
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 10: What does a sign with a curved arrow and a red circle with a slash through it mean?
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 11: A sign showing two arrows, one pointing up and the other down, indicates:
+2024-12-03 17:52:29,815 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,815 - INFO - Processing question 12: What should you do when the traffic light turns green?
+2024-12-03 17:52:29,815 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,815 - INFO - Processing question 13: What does a green left-turn arrow signal?
+2024-12-03 17:52:29,815 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,815 - INFO - Processing question 14: What does this red X symbol above a lane indicate?
+2024-12-03 17:52:29,816 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,816 - INFO - Processing question 15: What does a yellow X symbol above a lane indicate?
+2024-12-03 17:52:29,816 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:29,816 - INFO - Processing question 16: What does a blue sign with a white 'H' symbolize?
+2024-12-03 17:52:29,816 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,816 - INFO - Processing question 17: What does this sign with a truck going downhill indicate?
+2024-12-03 17:52:29,816 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,816 - INFO - Processing question 18: What does a sign with a U-turn symbol and a red slash indicate?
+2024-12-03 17:52:29,816 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,816 - INFO - Processing question 19: What does a sign with two arrows pointing in opposite directions signify?
+2024-12-03 17:52:29,816 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,816 - INFO - Processing question 20: When driving behind another car, what is the recommended safe following distance?
+2024-12-03 17:52:29,816 - INFO - Question category: General Knowledge
+2024-12-03 17:52:29,816 - INFO - Processing question 21: When merging onto a highway, who has the right of way?
+2024-12-03 17:52:29,816 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,816 - INFO - Processing question 22: What is the proper following distance in ideal conditions?
+2024-12-03 17:52:29,816 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,816 - INFO - Processing question 23: What should you do when approaching a yellow traffic light?
+2024-12-03 17:52:29,816 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,816 - INFO - Processing question 24: What should you do if your brakes fail?
+2024-12-03 17:52:29,816 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,816 - INFO - Processing question 25: When are you required to use your headlights in Virginia?
+2024-12-03 17:52:29,816 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,816 - INFO - Processing question 26: What is the minimum liability insurance coverage required in Virginia?
+2024-12-03 17:52:29,816 - INFO -  * Detected change in 'c:\\Users\\Big Daddy Pyatt\\CascadeProjects\\virginia_permit_test\\app.py', reloading
+2024-12-03 17:52:29,816 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,816 - INFO - Processing question 27: How many points does a speeding ticket (10-19 mph over) add to your driving record?
+2024-12-03 17:52:29,816 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,816 - INFO - Processing question 28: What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in Virginia?
+2024-12-03 17:52:29,816 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,816 - INFO - Processing question 29: What is the BAC limit for drivers under 21 in Virginia?
+2024-12-03 17:52:29,817 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,817 - INFO - Processing question 30: What should you do if you start to skid?
+2024-12-03 17:52:29,817 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,817 - INFO - Processing question 31: When must you come to a complete stop at a STOP sign?
+2024-12-03 17:52:29,817 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,817 - INFO - Processing question 32: What should you do after stopping at a STOP sign?
+2024-12-03 17:52:29,817 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,817 - INFO - Processing question 33: What color and shape is a railroad crossing advance warning sign?
+2024-12-03 17:52:29,817 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,817 - INFO - Processing question 34: What is the speed limit in a school zone when children are present?
+2024-12-03 17:52:29,817 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,817 - INFO - Processing question 35: When should you be especially alert for deer crossing the road?
+2024-12-03 17:52:29,817 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,817 - INFO - Processing question 36: What's the difference between a YIELD sign and a STOP sign?
+2024-12-03 17:52:29,817 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,817 - INFO - Processing question 37: What action is required when you see a steep grade warning sign?
+2024-12-03 17:52:29,817 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,817 - INFO - Processing question 38: When changing lanes, you must:
+2024-12-03 17:52:29,817 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,817 - INFO - Processing question 39: When making a right turn on red, you must:
+2024-12-03 17:52:29,817 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,817 - INFO - Processing question 40: What is the speed limit in a residential area unless otherwise posted?
+2024-12-03 17:52:29,817 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,817 - INFO - Processing question 41: When emergency vehicles with sirens and lights are approaching, you must:
+2024-12-03 17:52:29,817 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,817 - INFO - Processing question 42: What is the proper procedure at a four-way stop?
+2024-12-03 17:52:29,817 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,817 - INFO - Processing question 43: When is it legal to pass on the right in Virginia?
+2024-12-03 17:52:29,817 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,817 - INFO - Processing question 44: What does a solid white line between lanes mean?
+2024-12-03 17:52:29,817 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,817 - INFO - Processing question 45: When driving in fog, you should:
+2024-12-03 17:52:29,818 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,818 - INFO - Processing question 46: What is the first thing you should do in case of a tire blowout?
+2024-12-03 17:52:29,818 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,818 - INFO - Processing question 47: When should you turn on your headlights?
+2024-12-03 17:52:29,818 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,818 - INFO - Processing question 48: What should you do if your car starts to hydroplane?
+2024-12-03 17:52:29,818 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,818 - INFO - Processing question 49: What happens if you're caught driving without insurance in Virginia?
+2024-12-03 17:52:29,818 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,818 - INFO - Processing question 50: How long does a DUI conviction stay on your Virginia driving record?
+2024-12-03 17:52:29,818 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,818 - INFO - Processing question 51: How many points are deducted from your license for passing a stopped school bus?
+2024-12-03 17:52:29,818 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,818 - INFO - Processing question 52: What is the penalty for a first-time DUI offense in Virginia?
+2024-12-03 17:52:29,818 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,818 - INFO - Processing question 53: What happens if you refuse a breath test in Virginia?
+2024-12-03 17:52:29,818 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,818 - INFO - Processing question 54: What is the 'Zero Tolerance' law in Virginia?
+2024-12-03 17:52:29,820 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,820 - INFO - Processing question 55: When driving at night, you should:
+2024-12-03 17:52:29,820 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,820 - INFO - Processing question 56: When merging onto a highway, you should:
+2024-12-03 17:52:29,820 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,820 - INFO - Processing question 57: What is the proper way to park on a hill with a curb, facing downhill?
+2024-12-03 17:52:29,820 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,820 - INFO - Processing question 58: What should you do in a work zone?
+2024-12-03 17:52:29,820 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,820 - INFO - Processing question 59: How can you get demerit points removed from your license in Virginia?
+2024-12-03 17:52:29,820 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,820 - INFO - Processing question 60: What is an SR-22 in Virginia?
+2024-12-03 17:52:29,820 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,820 - INFO - Processing question 61: How long must you maintain SR-22 insurance in Virginia after a DUI?
+2024-12-03 17:52:29,820 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,820 - INFO - Processing question 62: What is Virginia's open container law?
+2024-12-03 17:52:29,820 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,820 - INFO - Processing question 63: What happens after a second DUI conviction in Virginia?
+2024-12-03 17:52:29,821 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,821 - INFO - Processing question 64: When is an ignition interlock device required in Virginia?
+2024-12-03 17:52:29,821 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,821 - INFO - Processing question 65: What is the 'Move Over' law in Virginia?
+2024-12-03 17:52:29,821 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,821 - INFO - Processing question 66: When must you report a crash to police in Virginia?
+2024-12-03 17:52:29,821 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,821 - INFO - Processing question 67: When driving in foggy conditions, you should:
+2024-12-03 17:52:29,821 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,821 - INFO - Processing question 68: When must you yield the right-of-way to an emergency vehicle?
+2024-12-03 17:52:29,821 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,821 - INFO - Processing question 69: What is the minimum liability insurance coverage required in Virginia for bodily injury or death of one person?
+2024-12-03 17:52:29,821 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,821 - INFO - Processing question 70: What should you do if you experience a tire blowout while driving?
+2024-12-03 17:52:29,821 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,821 - INFO - Processing question 71: In Virginia, what is the maximum speed limit on interstate highways in rural areas?
+2024-12-03 17:52:29,821 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,822 - INFO - Processing question 72: What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?
+2024-12-03 17:52:29,822 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:29,822 - INFO - Processing question 73: When driving in heavy rain, what is the recommended following distance?
+2024-12-03 17:52:29,822 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,822 - INFO - Processing question 74: When merging onto a highway, what is the correct procedure?
+2024-12-03 17:52:29,822 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,822 - INFO - Processing question 75: What is the penalty for driving without valid insurance in Virginia?
+2024-12-03 17:52:29,822 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,822 - INFO - Processing question 76: What should you do if you encounter black ice while driving?
+2024-12-03 17:52:29,822 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,822 - INFO - Processing question 77: When must you stop for a school bus?
+2024-12-03 17:52:29,822 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,822 - INFO - Processing question 78: What does a yellow diamond sign with black arrows curving to the right mean?
+2024-12-03 17:52:29,822 - INFO - Question category: Road Signs
+2024-12-03 17:52:29,822 - INFO - Processing question 79: What should you do if your brakes fail while driving?
+2024-12-03 17:52:29,822 - INFO - Question category: Safe Driving
+2024-12-03 17:52:29,822 - INFO - Processing question 80: What is the proper procedure when an emergency vehicle approaches with lights and sirens?
+2024-12-03 17:52:29,822 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:29,822 - INFO - Processing question 81: What happens if you're caught street racing in Virginia?
+2024-12-03 17:52:29,823 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:29,823 - INFO - Categories found: ['Road Signs', 'Traffic Signals', 'General Knowledge', 'Rules of the Road', 'Safe Driving', 'Penalties and Insurance', 'Alcohol and Drugs']
+2024-12-03 17:52:29,823 - INFO - Question counts per category: [('Road Signs', 24), ('Traffic Signals', 4), ('General Knowledge', 1), ('Rules of the Road', 15), ('Safe Driving', 17), ('Penalties and Insurance', 12), ('Alcohol and Drugs', 9)]
+2024-12-03 17:52:29,823 - INFO - Processing category Road Signs, want 9 questions
+2024-12-03 17:52:29,823 - INFO - Found 24 questions in category Road Signs, selecting 9
+2024-12-03 17:52:29,823 - INFO - Added 9 questions from Road Signs
+2024-12-03 17:52:29,823 - INFO - Processing category Traffic Signals, want 5 questions
+2024-12-03 17:52:29,824 - INFO - Found 4 questions in category Traffic Signals, selecting 4
+2024-12-03 17:52:29,824 - INFO - Added 4 questions from Traffic Signals
+2024-12-03 17:52:29,824 - INFO - Processing category Rules of the Road, want 7 questions
+2024-12-03 17:52:29,824 - INFO - Found 15 questions in category Rules of the Road, selecting 7
+2024-12-03 17:52:29,824 - INFO - Added 7 questions from Rules of the Road
+2024-12-03 17:52:29,824 - INFO - Processing category Safe Driving, want 7 questions
+2024-12-03 17:52:29,824 - INFO - Found 17 questions in category Safe Driving, selecting 7
+2024-12-03 17:52:29,824 - INFO - Added 7 questions from Safe Driving
+2024-12-03 17:52:29,824 - INFO - Processing category Penalties and Insurance, want 4 questions
+2024-12-03 17:52:29,824 - INFO - Found 12 questions in category Penalties and Insurance, selecting 4
+2024-12-03 17:52:29,824 - INFO - Added 4 questions from Penalties and Insurance
+2024-12-03 17:52:29,824 - INFO - Processing category Alcohol and Drugs, want 3 questions
+2024-12-03 17:52:29,824 - INFO - Found 9 questions in category Alcohol and Drugs, selecting 3
+2024-12-03 17:52:29,824 - INFO - Added 3 questions from Alcohol and Drugs
+2024-12-03 17:52:29,824 - INFO - Successfully loaded 34 questions across 6 sections
+2024-12-03 17:52:29,844 - WARNING -  * Debugger is active!
+2024-12-03 17:52:29,855 - INFO -  * Debugger PIN: 139-578-246
+2024-12-03 17:52:29,857 - INFO -  * Restarting with stat
+2024-12-03 17:52:30,192 - INFO - Starting to load questions from new_questions.json
+2024-12-03 17:52:30,193 - INFO - Loaded 82 questions from file
+2024-12-03 17:52:30,193 - INFO - Processing question 0: What does a red octagonal sign indicate?
+2024-12-03 17:52:30,193 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,193 - INFO - Processing question 1: A yellow diamond-shaped sign with a black cross warns drivers of:
+2024-12-03 17:52:30,194 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,194 - INFO - Processing question 2: What does a white rectangular sign with black letters stating 'Speed Limit 55' mean?
+2024-12-03 17:52:30,194 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,194 - INFO - Processing question 3: A circular yellow sign with a black 'X' and two 'R's indicates:
+2024-12-03 17:52:30,194 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,194 - INFO - Processing question 4: What does a pentagon-shaped sign with two figures walking signify?
+2024-12-03 17:52:30,194 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,194 - INFO - Processing question 5: What does a yellow sign with a deer symbol mean?
+2024-12-03 17:52:30,194 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,194 - INFO - Processing question 6: A sign with a curved arrow means:
+2024-12-03 17:52:30,194 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,194 - INFO - Processing question 7: What does a triangular red and white sign pointing downward mean?
+2024-12-03 17:52:30,194 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,194 - INFO - Processing question 8: What does a rectangular blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 9: What does a diamond-shaped sign with a truck going downhill warn of:
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 10: What does a sign with a curved arrow and a red circle with a slash through it mean?
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 11: A sign showing two arrows, one pointing up and the other down, indicates:
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 12: What should you do when the traffic light turns green?
+2024-12-03 17:52:30,195 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,195 - INFO - Processing question 13: What does a green left-turn arrow signal?
+2024-12-03 17:52:30,195 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,195 - INFO - Processing question 14: What does this red X symbol above a lane indicate?
+2024-12-03 17:52:30,195 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,195 - INFO - Processing question 15: What does a yellow X symbol above a lane indicate?
+2024-12-03 17:52:30,195 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,195 - INFO - Processing question 16: What does a blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 17: What does this sign with a truck going downhill indicate?
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 18: What does a sign with a U-turn symbol and a red slash indicate?
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 19: What does a sign with two arrows pointing in opposite directions signify?
+2024-12-03 17:52:30,195 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,195 - INFO - Processing question 20: When driving behind another car, what is the recommended safe following distance?
+2024-12-03 17:52:30,195 - INFO - Question category: General Knowledge
+2024-12-03 17:52:30,195 - INFO - Processing question 21: When merging onto a highway, who has the right of way?
+2024-12-03 17:52:30,195 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,195 - INFO - Processing question 22: What is the proper following distance in ideal conditions?
+2024-12-03 17:52:30,195 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,195 - INFO - Processing question 23: What should you do when approaching a yellow traffic light?
+2024-12-03 17:52:30,195 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,195 - INFO - Processing question 24: What should you do if your brakes fail?
+2024-12-03 17:52:30,195 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,195 - INFO - Processing question 25: When are you required to use your headlights in Virginia?
+2024-12-03 17:52:30,195 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,195 - INFO - Processing question 26: What is the minimum liability insurance coverage required in Virginia?
+2024-12-03 17:52:30,195 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,195 - INFO - Processing question 27: How many points does a speeding ticket (10-19 mph over) add to your driving record?
+2024-12-03 17:52:30,195 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,195 - INFO - Processing question 28: What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in Virginia?
+2024-12-03 17:52:30,195 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,196 - INFO - Processing question 29: What is the BAC limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,196 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,196 - INFO - Processing question 30: What should you do if you start to skid?
+2024-12-03 17:52:30,196 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,196 - INFO - Processing question 31: When must you come to a complete stop at a STOP sign?
+2024-12-03 17:52:30,196 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,196 - INFO - Processing question 32: What should you do after stopping at a STOP sign?
+2024-12-03 17:52:30,196 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,196 - INFO - Processing question 33: What color and shape is a railroad crossing advance warning sign?
+2024-12-03 17:52:30,196 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,196 - INFO - Processing question 34: What is the speed limit in a school zone when children are present?
+2024-12-03 17:52:30,196 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,196 - INFO - Processing question 35: When should you be especially alert for deer crossing the road?
+2024-12-03 17:52:30,196 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,196 - INFO - Processing question 36: What's the difference between a YIELD sign and a STOP sign?
+2024-12-03 17:52:30,196 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,196 - INFO - Processing question 37: What action is required when you see a steep grade warning sign?
+2024-12-03 17:52:30,196 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,196 - INFO - Processing question 38: When changing lanes, you must:
+2024-12-03 17:52:30,196 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,197 - INFO - Processing question 39: When making a right turn on red, you must:
+2024-12-03 17:52:30,197 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,197 - INFO - Processing question 40: What is the speed limit in a residential area unless otherwise posted?
+2024-12-03 17:52:30,197 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,197 - INFO - Processing question 41: When emergency vehicles with sirens and lights are approaching, you must:
+2024-12-03 17:52:30,197 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,197 - INFO - Processing question 42: What is the proper procedure at a four-way stop?
+2024-12-03 17:52:30,197 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,197 - INFO - Processing question 43: When is it legal to pass on the right in Virginia?
+2024-12-03 17:52:30,197 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,197 - INFO - Processing question 44: What does a solid white line between lanes mean?
+2024-12-03 17:52:30,197 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,197 - INFO - Processing question 45: When driving in fog, you should:
+2024-12-03 17:52:30,197 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,197 - INFO - Processing question 46: What is the first thing you should do in case of a tire blowout?
+2024-12-03 17:52:30,197 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,197 - INFO - Processing question 47: When should you turn on your headlights?
+2024-12-03 17:52:30,197 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,197 - INFO - Processing question 48: What should you do if your car starts to hydroplane?
+2024-12-03 17:52:30,197 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,197 - INFO - Processing question 49: What happens if you're caught driving without insurance in Virginia?
+2024-12-03 17:52:30,197 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,197 - INFO - Processing question 50: How long does a DUI conviction stay on your Virginia driving record?
+2024-12-03 17:52:30,197 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,197 - INFO - Processing question 51: How many points are deducted from your license for passing a stopped school bus?
+2024-12-03 17:52:30,197 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,197 - INFO - Processing question 52: What is the penalty for a first-time DUI offense in Virginia?
+2024-12-03 17:52:30,197 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,197 - INFO - Processing question 53: What happens if you refuse a breath test in Virginia?
+2024-12-03 17:52:30,197 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,197 - INFO - Processing question 54: What is the 'Zero Tolerance' law in Virginia?
+2024-12-03 17:52:30,197 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,198 - INFO - Processing question 55: When driving at night, you should:
+2024-12-03 17:52:30,198 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,198 - INFO - Processing question 56: When merging onto a highway, you should:
+2024-12-03 17:52:30,198 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,198 - INFO - Processing question 57: What is the proper way to park on a hill with a curb, facing downhill?
+2024-12-03 17:52:30,198 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,198 - INFO - Processing question 58: What should you do in a work zone?
+2024-12-03 17:52:30,198 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,198 - INFO - Processing question 59: How can you get demerit points removed from your license in Virginia?
+2024-12-03 17:52:30,198 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,198 - INFO - Processing question 60: What is an SR-22 in Virginia?
+2024-12-03 17:52:30,198 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,198 - INFO - Processing question 61: How long must you maintain SR-22 insurance in Virginia after a DUI?
+2024-12-03 17:52:30,198 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,198 - INFO - Processing question 62: What is Virginia's open container law?
+2024-12-03 17:52:30,198 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,198 - INFO - Processing question 63: What happens after a second DUI conviction in Virginia?
+2024-12-03 17:52:30,198 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,198 - INFO - Processing question 64: When is an ignition interlock device required in Virginia?
+2024-12-03 17:52:30,198 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,198 - INFO - Processing question 65: What is the 'Move Over' law in Virginia?
+2024-12-03 17:52:30,198 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,198 - INFO - Processing question 66: When must you report a crash to police in Virginia?
+2024-12-03 17:52:30,198 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,198 - INFO - Processing question 67: When driving in foggy conditions, you should:
+2024-12-03 17:52:30,198 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,198 - INFO - Processing question 68: When must you yield the right-of-way to an emergency vehicle?
+2024-12-03 17:52:30,198 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,198 - INFO - Processing question 69: What is the minimum liability insurance coverage required in Virginia for bodily injury or death of one person?
+2024-12-03 17:52:30,199 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,199 - INFO - Processing question 70: What should you do if you experience a tire blowout while driving?
+2024-12-03 17:52:30,199 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,199 - INFO - Processing question 71: In Virginia, what is the maximum speed limit on interstate highways in rural areas?
+2024-12-03 17:52:30,199 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,199 - INFO - Processing question 72: What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,199 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,199 - INFO - Processing question 73: When driving in heavy rain, what is the recommended following distance?
+2024-12-03 17:52:30,199 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,199 - INFO - Processing question 74: When merging onto a highway, what is the correct procedure?
+2024-12-03 17:52:30,199 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,199 - INFO - Processing question 75: What is the penalty for driving without valid insurance in Virginia?
+2024-12-03 17:52:30,199 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,199 - INFO - Processing question 76: What should you do if you encounter black ice while driving?
+2024-12-03 17:52:30,199 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,199 - INFO - Processing question 77: When must you stop for a school bus?
+2024-12-03 17:52:30,199 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,199 - INFO - Processing question 78: What does a yellow diamond sign with black arrows curving to the right mean?
+2024-12-03 17:52:30,199 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,199 - INFO - Processing question 79: What should you do if your brakes fail while driving?
+2024-12-03 17:52:30,199 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,199 - INFO - Processing question 80: What is the proper procedure when an emergency vehicle approaches with lights and sirens?
+2024-12-03 17:52:30,199 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,199 - INFO - Processing question 81: What happens if you're caught street racing in Virginia?
+2024-12-03 17:52:30,199 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,199 - INFO - Categories found: ['Road Signs', 'Traffic Signals', 'General Knowledge', 'Rules of the Road', 'Safe Driving', 'Penalties and Insurance', 'Alcohol and Drugs']
+2024-12-03 17:52:30,199 - INFO - Question counts per category: [('Road Signs', 24), ('Traffic Signals', 4), ('General Knowledge', 1), ('Rules of the Road', 15), ('Safe Driving', 17), ('Penalties and Insurance', 12), ('Alcohol and Drugs', 9)]
+2024-12-03 17:52:30,199 - INFO - Processing category Road Signs, want 9 questions
+2024-12-03 17:52:30,199 - INFO - Found 24 questions in category Road Signs, selecting 9
+2024-12-03 17:52:30,200 - INFO - Added 9 questions from Road Signs
+2024-12-03 17:52:30,200 - INFO - Processing category Traffic Signals, want 5 questions
+2024-12-03 17:52:30,200 - INFO - Found 4 questions in category Traffic Signals, selecting 4
+2024-12-03 17:52:30,200 - INFO - Added 4 questions from Traffic Signals
+2024-12-03 17:52:30,200 - INFO - Processing category Rules of the Road, want 7 questions
+2024-12-03 17:52:30,200 - INFO - Found 15 questions in category Rules of the Road, selecting 7
+2024-12-03 17:52:30,200 - INFO - Added 7 questions from Rules of the Road
+2024-12-03 17:52:30,200 - INFO - Processing category Safe Driving, want 7 questions
+2024-12-03 17:52:30,200 - INFO - Found 17 questions in category Safe Driving, selecting 7
+2024-12-03 17:52:30,200 - INFO - Added 7 questions from Safe Driving
+2024-12-03 17:52:30,200 - INFO - Processing category Penalties and Insurance, want 4 questions
+2024-12-03 17:52:30,200 - INFO - Found 12 questions in category Penalties and Insurance, selecting 4
+2024-12-03 17:52:30,200 - INFO - Added 4 questions from Penalties and Insurance
+2024-12-03 17:52:30,200 - INFO - Processing category Alcohol and Drugs, want 3 questions
+2024-12-03 17:52:30,200 - INFO - Found 9 questions in category Alcohol and Drugs, selecting 3
+2024-12-03 17:52:30,200 - INFO - Added 3 questions from Alcohol and Drugs
+2024-12-03 17:52:30,200 - INFO - Successfully loaded 34 questions across 6 sections
+2024-12-03 17:52:30,217 - INFO -  * Detected change in 'c:\\Users\\Big Daddy Pyatt\\CascadeProjects\\virginia_permit_test\\app.py', reloading
+2024-12-03 17:52:30,222 - WARNING -  * Debugger is active!
+2024-12-03 17:52:30,236 - INFO -  * Debugger PIN: 139-578-246
+2024-12-03 17:52:30,239 - INFO - Starting to load questions from new_questions.json
+2024-12-03 17:52:30,241 - INFO - Loaded 82 questions from file
+2024-12-03 17:52:30,241 - INFO - Processing question 0: What does a red octagonal sign indicate?
+2024-12-03 17:52:30,241 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,241 - INFO - Processing question 1: A yellow diamond-shaped sign with a black cross warns drivers of:
+2024-12-03 17:52:30,241 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,241 - INFO - Processing question 2: What does a white rectangular sign with black letters stating 'Speed Limit 55' mean?
+2024-12-03 17:52:30,241 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,241 - INFO - Processing question 3: A circular yellow sign with a black 'X' and two 'R's indicates:
+2024-12-03 17:52:30,241 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 4: What does a pentagon-shaped sign with two figures walking signify?
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 5: What does a yellow sign with a deer symbol mean?
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 6: A sign with a curved arrow means:
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 7: What does a triangular red and white sign pointing downward mean?
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 8: What does a rectangular blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 9: What does a diamond-shaped sign with a truck going downhill warn of:
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 10: What does a sign with a curved arrow and a red circle with a slash through it mean?
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 11: A sign showing two arrows, one pointing up and the other down, indicates:
+2024-12-03 17:52:30,242 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,242 - INFO - Processing question 12: What should you do when the traffic light turns green?
+2024-12-03 17:52:30,242 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,242 - INFO - Processing question 13: What does a green left-turn arrow signal?
+2024-12-03 17:52:30,242 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,243 - INFO - Processing question 14: What does this red X symbol above a lane indicate?
+2024-12-03 17:52:30,243 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,243 - INFO - Processing question 15: What does a yellow X symbol above a lane indicate?
+2024-12-03 17:52:30,243 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,243 - INFO - Processing question 16: What does a blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,243 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,243 - INFO - Processing question 17: What does this sign with a truck going downhill indicate?
+2024-12-03 17:52:30,243 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,243 - INFO - Processing question 18: What does a sign with a U-turn symbol and a red slash indicate?
+2024-12-03 17:52:30,243 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,243 - INFO - Processing question 19: What does a sign with two arrows pointing in opposite directions signify?
+2024-12-03 17:52:30,243 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,243 - INFO - Processing question 20: When driving behind another car, what is the recommended safe following distance?
+2024-12-03 17:52:30,243 - INFO - Question category: General Knowledge
+2024-12-03 17:52:30,243 - INFO - Processing question 21: When merging onto a highway, who has the right of way?
+2024-12-03 17:52:30,244 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,244 - INFO - Processing question 22: What is the proper following distance in ideal conditions?
+2024-12-03 17:52:30,244 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,244 - INFO - Processing question 23: What should you do when approaching a yellow traffic light?
+2024-12-03 17:52:30,244 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,244 - INFO - Processing question 24: What should you do if your brakes fail?
+2024-12-03 17:52:30,244 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,244 - INFO - Processing question 25: When are you required to use your headlights in Virginia?
+2024-12-03 17:52:30,244 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,244 - INFO - Processing question 26: What is the minimum liability insurance coverage required in Virginia?
+2024-12-03 17:52:30,244 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,244 - INFO - Processing question 27: How many points does a speeding ticket (10-19 mph over) add to your driving record?
+2024-12-03 17:52:30,244 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,244 - INFO - Processing question 28: What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in Virginia?
+2024-12-03 17:52:30,244 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,244 - INFO - Processing question 29: What is the BAC limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,244 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,245 - INFO - Processing question 30: What should you do if you start to skid?
+2024-12-03 17:52:30,245 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,245 - INFO - Processing question 31: When must you come to a complete stop at a STOP sign?
+2024-12-03 17:52:30,245 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,245 - INFO - Processing question 32: What should you do after stopping at a STOP sign?
+2024-12-03 17:52:30,245 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,245 - INFO - Processing question 33: What color and shape is a railroad crossing advance warning sign?
+2024-12-03 17:52:30,245 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,245 - INFO - Processing question 34: What is the speed limit in a school zone when children are present?
+2024-12-03 17:52:30,245 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,245 - INFO - Processing question 35: When should you be especially alert for deer crossing the road?
+2024-12-03 17:52:30,245 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,245 - INFO - Processing question 36: What's the difference between a YIELD sign and a STOP sign?
+2024-12-03 17:52:30,245 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,245 - INFO - Processing question 37: What action is required when you see a steep grade warning sign?
+2024-12-03 17:52:30,245 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,245 - INFO - Processing question 38: When changing lanes, you must:
+2024-12-03 17:52:30,245 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,245 - INFO - Processing question 39: When making a right turn on red, you must:
+2024-12-03 17:52:30,245 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,245 - INFO - Processing question 40: What is the speed limit in a residential area unless otherwise posted?
+2024-12-03 17:52:30,245 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,245 - INFO - Processing question 41: When emergency vehicles with sirens and lights are approaching, you must:
+2024-12-03 17:52:30,245 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,245 - INFO - Processing question 42: What is the proper procedure at a four-way stop?
+2024-12-03 17:52:30,245 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,245 - INFO - Processing question 43: When is it legal to pass on the right in Virginia?
+2024-12-03 17:52:30,246 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,246 - INFO - Processing question 44: What does a solid white line between lanes mean?
+2024-12-03 17:52:30,246 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,246 - INFO - Processing question 45: When driving in fog, you should:
+2024-12-03 17:52:30,246 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,246 - INFO - Processing question 46: What is the first thing you should do in case of a tire blowout?
+2024-12-03 17:52:30,246 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,246 - INFO - Processing question 47: When should you turn on your headlights?
+2024-12-03 17:52:30,246 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,246 - INFO - Processing question 48: What should you do if your car starts to hydroplane?
+2024-12-03 17:52:30,246 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,246 - INFO - Processing question 49: What happens if you're caught driving without insurance in Virginia?
+2024-12-03 17:52:30,246 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,246 - INFO - Processing question 50: How long does a DUI conviction stay on your Virginia driving record?
+2024-12-03 17:52:30,246 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,246 - INFO - Processing question 51: How many points are deducted from your license for passing a stopped school bus?
+2024-12-03 17:52:30,246 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,246 - INFO - Processing question 52: What is the penalty for a first-time DUI offense in Virginia?
+2024-12-03 17:52:30,247 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,247 - INFO - Processing question 53: What happens if you refuse a breath test in Virginia?
+2024-12-03 17:52:30,247 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,247 - INFO - Processing question 54: What is the 'Zero Tolerance' law in Virginia?
+2024-12-03 17:52:30,247 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,247 - INFO - Processing question 55: When driving at night, you should:
+2024-12-03 17:52:30,247 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,247 - INFO - Processing question 56: When merging onto a highway, you should:
+2024-12-03 17:52:30,247 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,248 - INFO - Processing question 57: What is the proper way to park on a hill with a curb, facing downhill?
+2024-12-03 17:52:30,248 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,248 - INFO - Processing question 58: What should you do in a work zone?
+2024-12-03 17:52:30,248 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,248 - INFO - Processing question 59: How can you get demerit points removed from your license in Virginia?
+2024-12-03 17:52:30,248 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,248 - INFO - Processing question 60: What is an SR-22 in Virginia?
+2024-12-03 17:52:30,248 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,248 - INFO - Processing question 61: How long must you maintain SR-22 insurance in Virginia after a DUI?
+2024-12-03 17:52:30,248 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,248 - INFO - Processing question 62: What is Virginia's open container law?
+2024-12-03 17:52:30,248 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,248 - INFO - Processing question 63: What happens after a second DUI conviction in Virginia?
+2024-12-03 17:52:30,248 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,248 - INFO - Processing question 64: When is an ignition interlock device required in Virginia?
+2024-12-03 17:52:30,248 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,248 - INFO - Processing question 65: What is the 'Move Over' law in Virginia?
+2024-12-03 17:52:30,249 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,249 - INFO - Processing question 66: When must you report a crash to police in Virginia?
+2024-12-03 17:52:30,249 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,249 - INFO - Processing question 67: When driving in foggy conditions, you should:
+2024-12-03 17:52:30,249 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,249 - INFO - Processing question 68: When must you yield the right-of-way to an emergency vehicle?
+2024-12-03 17:52:30,249 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,249 - INFO - Processing question 69: What is the minimum liability insurance coverage required in Virginia for bodily injury or death of one person?
+2024-12-03 17:52:30,249 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,249 - INFO - Processing question 70: What should you do if you experience a tire blowout while driving?
+2024-12-03 17:52:30,249 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,249 - INFO - Processing question 71: In Virginia, what is the maximum speed limit on interstate highways in rural areas?
+2024-12-03 17:52:30,249 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,249 - INFO - Processing question 72: What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,249 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,249 - INFO - Processing question 73: When driving in heavy rain, what is the recommended following distance?
+2024-12-03 17:52:30,249 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,250 - INFO - Processing question 74: When merging onto a highway, what is the correct procedure?
+2024-12-03 17:52:30,250 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,250 - INFO - Processing question 75: What is the penalty for driving without valid insurance in Virginia?
+2024-12-03 17:52:30,250 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,250 - INFO - Processing question 76: What should you do if you encounter black ice while driving?
+2024-12-03 17:52:30,250 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,250 - INFO - Processing question 77: When must you stop for a school bus?
+2024-12-03 17:52:30,250 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,250 - INFO - Processing question 78: What does a yellow diamond sign with black arrows curving to the right mean?
+2024-12-03 17:52:30,250 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,250 - INFO - Processing question 79: What should you do if your brakes fail while driving?
+2024-12-03 17:52:30,250 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,250 - INFO - Processing question 80: What is the proper procedure when an emergency vehicle approaches with lights and sirens?
+2024-12-03 17:52:30,250 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,250 - INFO - Processing question 81: What happens if you're caught street racing in Virginia?
+2024-12-03 17:52:30,250 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,250 - INFO - Categories found: ['Road Signs', 'Traffic Signals', 'General Knowledge', 'Rules of the Road', 'Safe Driving', 'Penalties and Insurance', 'Alcohol and Drugs']
+2024-12-03 17:52:30,251 - INFO - Question counts per category: [('Road Signs', 24), ('Traffic Signals', 4), ('General Knowledge', 1), ('Rules of the Road', 15), ('Safe Driving', 17), ('Penalties and Insurance', 12), ('Alcohol and Drugs', 9)]
+2024-12-03 17:52:30,251 - INFO - Processing category Road Signs, want 9 questions
+2024-12-03 17:52:30,251 - INFO - Found 24 questions in category Road Signs, selecting 9
+2024-12-03 17:52:30,251 - INFO - Added 9 questions from Road Signs
+2024-12-03 17:52:30,251 - INFO - Processing category Traffic Signals, want 5 questions
+2024-12-03 17:52:30,251 - INFO - Found 4 questions in category Traffic Signals, selecting 4
+2024-12-03 17:52:30,251 - INFO - Added 4 questions from Traffic Signals
+2024-12-03 17:52:30,251 - INFO - Processing category Rules of the Road, want 7 questions
+2024-12-03 17:52:30,251 - INFO - Found 15 questions in category Rules of the Road, selecting 7
+2024-12-03 17:52:30,251 - INFO - Added 7 questions from Rules of the Road
+2024-12-03 17:52:30,251 - INFO - Processing category Safe Driving, want 7 questions
+2024-12-03 17:52:30,251 - INFO - Found 17 questions in category Safe Driving, selecting 7
+2024-12-03 17:52:30,251 - INFO - Added 7 questions from Safe Driving
+2024-12-03 17:52:30,252 - INFO - Processing category Penalties and Insurance, want 4 questions
+2024-12-03 17:52:30,252 - INFO - Found 12 questions in category Penalties and Insurance, selecting 4
+2024-12-03 17:52:30,252 - INFO - Added 4 questions from Penalties and Insurance
+2024-12-03 17:52:30,252 - INFO - Processing category Alcohol and Drugs, want 3 questions
+2024-12-03 17:52:30,252 - INFO - Found 9 questions in category Alcohol and Drugs, selecting 3
+2024-12-03 17:52:30,252 - INFO - Added 3 questions from Alcohol and Drugs
+2024-12-03 17:52:30,252 - INFO - Successfully loaded 34 questions across 6 sections
+2024-12-03 17:52:30,267 - INFO -  * Restarting with stat
+2024-12-03 17:52:30,272 - WARNING -  * Debugger is active!
+2024-12-03 17:52:30,286 - INFO -  * Debugger PIN: 139-578-246
+2024-12-03 17:52:30,378 - INFO -  * Detected change in 'c:\\Users\\Big Daddy Pyatt\\CascadeProjects\\virginia_permit_test\\app.py', reloading
+2024-12-03 17:52:30,418 - INFO -  * Restarting with stat
+2024-12-03 17:52:30,689 - INFO - Starting to load questions from new_questions.json
+2024-12-03 17:52:30,691 - INFO - Loaded 82 questions from file
+2024-12-03 17:52:30,691 - INFO - Processing question 0: What does a red octagonal sign indicate?
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 1: A yellow diamond-shaped sign with a black cross warns drivers of:
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 2: What does a white rectangular sign with black letters stating 'Speed Limit 55' mean?
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 3: A circular yellow sign with a black 'X' and two 'R's indicates:
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 4: What does a pentagon-shaped sign with two figures walking signify?
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 5: What does a yellow sign with a deer symbol mean?
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 6: A sign with a curved arrow means:
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 7: What does a triangular red and white sign pointing downward mean?
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,691 - INFO - Processing question 8: What does a rectangular blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,691 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 9: What does a diamond-shaped sign with a truck going downhill warn of:
+2024-12-03 17:52:30,692 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 10: What does a sign with a curved arrow and a red circle with a slash through it mean?
+2024-12-03 17:52:30,692 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 11: A sign showing two arrows, one pointing up and the other down, indicates:
+2024-12-03 17:52:30,692 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 12: What should you do when the traffic light turns green?
+2024-12-03 17:52:30,692 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,692 - INFO - Processing question 13: What does a green left-turn arrow signal?
+2024-12-03 17:52:30,692 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,692 - INFO - Processing question 14: What does this red X symbol above a lane indicate?
+2024-12-03 17:52:30,692 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,692 - INFO - Processing question 15: What does a yellow X symbol above a lane indicate?
+2024-12-03 17:52:30,692 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,692 - INFO - Processing question 16: What does a blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,692 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 17: What does this sign with a truck going downhill indicate?
+2024-12-03 17:52:30,692 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 18: What does a sign with a U-turn symbol and a red slash indicate?
+2024-12-03 17:52:30,692 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 19: What does a sign with two arrows pointing in opposite directions signify?
+2024-12-03 17:52:30,692 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,692 - INFO - Processing question 20: When driving behind another car, what is the recommended safe following distance?
+2024-12-03 17:52:30,692 - INFO - Question category: General Knowledge
+2024-12-03 17:52:30,692 - INFO - Processing question 21: When merging onto a highway, who has the right of way?
+2024-12-03 17:52:30,692 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,693 - INFO - Processing question 22: What is the proper following distance in ideal conditions?
+2024-12-03 17:52:30,693 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,693 - INFO - Processing question 23: What should you do when approaching a yellow traffic light?
+2024-12-03 17:52:30,693 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,693 - INFO - Processing question 24: What should you do if your brakes fail?
+2024-12-03 17:52:30,693 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,693 - INFO - Processing question 25: When are you required to use your headlights in Virginia?
+2024-12-03 17:52:30,693 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,693 - INFO - Processing question 26: What is the minimum liability insurance coverage required in Virginia?
+2024-12-03 17:52:30,693 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,693 - INFO - Processing question 27: How many points does a speeding ticket (10-19 mph over) add to your driving record?
+2024-12-03 17:52:30,693 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,693 - INFO - Processing question 28: What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in Virginia?
+2024-12-03 17:52:30,693 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,693 - INFO - Processing question 29: What is the BAC limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,693 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,693 - INFO - Processing question 30: What should you do if you start to skid?
+2024-12-03 17:52:30,693 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,693 - INFO - Processing question 31: When must you come to a complete stop at a STOP sign?
+2024-12-03 17:52:30,693 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,693 - INFO - Processing question 32: What should you do after stopping at a STOP sign?
+2024-12-03 17:52:30,693 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,693 - INFO - Processing question 33: What color and shape is a railroad crossing advance warning sign?
+2024-12-03 17:52:30,693 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,693 - INFO - Processing question 34: What is the speed limit in a school zone when children are present?
+2024-12-03 17:52:30,693 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,694 - INFO - Processing question 35: When should you be especially alert for deer crossing the road?
+2024-12-03 17:52:30,694 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,694 - INFO - Processing question 36: What's the difference between a YIELD sign and a STOP sign?
+2024-12-03 17:52:30,694 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,694 - INFO - Processing question 37: What action is required when you see a steep grade warning sign?
+2024-12-03 17:52:30,694 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,694 - INFO - Processing question 38: When changing lanes, you must:
+2024-12-03 17:52:30,694 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,694 - INFO - Processing question 39: When making a right turn on red, you must:
+2024-12-03 17:52:30,694 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,694 - INFO - Processing question 40: What is the speed limit in a residential area unless otherwise posted?
+2024-12-03 17:52:30,694 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,694 - INFO - Processing question 41: When emergency vehicles with sirens and lights are approaching, you must:
+2024-12-03 17:52:30,694 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,694 - INFO - Processing question 42: What is the proper procedure at a four-way stop?
+2024-12-03 17:52:30,694 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,694 - INFO - Processing question 43: When is it legal to pass on the right in Virginia?
+2024-12-03 17:52:30,694 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,694 - INFO - Processing question 44: What does a solid white line between lanes mean?
+2024-12-03 17:52:30,694 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,694 - INFO - Processing question 45: When driving in fog, you should:
+2024-12-03 17:52:30,694 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,694 - INFO - Processing question 46: What is the first thing you should do in case of a tire blowout?
+2024-12-03 17:52:30,694 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,694 - INFO - Processing question 47: When should you turn on your headlights?
+2024-12-03 17:52:30,694 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,694 - INFO - Processing question 48: What should you do if your car starts to hydroplane?
+2024-12-03 17:52:30,694 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,694 - INFO - Processing question 49: What happens if you're caught driving without insurance in Virginia?
+2024-12-03 17:52:30,695 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,695 - INFO - Processing question 50: How long does a DUI conviction stay on your Virginia driving record?
+2024-12-03 17:52:30,695 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,695 - INFO - Processing question 51: How many points are deducted from your license for passing a stopped school bus?
+2024-12-03 17:52:30,695 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,695 - INFO - Processing question 52: What is the penalty for a first-time DUI offense in Virginia?
+2024-12-03 17:52:30,695 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,695 - INFO - Processing question 53: What happens if you refuse a breath test in Virginia?
+2024-12-03 17:52:30,695 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,695 - INFO - Processing question 54: What is the 'Zero Tolerance' law in Virginia?
+2024-12-03 17:52:30,695 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,695 - INFO - Processing question 55: When driving at night, you should:
+2024-12-03 17:52:30,695 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,695 - INFO - Processing question 56: When merging onto a highway, you should:
+2024-12-03 17:52:30,695 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 57: What is the proper way to park on a hill with a curb, facing downhill?
+2024-12-03 17:52:30,696 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 58: What should you do in a work zone?
+2024-12-03 17:52:30,696 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 59: How can you get demerit points removed from your license in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,696 - INFO - Processing question 60: What is an SR-22 in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,696 - INFO - Processing question 61: How long must you maintain SR-22 insurance in Virginia after a DUI?
+2024-12-03 17:52:30,696 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,696 - INFO - Processing question 62: What is Virginia's open container law?
+2024-12-03 17:52:30,696 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,696 - INFO - Processing question 63: What happens after a second DUI conviction in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,696 - INFO - Processing question 64: When is an ignition interlock device required in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,696 - INFO - Processing question 65: What is the 'Move Over' law in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 66: When must you report a crash to police in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,696 - INFO - Processing question 67: When driving in foggy conditions, you should:
+2024-12-03 17:52:30,696 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 68: When must you yield the right-of-way to an emergency vehicle?
+2024-12-03 17:52:30,696 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,696 - INFO - Processing question 69: What is the minimum liability insurance coverage required in Virginia for bodily injury or death of one person?
+2024-12-03 17:52:30,696 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,696 - INFO - Processing question 70: What should you do if you experience a tire blowout while driving?
+2024-12-03 17:52:30,696 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 71: In Virginia, what is the maximum speed limit on interstate highways in rural areas?
+2024-12-03 17:52:30,696 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,696 - INFO - Processing question 72: What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,696 - INFO - Processing question 73: When driving in heavy rain, what is the recommended following distance?
+2024-12-03 17:52:30,696 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 74: When merging onto a highway, what is the correct procedure?
+2024-12-03 17:52:30,696 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,696 - INFO - Processing question 75: What is the penalty for driving without valid insurance in Virginia?
+2024-12-03 17:52:30,696 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,696 - INFO - Processing question 76: What should you do if you encounter black ice while driving?
+2024-12-03 17:52:30,696 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,696 - INFO - Processing question 77: When must you stop for a school bus?
+2024-12-03 17:52:30,696 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,696 - INFO - Processing question 78: What does a yellow diamond sign with black arrows curving to the right mean?
+2024-12-03 17:52:30,697 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,697 - INFO - Processing question 79: What should you do if your brakes fail while driving?
+2024-12-03 17:52:30,697 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,697 - INFO - Processing question 80: What is the proper procedure when an emergency vehicle approaches with lights and sirens?
+2024-12-03 17:52:30,697 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,697 - INFO - Processing question 81: What happens if you're caught street racing in Virginia?
+2024-12-03 17:52:30,697 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,697 - INFO - Categories found: ['Road Signs', 'Traffic Signals', 'General Knowledge', 'Rules of the Road', 'Safe Driving', 'Penalties and Insurance', 'Alcohol and Drugs']
+2024-12-03 17:52:30,697 - INFO - Question counts per category: [('Road Signs', 24), ('Traffic Signals', 4), ('General Knowledge', 1), ('Rules of the Road', 15), ('Safe Driving', 17), ('Penalties and Insurance', 12), ('Alcohol and Drugs', 9)]
+2024-12-03 17:52:30,697 - INFO - Processing category Road Signs, want 9 questions
+2024-12-03 17:52:30,697 - INFO - Found 24 questions in category Road Signs, selecting 9
+2024-12-03 17:52:30,697 - INFO - Added 9 questions from Road Signs
+2024-12-03 17:52:30,697 - INFO - Processing category Traffic Signals, want 5 questions
+2024-12-03 17:52:30,697 - INFO - Found 4 questions in category Traffic Signals, selecting 4
+2024-12-03 17:52:30,697 - INFO - Added 4 questions from Traffic Signals
+2024-12-03 17:52:30,697 - INFO - Processing category Rules of the Road, want 7 questions
+2024-12-03 17:52:30,697 - INFO - Found 15 questions in category Rules of the Road, selecting 7
+2024-12-03 17:52:30,697 - INFO - Added 7 questions from Rules of the Road
+2024-12-03 17:52:30,697 - INFO - Processing category Safe Driving, want 7 questions
+2024-12-03 17:52:30,697 - INFO - Found 17 questions in category Safe Driving, selecting 7
+2024-12-03 17:52:30,697 - INFO - Added 7 questions from Safe Driving
+2024-12-03 17:52:30,697 - INFO - Processing category Penalties and Insurance, want 4 questions
+2024-12-03 17:52:30,697 - INFO - Found 12 questions in category Penalties and Insurance, selecting 4
+2024-12-03 17:52:30,697 - INFO - Added 4 questions from Penalties and Insurance
+2024-12-03 17:52:30,697 - INFO - Processing category Alcohol and Drugs, want 3 questions
+2024-12-03 17:52:30,697 - INFO - Found 9 questions in category Alcohol and Drugs, selecting 3
+2024-12-03 17:52:30,697 - INFO - Added 3 questions from Alcohol and Drugs
+2024-12-03 17:52:30,698 - INFO - Successfully loaded 34 questions across 6 sections
+2024-12-03 17:52:30,718 - WARNING -  * Debugger is active!
+2024-12-03 17:52:30,733 - INFO -  * Debugger PIN: 139-578-246
+2024-12-03 17:52:30,840 - INFO - Starting to load questions from new_questions.json
+2024-12-03 17:52:30,841 - INFO - Loaded 82 questions from file
+2024-12-03 17:52:30,841 - INFO - Processing question 0: What does a red octagonal sign indicate?
+2024-12-03 17:52:30,841 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,841 - INFO - Processing question 1: A yellow diamond-shaped sign with a black cross warns drivers of:
+2024-12-03 17:52:30,841 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,841 - INFO - Processing question 2: What does a white rectangular sign with black letters stating 'Speed Limit 55' mean?
+2024-12-03 17:52:30,841 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 3: A circular yellow sign with a black 'X' and two 'R's indicates:
+2024-12-03 17:52:30,842 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 4: What does a pentagon-shaped sign with two figures walking signify?
+2024-12-03 17:52:30,842 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 5: What does a yellow sign with a deer symbol mean?
+2024-12-03 17:52:30,842 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 6: A sign with a curved arrow means:
+2024-12-03 17:52:30,842 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 7: What does a triangular red and white sign pointing downward mean?
+2024-12-03 17:52:30,842 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 8: What does a rectangular blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,842 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 9: What does a diamond-shaped sign with a truck going downhill warn of:
+2024-12-03 17:52:30,842 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,842 - INFO - Processing question 10: What does a sign with a curved arrow and a red circle with a slash through it mean?
+2024-12-03 17:52:30,843 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,843 - INFO - Processing question 11: A sign showing two arrows, one pointing up and the other down, indicates:
+2024-12-03 17:52:30,843 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,843 - INFO - Processing question 12: What should you do when the traffic light turns green?
+2024-12-03 17:52:30,843 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,843 - INFO - Processing question 13: What does a green left-turn arrow signal?
+2024-12-03 17:52:30,843 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,843 - INFO - Processing question 14: What does this red X symbol above a lane indicate?
+2024-12-03 17:52:30,843 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,843 - INFO - Processing question 15: What does a yellow X symbol above a lane indicate?
+2024-12-03 17:52:30,843 - INFO - Question category: Traffic Signals
+2024-12-03 17:52:30,843 - INFO - Processing question 16: What does a blue sign with a white 'H' symbolize?
+2024-12-03 17:52:30,843 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,843 - INFO - Processing question 17: What does this sign with a truck going downhill indicate?
+2024-12-03 17:52:30,843 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,843 - INFO - Processing question 18: What does a sign with a U-turn symbol and a red slash indicate?
+2024-12-03 17:52:30,843 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,843 - INFO - Processing question 19: What does a sign with two arrows pointing in opposite directions signify?
+2024-12-03 17:52:30,843 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,843 - INFO - Processing question 20: When driving behind another car, what is the recommended safe following distance?
+2024-12-03 17:52:30,843 - INFO - Question category: General Knowledge
+2024-12-03 17:52:30,843 - INFO - Processing question 21: When merging onto a highway, who has the right of way?
+2024-12-03 17:52:30,843 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,843 - INFO - Processing question 22: What is the proper following distance in ideal conditions?
+2024-12-03 17:52:30,843 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,843 - INFO - Processing question 23: What should you do when approaching a yellow traffic light?
+2024-12-03 17:52:30,843 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,843 - INFO - Processing question 24: What should you do if your brakes fail?
+2024-12-03 17:52:30,844 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,844 - INFO - Processing question 25: When are you required to use your headlights in Virginia?
+2024-12-03 17:52:30,844 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,844 - INFO - Processing question 26: What is the minimum liability insurance coverage required in Virginia?
+2024-12-03 17:52:30,844 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,844 - INFO - Processing question 27: How many points does a speeding ticket (10-19 mph over) add to your driving record?
+2024-12-03 17:52:30,844 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,844 - INFO - Processing question 28: What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in Virginia?
+2024-12-03 17:52:30,844 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,844 - INFO - Processing question 29: What is the BAC limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,844 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,844 - INFO - Processing question 30: What should you do if you start to skid?
+2024-12-03 17:52:30,844 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,844 - INFO - Processing question 31: When must you come to a complete stop at a STOP sign?
+2024-12-03 17:52:30,844 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,844 - INFO - Processing question 32: What should you do after stopping at a STOP sign?
+2024-12-03 17:52:30,844 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,844 - INFO - Processing question 33: What color and shape is a railroad crossing advance warning sign?
+2024-12-03 17:52:30,844 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,844 - INFO - Processing question 34: What is the speed limit in a school zone when children are present?
+2024-12-03 17:52:30,844 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,844 - INFO - Processing question 35: When should you be especially alert for deer crossing the road?
+2024-12-03 17:52:30,844 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,844 - INFO - Processing question 36: What's the difference between a YIELD sign and a STOP sign?
+2024-12-03 17:52:30,844 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,844 - INFO - Processing question 37: What action is required when you see a steep grade warning sign?
+2024-12-03 17:52:30,844 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,844 - INFO - Processing question 38: When changing lanes, you must:
+2024-12-03 17:52:30,844 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,844 - INFO - Processing question 39: When making a right turn on red, you must:
+2024-12-03 17:52:30,844 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,844 - INFO - Processing question 40: What is the speed limit in a residential area unless otherwise posted?
+2024-12-03 17:52:30,844 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,844 - INFO - Processing question 41: When emergency vehicles with sirens and lights are approaching, you must:
+2024-12-03 17:52:30,844 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,844 - INFO - Processing question 42: What is the proper procedure at a four-way stop?
+2024-12-03 17:52:30,844 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,844 - INFO - Processing question 43: When is it legal to pass on the right in Virginia?
+2024-12-03 17:52:30,844 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,844 - INFO - Processing question 44: What does a solid white line between lanes mean?
+2024-12-03 17:52:30,844 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,844 - INFO - Processing question 45: When driving in fog, you should:
+2024-12-03 17:52:30,844 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,844 - INFO - Processing question 46: What is the first thing you should do in case of a tire blowout?
+2024-12-03 17:52:30,844 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,844 - INFO - Processing question 47: When should you turn on your headlights?
+2024-12-03 17:52:30,845 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,845 - INFO - Processing question 48: What should you do if your car starts to hydroplane?
+2024-12-03 17:52:30,845 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,845 - INFO - Processing question 49: What happens if you're caught driving without insurance in Virginia?
+2024-12-03 17:52:30,845 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,845 - INFO - Processing question 50: How long does a DUI conviction stay on your Virginia driving record?
+2024-12-03 17:52:30,845 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,845 - INFO - Processing question 51: How many points are deducted from your license for passing a stopped school bus?
+2024-12-03 17:52:30,845 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,845 - INFO - Processing question 52: What is the penalty for a first-time DUI offense in Virginia?
+2024-12-03 17:52:30,845 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,845 - INFO - Processing question 53: What happens if you refuse a breath test in Virginia?
+2024-12-03 17:52:30,845 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,846 - INFO - Processing question 54: What is the 'Zero Tolerance' law in Virginia?
+2024-12-03 17:52:30,846 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,846 - INFO - Processing question 55: When driving at night, you should:
+2024-12-03 17:52:30,846 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,846 - INFO - Processing question 56: When merging onto a highway, you should:
+2024-12-03 17:52:30,846 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,846 - INFO - Processing question 57: What is the proper way to park on a hill with a curb, facing downhill?
+2024-12-03 17:52:30,846 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,846 - INFO - Processing question 58: What should you do in a work zone?
+2024-12-03 17:52:30,846 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,846 - INFO - Processing question 59: How can you get demerit points removed from your license in Virginia?
+2024-12-03 17:52:30,846 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,846 - INFO - Processing question 60: What is an SR-22 in Virginia?
+2024-12-03 17:52:30,846 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,846 - INFO - Processing question 61: How long must you maintain SR-22 insurance in Virginia after a DUI?
+2024-12-03 17:52:30,846 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,846 - INFO - Processing question 62: What is Virginia's open container law?
+2024-12-03 17:52:30,846 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,846 - INFO - Processing question 63: What happens after a second DUI conviction in Virginia?
+2024-12-03 17:52:30,846 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,846 - INFO - Processing question 64: When is an ignition interlock device required in Virginia?
+2024-12-03 17:52:30,846 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,846 - INFO - Processing question 65: What is the 'Move Over' law in Virginia?
+2024-12-03 17:52:30,846 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,846 - INFO - Processing question 66: When must you report a crash to police in Virginia?
+2024-12-03 17:52:30,846 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,846 - INFO - Processing question 67: When driving in foggy conditions, you should:
+2024-12-03 17:52:30,846 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,846 - INFO - Processing question 68: When must you yield the right-of-way to an emergency vehicle?
+2024-12-03 17:52:30,846 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,846 - INFO - Processing question 69: What is the minimum liability insurance coverage required in Virginia for bodily injury or death of one person?
+2024-12-03 17:52:30,847 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,847 - INFO - Processing question 70: What should you do if you experience a tire blowout while driving?
+2024-12-03 17:52:30,847 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,847 - INFO - Processing question 71: In Virginia, what is the maximum speed limit on interstate highways in rural areas?
+2024-12-03 17:52:30,847 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,847 - INFO - Processing question 72: What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?
+2024-12-03 17:52:30,847 - INFO - Question category: Alcohol and Drugs
+2024-12-03 17:52:30,847 - INFO - Processing question 73: When driving in heavy rain, what is the recommended following distance?
+2024-12-03 17:52:30,847 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,847 - INFO - Processing question 74: When merging onto a highway, what is the correct procedure?
+2024-12-03 17:52:30,847 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,847 - INFO - Processing question 75: What is the penalty for driving without valid insurance in Virginia?
+2024-12-03 17:52:30,847 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,847 - INFO - Processing question 76: What should you do if you encounter black ice while driving?
+2024-12-03 17:52:30,847 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,847 - INFO - Processing question 77: When must you stop for a school bus?
+2024-12-03 17:52:30,847 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,847 - INFO - Processing question 78: What does a yellow diamond sign with black arrows curving to the right mean?
+2024-12-03 17:52:30,847 - INFO - Question category: Road Signs
+2024-12-03 17:52:30,847 - INFO - Processing question 79: What should you do if your brakes fail while driving?
+2024-12-03 17:52:30,847 - INFO - Question category: Safe Driving
+2024-12-03 17:52:30,847 - INFO - Processing question 80: What is the proper procedure when an emergency vehicle approaches with lights and sirens?
+2024-12-03 17:52:30,847 - INFO - Question category: Rules of the Road
+2024-12-03 17:52:30,847 - INFO - Processing question 81: What happens if you're caught street racing in Virginia?
+2024-12-03 17:52:30,847 - INFO - Question category: Penalties and Insurance
+2024-12-03 17:52:30,847 - INFO - Categories found: ['Road Signs', 'Traffic Signals', 'General Knowledge', 'Rules of the Road', 'Safe Driving', 'Penalties and Insurance', 'Alcohol and Drugs']
+2024-12-03 17:52:30,847 - INFO - Question counts per category: [('Road Signs', 24), ('Traffic Signals', 4), ('General Knowledge', 1), ('Rules of the Road', 15), ('Safe Driving', 17), ('Penalties and Insurance', 12), ('Alcohol and Drugs', 9)]
+2024-12-03 17:52:30,847 - INFO - Processing category Road Signs, want 9 questions
+2024-12-03 17:52:30,847 - INFO - Found 24 questions in category Road Signs, selecting 9
+2024-12-03 17:52:30,848 - INFO - Added 9 questions from Road Signs
+2024-12-03 17:52:30,848 - INFO - Processing category Traffic Signals, want 5 questions
+2024-12-03 17:52:30,848 - INFO - Found 4 questions in category Traffic Signals, selecting 4
+2024-12-03 17:52:30,848 - INFO - Added 4 questions from Traffic Signals
+2024-12-03 17:52:30,848 - INFO - Processing category Rules of the Road, want 7 questions
+2024-12-03 17:52:30,848 - INFO - Found 15 questions in category Rules of the Road, selecting 7
+2024-12-03 17:52:30,848 - INFO - Added 7 questions from Rules of the Road
+2024-12-03 17:52:30,848 - INFO - Processing category Safe Driving, want 7 questions
+2024-12-03 17:52:30,848 - INFO - Found 17 questions in category Safe Driving, selecting 7
+2024-12-03 17:52:30,848 - INFO - Added 7 questions from Safe Driving
+2024-12-03 17:52:30,848 - INFO - Processing category Penalties and Insurance, want 4 questions
+2024-12-03 17:52:30,848 - INFO - Found 12 questions in category Penalties and Insurance, selecting 4
+2024-12-03 17:52:30,848 - INFO - Added 4 questions from Penalties and Insurance
+2024-12-03 17:52:30,848 - INFO - Processing category Alcohol and Drugs, want 3 questions
+2024-12-03 17:52:30,848 - INFO - Found 9 questions in category Alcohol and Drugs, selecting 3
+2024-12-03 17:52:30,848 - INFO - Added 3 questions from Alcohol and Drugs
+2024-12-03 17:52:30,848 - INFO - Successfully loaded 34 questions across 6 sections
+2024-12-03 17:52:30,866 - WARNING -  * Debugger is active!
+2024-12-03 17:52:30,877 - INFO -  * Debugger PIN: 139-578-246

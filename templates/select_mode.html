@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMV Practice Test - Select Mode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff6b6b;
+            --secondary: #4ecdc4;
+            --accent: #45b7d1;
+            --background: #f7f1e3;
+            --text: #2d3436;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mode-container {
+            max-width: 800px;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .mode-description {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .mode-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .mode-button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .practice-mode {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .test-mode {
+            background: var(--primary);
+            color: white;
+        }
+
+        .mode-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="mode-container">
+        <h1>Choose Your Mode</h1>
+        
+        <div class="mode-description">
+            <p><strong>Practice Mode:</strong> Stay on each question until you get it right. Perfect for learning! 📚</p>
+            <p><strong>Test Mode:</strong> Just like the real thing - no second chances! 🎯</p>
+        </div>
+        
+        <div class="mode-buttons">
+            <a href="{{ url_for('set_mode', mode='practice') }}" class="mode-button practice-mode">
+                <i class="fas fa-book"></i>
+                Practice Mode
+            </a>
+            <a href="{{ url_for('set_mode', mode='test') }}" class="mode-button test-mode">
+                <i class="fas fa-clipboard-check"></i>
+                Test Mode
+            </a>
+        </div>
+    </div>
+</body>
+</html>
