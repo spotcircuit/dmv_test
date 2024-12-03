@@ -1,0 +1,975 @@
+[
+    {
+        "category": "Road Signs",
+        "question": "What does a red octagonal sign indicate?",
+        "options": [
+            "A. Yield",
+            "B. Stop",
+            "C. Do not enter",
+            "D. No parking"
+        ],
+        "image": "stop.jpg",
+        "answer": "B",
+        "explanation": "Bestie, you ate if you got this right! 😂👏 The STOP sign is giving very demure energy with its bold red look. Rolling through it? That's negative aura points fr fr! 🚫💀 The way it commands respect is pure rizz, no cap! Stop means stop bestie, that's the slay behavior we're looking for 💅"
+    },
+    {
+        "category": "Road Signs",
+        "question": "A yellow diamond-shaped sign with a black cross warns drivers of:",
+        "options": [
+            "A. A hospital ahead",
+            "B. A railroad crossing",
+            "C. An intersection ahead",
+            "D. A pedestrian crossing"
+        ],
+        "image": "railroad_crossing.jpg",
+        "answer": "C",
+        "explanation": "The way this intersection sign ate and left no crumbs! 🤯👀 Not knowing this? That's giving major ick energy bestie! 🤢 Your GPS bout to be a whole yapper with that 'recalculating' because you're lost in the sauce. But bet you'll remember it now! Intersection signs are brat fr fr - bold and demanding respect 💯"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a white rectangular sign with black letters stating 'Speed Limit 55' mean?",
+        "options": [
+            "A. Minimum speed limit is 55 mph",
+            "B. Maximum speed limit is 55 mph",
+            "C. Recommended speed is 55 mph",
+            "D. Speed limit changes in 55 miles"
+        ],
+        "image": "schoolzonespeed.jpg",
+        "answer": "B",
+        "explanation": "NOT YOU THINKING THIS IS THE MINIMUM SPEED! 😂🚫 The way you're trying to speedrun your license removal is sending me fr fr! This sign said 55 max and you're out here making it your Snap streak number?? 📸 That's peak 'I learned driving from Mario Kart' behavior bestie! The cops gonna ratio you IRL no cap 🚔"
+    },
+    {
+        "category": "Road Signs",
+        "question": "A circular yellow sign with a black 'X' and two 'R's indicates:",
+        "options": [
+            "A. A roundabout ahead",
+            "B. A railroad crossing",
+            "C. A restricted area",
+            "D. A road repair zone"
+        ],
+        "image": "railroad_crossing.jpg",
+        "answer": "B",
+        "explanation": "HELP! Not you thinking RR stands for 'road repair' 🤣 It's a railroad crossing bestie, and that train is about to serve track queen behavior! 🚂 Trying to race the train? That's giving 'main character in their last episode' energy fr fr! The train always wins, no cap, and that's period ahh period uhh 🚫"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a pentagon-shaped sign with two figures walking signify?",
+        "options": [
+            "A. Pedestrian crossing",
+            "B. School zone",
+            "C. Playground area",
+            "D. Child care facility"
+        ],
+        "image": "schoolzonespeed.jpg",
+        "answer": "B",
+        "explanation": "The way this sign is giving school zone energy and you still missed it?? 🤦‍♀️ Bestie, those little figures aren't doing a TikTok dance, they're STUDENTS! 📚 Speeding here? That's straight up villain origin story + ratio + L + you fell off + touch grass! Your insurance company gonna unfollow you IRL fr fr 📊"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a yellow sign with a deer symbol mean?",
+        "options": [
+            "A. Petting zoo ahead",
+            "B. Animal crossing",
+            "C. Hunting zone",
+            "D. Wildlife sanctuary"
+        ],
+        "image": "deer_crossing.jpg",
+        "answer": "B",
+        "explanation": "NOT THE PETTING ZOO ANSWER! 🐰😂 This ain't Animal Crossing: New Horizons bestie! 🌳 That deer is about to do a collab with your car and trust, it won't be a vibe! Hitting a deer? That's giving 'didn't pass the vibe check' energy fr fr! Your car gonna end up on their close friends story looking real mid 📸"
+    },
+    {
+        "category": "Road Signs",
+        "question": "A sign with a curved arrow means:",
+        "options": [
+            "A. U-turn allowed",
+            "B. Sharp curve ahead",
+            "C. Return to start",
+            "D. Roundabout ahead"
+        ],
+        "answer": "B",
+        "explanation": "Bestie this curve is about to hit harder than your Spotify Wrapped reveal fr fr! 📈😫 Sharp curve ahead and you're giving 'I drift in my mom's minivan' energy?? 🚗😂 The way you picked U-turn is sending me fr fr! Your tires gonna unfollow you if you don't slow down no cap 🚫"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a triangular red and white sign pointing downward mean?",
+        "options": [
+            "A. Stop",
+            "B. Yield",
+            "C. No entry",
+            "D. Caution"
+        ],
+        "image": "yield.jpg",
+        "answer": "B",
+        "explanation": "The way this YIELD sign said 'let others go first' and you still chose violence?? 😂🚫 Not you trying to gatekeep the intersection fr fr! This sign is giving 'respectfully wait' energy and you're out here speedrunning to a crash compilation video! Your insurance agent's about to block you bestie 📊"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a rectangular blue sign with a white 'H' symbolize?",
+        "options": [
+            "A. Highway exit",
+            "B. Hospital",
+            "C. Helicopter landing",
+            "D. Handicap accessible area"
+        ],
+        "image": "hospital.jpg",
+        "answer": "B",
+        "explanation": "It's a Hospital! Not a Helicopter pad or Happy Hour location. Though if you keep misreading road signs, you might become very familiar with where it leads! 🏥😂"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a diamond-shaped sign with a truck going downhill warn of:",
+        "options": [
+            "A. A steep descent ahead",
+            "B. A truck stop ahead",
+            "C. No trucks allowed beyond this point",
+            "D. Uphill grade ahead"
+        ],
+        "image": "steep_descent.jpg",
+        "answer": "A",
+        "explanation": "It's warning you about a steep hill ahead! Not a truck's favorite parking spot or a weight-loss program for vehicles. Physics is about to become very real! 📉😂"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a sign with a curved arrow and a red circle with a slash through it mean?",
+        "options": [
+            "A. No U-turn",
+            "B. No left turn",
+            "C. No right turn",
+            "D. No merging"
+        ],
+        "image": "no_uturn.jpg",
+        "answer": "A",
+        "explanation": "No U-turns! I know your GPS just said 'recalculating,' but that's not an invitation to pull a Fast & Furious move. Drive an extra block, it won't kill you (unlike that U-turn might)! 🚗😂"
+    },
+    {
+        "category": "Road Signs",
+        "question": "A sign showing two arrows, one pointing up and the other down, indicates:",
+        "options": [
+            "A. Divided highway ends",
+            "B. Two-way traffic",
+            "C. Merge ahead",
+            "D. Opposing lanes"
+        ],
+        "image": "two_way_traffic.jpg",
+        "answer": "B",
+        "explanation": "Two-way traffic! You know, cars going both ways? Like your ex's stories fr fr! If you thought this was a one-way street, you're about to get the jump scare of your life no cap! Stay in your lane or end up on someone's BeReal looking real goofy 🚗↔️🚗"
+    },
+    {
+        "category": "Traffic Signals",
+        "question": "What should you do when the traffic light turns green?",
+        "options": [
+            "A. Speed through the intersection",
+            "B. Proceed with caution after ensuring the intersection is clear",
+            "C. Stop and wait for a signal from other drivers",
+            "D. Yield to vehicles from your right"
+        ],
+        "image": "2greenLight.jpg",
+        "answer": "B",
+        "explanation": "NOT YOU TRYING TO SPEEDRUN THE INTERSECTION! 💀 Green means go bestie, but first make sure no one's trying to be the main character and run their red light fr fr! Option A is giving 'I learned driving from GTA' energy and that's an L + ratio moment right there! Stay safe or end up on someone's dashcam compilation no cap! 🚦"
+    },
+    {
+        "category": "Traffic Signals",
+        "question": "What does a green left-turn arrow signal?",
+        "options": [
+            "A. Stop and wait for oncoming traffic",
+            "B. Turn left only after yielding to pedestrians",
+            "C. You may turn left without stopping, as the arrow indicates a protected turn",
+            "D. Proceed straight through the intersection"
+        ],
+        "image": "2leftTurnArrow1.jpg",
+        "answer": "C",
+        "explanation": "Bestie this arrow is literally giving you the green light to slay that left turn! 💅 The way some of y'all still waiting for traffic... it's giving 'didn't read the patch notes' energy fr fr! You got the VIP lane rn, just don't run over any pedestrians or you'll end up on their TikTok story 💀"
+    },
+    {
+        "category": "Traffic Signals",
+        "question": "What does this red X symbol above a lane indicate?",
+        "options": [
+            "A. The lane is open for use",
+            "B. The lane is closed and must not be used",
+            "C. Slow down and prepare to stop",
+            "D. It marks an HOV lane"
+        ],
+        "image": "2redX.jpg",
+        "answer": "B",
+        "explanation": "NAURRR NOT YOU TRYING TO USE THE FORBIDDEN LANE! 💀 This X is giving major 'you can't sit with us' energy fr fr! If you picked A, you're about to get ratio'd by a traffic ticket bestie! That lane said 'I'm in my closed era' and you need to respect that no cap ⛔"
+    },
+    {
+        "category": "Traffic Signals",
+        "question": "What does a yellow X symbol above a lane indicate?",
+        "options": [
+            "A. The lane is open for all traffic",
+            "B. The lane is closed for maintenance",
+            "C. The lane is about to close, and you should prepare to move",
+            "D. It is a restricted HOV lane"
+        ],
+        "image": "2yellowX.jpg",
+        "answer": "C",
+        "explanation": "POV: Your lane is about to ghost you fr fr! 👻 This yellow X is giving 'last warning bestie' energy and you better take the hint! Staying in this lane? That's peak 'I don't check my crush's story before posting' behavior! Time to switch lanes or get caught in your villain era no cap 🚗"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does this sign with a truck going downhill indicate?",
+        "options": [
+            "A. Truck parking area ahead",
+            "B. Steep descent—reduce your speed",
+            "C. No trucks allowed beyond this point",
+            "D. Uphill grade ahead"
+        ],
+        "image": "steep_descent.jpg",
+        "answer": "B",
+        "explanation": "HELP! Not the gravity check! 😭 This hill is about to hit harder than your Spotify Wrapped reveal fr fr! If you don't slow down, you're gonna be giving 'failed physics class' energy! Your brakes better not be in their flop era rn or you'll end up in your final episode no cap 📉"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a sign with a U-turn symbol and a red slash indicate?",
+        "options": [
+            "A. U-turns are permitted with caution",
+            "B. U-turns are prohibited",
+            "C. Only emergency vehicles can make U-turns",
+            "D. Yield to oncoming traffic before making a U-turn"
+        ],
+        "image": "no_uturn.jpg",
+        "answer": "B",
+        "explanation": "NOT YOU TRYING TO DO A 180 HERE! 💀 This sign said no U-turns and you're out here trying to flex? That's giving 'didn't read the terms and conditions' energy bestie! Your GPS said recalculate so now you're in your rebellious era? Nah fam, keep it pushing or catch that ticket fr fr 🚫"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a sign with two arrows pointing in opposite directions signify?",
+        "options": [
+            "A. One-way street",
+            "B. Two-way traffic ahead",
+            "C. Merge ahead",
+            "D. Opposing lanes"
+        ],
+        "image": "two_way_traffic.jpg",
+        "answer": "B",
+        "explanation": "Bestie this road is in its bidirectional era! 😤 Cars going both ways like your ex's stories fr fr! If you thought this was a one-way street, you're about to get the jump scare of your life no cap! Stay in your lane or end up on someone's BeReal looking real goofy 🚗↔️🚗"
+    },
+    {
+        "category": "General Knowledge",
+        "question": "When driving behind another car, what is the recommended safe following distance?",
+        "options": [
+            "A. At least 1 second",
+            "B. At least 2-3 seconds",
+            "C. At least 5 seconds",
+            "D. Distance doesn't matter"
+        ],
+        "image": "3redCar.jpg",
+        "answer": "B",
+        "explanation": "WHY ARE YOU TAILGATING BESTIE? 💀 That's giving 'I learned spacing from a conga line' energy fr fr! 2-3 seconds is the vibe, anything less and you're speedrunning to an insurance claim! The way you picked 1 second like you're trying to read their license plate for their Insta... embarrassing bestie! Back up or get ratioed by their brake check no cap! 🚗"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When merging onto a highway, who has the right of way?",
+        "options": [
+            "A. Vehicles already on the highway",
+            "B. Merging vehicles",
+            "C. Whoever is going faster",
+            "D. Whoever signals first"
+        ],
+        "answer": "A",
+        "explanation": "Bestie, the highway is their turf fr fr! 🛣️ Those cars already cruising got the right of way, and you gotta respect that! Thinking you can just yeet yourself into traffic? That's giving main character syndrome energy no cap! Match their speed and slide in smooth like butter or end up on someone's dashcam fail compilation 💀"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "What is the proper following distance in ideal conditions?",
+        "options": [
+            "A. 1 second",
+            "B. 2 seconds",
+            "C. 3 seconds",
+            "D. 4 seconds"
+        ],
+        "answer": "C",
+        "explanation": "The 3-second rule isn't about dropping food bestie! 💅 It's giving 'personal space' but for cars fr fr! If you're following closer than that, you're being more clingy than a toxic ex no cap! Keep that 3-second gap or risk ending up in someone's insurance claim era 🚗💨"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "What should you do when approaching a yellow traffic light?",
+        "options": [
+            "A. Speed up to get through",
+            "B. Stop if you can do so safely",
+            "C. Honk to warn other drivers",
+            "D. Ignore it if you're running late"
+        ],
+        "answer": "B",
+        "explanation": "NOT YOU TRYING TO SPEEDRUN THE YELLOW LIGHT! 💀 Yellow means slow down bestie, not 'floor it and pray'! If you picked A, you're giving 'I learned driving from Fast & Furious' energy fr fr! Better to be fashionably late than fashionably totaled no cap 🚦"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "When are you required to use your headlights in Virginia?",
+        "options": [
+            "A. Only at night",
+            "B. From sunset to sunrise, when using wipers, and when visibility is less than 500 feet",
+            "C. Only when other cars have their lights on",
+            "D. Only in rain or fog"
+        ],
+        "answer": "B",
+        "explanation": "Your car isn't a stealth game bestie! 🔦 Lights on for the sunset/sunrise shift, when the wipers are doing their thing, or when you can't see 500 feet ahead! Not using headlights? That's straight up ghost car behavior fr fr! Don't be that mysterious character in everyone else's driving story 👻"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "What is the minimum liability insurance coverage required in Virginia?",
+        "options": [
+            "A. $25,000/$50,000/$20,000",
+            "B. $30,000/$60,000/$20,000",
+            "C. $50,000/$100,000/$25,000",
+            "D. $100,000/$200,000/$50,000"
+        ],
+        "answer": "B",
+        "explanation": "These numbers are giving algebra homework energy fr fr! 📝 But bestie, Virginia said $30k/$60k/$20k is the minimum coverage or you're getting ratio'd by the DMV! Skipping insurance? That's giving 'I make bad decisions' energy no cap! Keep it legal or catch an L from the law 💸"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "How many points does a speeding ticket (10-19 mph over) add to your driving record?",
+        "options": [
+            "A. 2 points",
+            "B. 4 points",
+            "C. 6 points",
+            "D. 8 points"
+        ],
+        "answer": "B",
+        "explanation": "Not the point collection era! 💀 4 points for that speeding ticket bestie - and this ain't a game high score you wanna chase! Your license about to be in its flop era if you keep collecting these points like they're TikTok followers fr fr! Slow down or get grounded (from driving) no cap 🚫"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in Virginia?",
+        "options": [
+            "A. 0.10%",
+            "B. 0.08%",
+            "C. 0.05%",
+            "D. 0.02%"
+        ],
+        "answer": "B",
+        "explanation": "0.08% is the limit for 21+ bestie and that's on period! 🚫 (0.02% if you're under 21 btw!) Drinking and driving? That's giving major L behavior! Your Uber rating >>>> a DUI charge fr fr! Stay safe and keep your BAC at 0% when driving or end up in jail's story time era no cap! 😤"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What is the BAC limit for drivers under 21 in Virginia?",
+        "options": [
+            "A. 0.08%",
+            "B. 0.05%",
+            "C. 0.02%",
+            "D. 0.00%"
+        ],
+        "answer": "C",
+        "explanation": "Listen up bestie! Virginia said if you're under 21, anything over 0.02% is giving 'I make bad decisions' energy! 🚫 This ain't a regular BAC, it's a ~zero tolerance~ BAC! Getting caught? That's straight up origin story for losing your license fr fr! Call an Uber or get ratio'd by the law no cap! 😤"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What should you do if you start to skid?",
+        "options": [
+            "A. Steer in the direction you want to go",
+            "B. Slam on the brakes",
+            "C. Turn the wheel rapidly",
+            "D. Accelerate hard"
+        ],
+        "answer": "A",
+        "explanation": "Your car giving Tokyo Drift vibes? 🚗💨 Steer where you wanna go bestie - it's like manifesting but with your steering wheel fr fr! Slamming brakes? That's giving panic mode energy and we don't stan that! Keep it smooth or end up doing a TikTok dance with the guardrail no cap! 😩"
+    },
+    {
+        "category": "Road Signs",
+        "question": "When must you come to a complete stop at a STOP sign?",
+        "options": [
+            "A. Only when other vehicles are present",
+            "B. Every time, even if no other vehicles are present",
+            "C. Only during daytime hours",
+            "D. Only at busy intersections"
+        ],
+        "answer": "B",
+        "explanation": "Bestie, that STOP sign isn't giving optional vibes! 🛑 You gotta come to a full stop EVERY time - this ain't a maybe era! Rolling through like it's a yield? That's giving 'I skip the terms and conditions' energy fr fr! Complete stop or complete flop no cap 💅"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What should you do after stopping at a STOP sign?",
+        "options": [
+            "A. Look left, then right, then left again before proceeding",
+            "B. Proceed immediately after stopping",
+            "C. Wait for another car to go first",
+            "D. Honk your horn before proceeding"
+        ],
+        "image": "stop.jpg",
+        "answer": "A",
+        "explanation": "The way you need to serve look left-right-left realness! 👀 Not checking all directions? That's giving main character who doesn't make it to season 2 energy fr fr! This ain't a speedrun bestie - take those extra seconds to check or end up as a viral fail moment no cap! 🚗"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What color and shape is a railroad crossing advance warning sign?",
+        "options": [
+            "A. Round yellow with black RR",
+            "B. Diamond yellow with black X and RR",
+            "C. Square white with black RR",
+            "D. Octagonal red with white RR"
+        ],
+        "image": "railroad_crossing.jpg",
+        "answer": "A",
+        "explanation": "It's giving round yellow moment with that black RR! 🚂 Not the diamond shape bestie, that's for other warnings! This sign said 'I'm here to serve train tea' and you better listen fr fr! Mix this up and you might find out why trains don't have a brake check era no cap ⚠️"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What is the speed limit in a school zone when children are present?",
+        "options": [
+            "A. 25 mph",
+            "B. 15 mph",
+            "C. 35 mph",
+            "D. 20 mph"
+        ],
+        "image": "schoolzonespeed.jpg",
+        "answer": "B",
+        "explanation": "15 mph in the school zone bestie - this ain't Fast & Furious: Academic Drift! 🏫 The kids are giving 'unpredictable NPC' energy and you need to keep it slow and steady! Speeding here? That's straight up villain origin story behavior + ratio + L fr fr! 🚸"
+    },
+    {
+        "category": "Road Signs",
+        "question": "When should you be especially alert for deer crossing the road?",
+        "options": [
+            "A. Dawn and dusk",
+            "B. Only at night",
+            "C. Only during hunting season",
+            "D. Only when signs are present"
+        ],
+        "image": "deer_crossing.jpg",
+        "answer": "A",
+        "explanation": "Dawn and dusk is peak deer influencer hours bestie! 🦌 They're out there serving main character energy when the sun is doing its transition era! Not paying attention? Your car bout to collab with Bambi fr fr and that's not the viral moment you want no cap! 🌅"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What's the difference between a YIELD sign and a STOP sign?",
+        "options": [
+            "A. Yield means stop only if other vehicles are present",
+            "B. There is no difference",
+            "C. Yield means never stop",
+            "D. Stop means yield to emergency vehicles only"
+        ],
+        "image": "yield.jpg",
+        "answer": "A",
+        "explanation": "Yield is giving 'read the room' energy fr fr! 🔻 Unlike that stop sign bestie, you only need to stop if someone's serving main character energy in the intersection! But if it's clear? You can keep slaying your journey without the full stop moment! Just don't make it your villain era by ignoring other cars no cap 💅"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What action is required when you see a steep grade warning sign?",
+        "options": [
+            "A. Shift to a lower gear",
+            "B. Increase your speed",
+            "C. Turn on hazard lights",
+            "D. Pull over and wait"
+        ],
+        "image": "steep_descent.jpg",
+        "answer": "A",
+        "explanation": "Time to shift down bestie - this hill is giving gravity check energy! 📉 Not downshifting? Your brakes gonna be in their burnout era fr fr! This ain't the time to let Jesus take the wheel, take control of that gear shift and slay the descent no cap! 🏔️"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When changing lanes, you must:",
+        "options": [
+            "A. Signal, check mirrors and blind spots, change lanes when safe",
+            "B. Change lanes quickly without signaling",
+            "C. Only check your rearview mirror",
+            "D. Only signal if other cars are present"
+        ],
+        "answer": "A",
+        "explanation": "Bestie, changing lanes isn't a surprise party moment! 🚗 Signal that glow-up, check ALL the angles (mirrors AND blind spots giving backup dancer energy), then slide into that lane when it's safe! No ghosting other drivers fr fr! Skip any step and you're about to be in someone's dashcam compilation no cap! 💅"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When making a right turn on red, you must:",
+        "options": [
+            "A. Come to a complete stop, yield to pedestrians and traffic, then turn if clear",
+            "B. Slow down and turn if no cars are coming",
+            "C. Wait for a green light",
+            "D. Honk before turning"
+        ],
+        "answer": "A",
+        "explanation": "Right on red isn't a yeet and yolo situation bestie! 🛑 Full stop first, check for main characters crossing (pedestrians), and other cars serving traffic realness! Clear vibes only - then you can slay that turn! Skipping the stop? That's giving 'I don't read the patch notes' energy fr fr! 🚦"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "What is the speed limit in a residential area unless otherwise posted?",
+        "options": [
+            "A. 15 mph",
+            "B. 25 mph",
+            "C. 35 mph",
+            "D. 45 mph"
+        ],
+        "answer": "B",
+        "explanation": "25 mph in the residential zone bestie! 🏘️ This ain't your TikTok car meetup spot fr fr! The neighborhood watch is giving speed check energy and you better respect it! Going faster? That's peak 'main character who doesn't make it to season 2' behavior no cap! 🚗"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When emergency vehicles with sirens and lights are approaching, you must:",
+        "options": [
+            "A. Pull to the right and stop",
+            "B. Speed up to get out of the way",
+            "C. Stop where you are",
+            "D. Turn on your hazard lights and continue"
+        ],
+        "answer": "A",
+        "explanation": "Emergency vehicle check! Pull right and stop bestie - they're serving main character energy rn and you're just an NPC! 🚨 Trying to speed away? That's giving 'I'm the villain in this story' vibes fr fr! Let them pass or catch an L from the law no cap! 🚑"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "What is the proper procedure at a four-way stop?",
+        "options": [
+            "A. First to stop is first to go, then take turns",
+            "B. Right of way goes to the biggest vehicle",
+            "C. Everyone goes at the same time",
+            "D. Whoever honks first goes first"
+        ],
+        "answer": "A",
+        "explanation": "Four-way stop serving turn-based gameplay energy! 🛑 First to stop, first to main character - then everyone better take turns like it's a TikTok dance challenge! Trying to speedrun it? That's giving 'I skip dialogue in RPGs' energy fr fr! Wait your turn or get ratio'd by karma no cap! 🎮"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When is it legal to pass on the right in Virginia?",
+        "options": [
+            "A. When the vehicle ahead is making a left turn",
+            "B. When you're running late",
+            "C. When traffic is moving slowly",
+            "D. Never"
+        ],
+        "answer": "A",
+        "explanation": "Passing on the right is only the vibe when left turn energy is happening bestie! 🚗 Not waiting for a left turn? That's giving 'I make my own rules' energy and the DMV ain't here for that plot twist fr fr! Stay in your lane unless it's legal or catch an L from the law no cap! ➡️"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "What does a solid white line between lanes mean?",
+        "options": [
+            "A. Discouraged to cross",
+            "B. Never cross",
+            "C. Cross any time",
+            "D. Cross only when passing"
+        ],
+        "answer": "A",
+        "explanation": "Solid white line is giving 'strongly suggest you stay in your lane' energy fr fr! 🚗 It's not illegal to cross but it's giving risky behavior vibes! Like when your bestie says 'maybe don't text your ex' - you CAN but should you? Keep it in your lane unless it's absolutely necessary no cap! ⚪"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What is the first thing you should do in case of a tire blowout?",
+        "options": [
+            "A. Grip the wheel firmly and gradually slow down",
+            "B. Slam on the brakes",
+            "C. Turn off the engine immediately",
+            "D. Make a sudden turn to the side of the road"
+        ],
+        "answer": "A",
+        "explanation": "Tire blowout? Don't let it blow up your vibe bestie! 😱 Grip that wheel like it's your last phone charger and slow down gradually! Slamming brakes? That's giving panic mode energy fr fr! Keep it smooth or end up doing a TikTok dance with the guardrail no cap! 🛞"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "When should you turn on your headlights?",
+        "options": [
+            "A. 30 minutes after sunset to 30 minutes before sunrise",
+            "B. Only when it's completely dark",
+            "C. Only when other cars have their lights on",
+            "D. Only in bad weather"
+        ],
+        "answer": "A",
+        "explanation": "Bestie your car needs to serve visibility from 30 before sunrise to 30 after sunset! 🌅 Playing ghost car? That's giving 'I'm in my stealth era' energy fr fr! Light up or get ratio'd by the law no cap! Plus it's giving main character energy to be seen! 💡"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What should you do if your car starts to hydroplane?",
+        "options": [
+            "A. Take your foot off the gas and steer straight",
+            "B. Press the brake hard",
+            "C. Turn the wheel quickly",
+            "D. Accelerate to power through"
+        ],
+        "answer": "A",
+        "explanation": "Hydroplaning? Your car thinks it's in its swimming era fr fr! 💦 Take that foot off the gas bestie - no brake check energy! Keep it straight and steady or you'll end up doing synchronized swimming with the guardrail no cap! This ain't Tokyo Drift on water! 🌊"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "What happens if you're caught driving without insurance in Virginia?",
+        "options": [
+            "A. $500 fee and license suspension",
+            "B. Just a warning",
+            "C. Small fine only",
+            "D. Points on license only"
+        ],
+        "answer": "A",
+        "explanation": "No insurance? Virginia bout to make your wallet cry bestie! 😭 $500 fee AND license suspension - that's giving 'I make bad financial decisions' energy fr fr! Better have that insurance ready or catch the biggest L from the DMV no cap! Your bank account gonna unfollow you real quick! 💸"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "How long does a DUI conviction stay on your Virginia driving record?",
+        "options": [
+            "A. 11 years",
+            "B. 5 years",
+            "C. 3 years",
+            "D. 1 year"
+        ],
+        "answer": "A",
+        "explanation": "11 YEARS bestie! That DUI gonna stay on your record longer than most influencer relationships fr fr! 😩 Think you can ghost it? Nah, it's giving 'clingy ex' energy and staying for over a decade! Call an Uber or catch an L that's gonna haunt you through multiple iPhone generations no cap! ⏰"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "How many points are deducted from your license for passing a stopped school bus?",
+        "options": [
+            "A. 6 points",
+            "B. 4 points",
+            "C. 3 points",
+            "D. 2 points"
+        ],
+        "answer": "A",
+        "explanation": "6 POINTS?! That's giving 'speedrun to license suspension' energy fr fr! 😱 Passing a school bus? Major villain behavior bestie! Your license about to be in its flop era faster than a viral TikTok dance! Stay behind that bus or catch the biggest ratio from the DMV no cap! 🚌"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What is the penalty for a first-time DUI offense in Virginia?",
+        "options": [
+            "A. Minimum $250 fine and 1-year license suspension",
+            "B. Warning only",
+            "C. 30-day suspension only",
+            "D. Points on license only"
+        ],
+        "answer": "A",
+        "explanation": "First DUI gonna hit different fr fr! 😤 $250 minimum fine AND a whole year without your license? That's giving 'I messed up big time' energy bestie! Your wallet AND your independence about to ghost you! Call that Uber or catch an L that's more expensive than your phone plan no cap! 🚫"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What happens if you refuse a breath test in Virginia?",
+        "options": [
+            "A. 1-year license suspension automatically",
+            "B. Nothing happens",
+            "C. Just a warning",
+            "D. Small fine only"
+        ],
+        "answer": "A",
+        "explanation": "Refusing that breath test? Virginia said 'bet' and took your license for a YEAR automatically bestie! 😩 That's giving 'I don't read the terms and conditions' energy fr fr! You already agreed to this when you got your license - implied consent ain't playing! Now your license in its vacation era no cap! 📄"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What is the 'Zero Tolerance' law in Virginia?",
+        "options": [
+            "A. BAC limit of 0.02% for drivers under 21",
+            "B. No alcohol allowed in the car",
+            "C. No drinking after accidents",
+            "D. Zero points for DUI"
+        ],
+        "answer": "A",
+        "explanation": "Under 21? Virginia said you better keep that BAC under 0.02% bestie! 🚫 That's basically one sip fr fr! Zero Tolerance is giving 'we don't play about this' energy! Try to drive after drinking and catch an L faster than a trending hashtag no cap! Stay sober or get ratio'd by the law! 😤"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "When driving at night, you should:",
+        "options": [
+            "A. Be able to stop within the distance illuminated by your headlights",
+            "B. Drive at the same speed as during daylight",
+            "C. Follow closer to see the car ahead better",
+            "D. Use high beams at all times"
+        ],
+        "answer": "A",
+        "explanation": "Night driving check! 🌙 You gotta see it to slay it bestie! If your lights can't show it, you better slow it! Following close for better view? That's giving 'horror movie decision' energy fr fr! Keep it safe or end up as a ghost story no cap! 🚗✨"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "When merging onto a highway, you should:",
+        "options": [
+            "A. Match the speed of traffic and merge smoothly",
+            "B. Stop and wait for a large gap",
+            "C. Drive slowly until you feel comfortable",
+            "D. Force your way into traffic"
+        ],
+        "answer": "A",
+        "explanation": "Merging is like joining a TikTok dance challenge bestie - match their energy! 💃 Going too slow? That's giving 'main character who doesn't make it past the intro' vibes fr fr! Match that speed and slide in smooth like butter or catch an L from the traffic no cap! 🔄"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What is the proper way to park on a hill with a curb, facing downhill?",
+        "options": [
+            "A. Turn wheels toward the curb",
+            "B. Turn wheels away from the curb",
+            "C. Keep wheels straight",
+            "D. Doesn't matter which way"
+        ],
+        "answer": "A",
+        "explanation": "Downhill parking bestie? Turn those wheels to the curb like it's your bestie fr fr! 📉 Straight wheels? That's giving 'I trust gravity' energy and we don't stan that! Your car better be ready to hug that curb if it starts rolling or you'll end up on someone's security cam compilation no cap! 🎥"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What should you do in a work zone?",
+        "options": [
+            "A. Slow down and follow all signs",
+            "B. Maintain normal speed",
+            "C. Pass slower vehicles",
+            "D. Take pictures of the work"
+        ],
+        "answer": "A",
+        "explanation": "Work zone? More like slow zone bestie! 🚧 Those workers are literally in their construction era and you need to respect that! Trying to speed through? That's giving 'main character with zero awareness' energy fr fr! Slow down or catch a fine that's more expensive than your streaming subscriptions no cap! 👷‍♂️"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "How can you get demerit points removed from your license in Virginia?",
+        "options": [
+            "A. Complete a driver improvement clinic",
+            "B. Wait one month",
+            "C. Pay extra fees",
+            "D. Write an apology letter"
+        ],
+        "answer": "A",
+        "explanation": "Too many points? Time for driver improvement clinic era bestie! 📚 That's giving 'character development arc' energy fr fr! Can't just ghost those points or ratio them away - gotta put in that work! Skipping the clinic? Your license gonna stay in its flop era no cap! 💅"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "What is an SR-22 in Virginia?",
+        "options": [
+            "A. Proof of financial responsibility insurance",
+            "B. A special license plate",
+            "C. A driving test",
+            "D. A payment plan"
+        ],
+        "answer": "A",
+        "explanation": "SR-22 is that proof of insurance receipt bestie! 📄 Virginia making sure you're not in your broke era when it comes to coverage fr fr! This ain't optional - it's giving 'we need receipts' energy! Skip this and catch the biggest L from the DMV no cap! 💸"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "How long must you maintain SR-22 insurance in Virginia after a DUI?",
+        "options": [
+            "A. 3 years",
+            "B. 1 year",
+            "C. 6 months",
+            "D. 5 years"
+        ],
+        "answer": "A",
+        "explanation": "3 whole years bestie! That SR-22 staying longer than most situationships fr fr! 📅 Virginia said 'we need to see the commitment' and they ain't playing! Try to drop it early and catch an L that's giving 'didn't read the terms and conditions' energy no cap! ⏰"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What is Virginia's open container law?",
+        "options": [
+            "A. No open alcohol containers in passenger area",
+            "B. Open containers allowed if sealed",
+            "C. Only passengers can have open containers",
+            "D. Open containers allowed in traffic"
+        ],
+        "answer": "A",
+        "explanation": "No open containers in the passenger area bestie! 🚫 That bottle better be in the trunk or Virginia gonna make you catch an L fr fr! Having drinks within reach? That's giving 'I make bad decisions' energy! Keep it sealed and stored or end up on the police department's highlight reel no cap! 🍾"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What happens after a second DUI conviction in Virginia?",
+        "options": [
+            "A. Minimum 3-year license revocation",
+            "B. 1-month suspension",
+            "C. Just a fine",
+            "D. Warning only"
+        ],
+        "answer": "A",
+        "explanation": "Second DUI? Virginia said 'bye bye license' for THREE YEARS bestie! 😱 That's giving 'didn't learn from the first L' energy fr fr! Your license about to ghost you longer than your ex! Time to become besties with Uber or catch the biggest transportation L no cap! 🚫"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "When is an ignition interlock device required in Virginia?",
+        "options": [
+            "A. After any DUI conviction",
+            "B. Only for third offense",
+            "C. Never required",
+            "D. Only for commercial drivers"
+        ],
+        "answer": "A",
+        "explanation": "Any DUI = ignition interlock check fr fr! 🔐 Virginia said 'blow before you go' and that's on period! This device gonna be your new bestie for at least 6 months! Trying to avoid it? That's giving 'I don't like consequences' energy no cap! Better start practicing your breath control bestie! 💨"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What is the 'Move Over' law in Virginia?",
+        "options": [
+            "A. Move over or slow down for stopped emergency vehicles",
+            "B. Only move for police cars",
+            "C. Change lanes whenever possible",
+            "D. Move over for faster traffic"
+        ],
+        "answer": "A",
+        "explanation": "Emergency vehicle on the shoulder? Better move over bestie! 🚨 If you can't move, slow that roll! Not giving them space? That's straight up main character syndrome when you should be an NPC fr fr! Respect their work era or catch a fine that's giving 'should have listened' energy no cap! 🚔"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "When must you report a crash to police in Virginia?",
+        "options": [
+            "A. If injury, death, or property damage over $1500",
+            "B. Only if someone is injured",
+            "C. Only if a car is totaled",
+            "D. All crashes must be reported"
+        ],
+        "answer": "A",
+        "explanation": "Crash giving damage over $1500? Time to call the police bestie! 📱 Or if someone's hurt - this ain't a 'keep it between us' moment fr fr! Trying to handle it lowkey? That's giving 'I make sus decisions' energy! Report it or catch legal troubles that's more dramatic than your fav reality show no cap! 🚓"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "When driving in foggy conditions, you should:",
+        "options": [
+            "A. Use high beam headlights",
+            "B. Use low beam headlights",
+            "C. Use hazard lights while driving",
+            "D. Follow closely behind other vehicles"
+        ],
+        "answer": "B",
+        "explanation": "The way high beams in fog are giving main character syndrome fr fr! Low beams ate and left no crumbs - they're the real rizz king in foggy weather! Following other cars closely? Major ick behavior bestie! Keep that safe distance, it's giving very demure energy and we love that for you! 💅✨"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When must you yield the right-of-way to an emergency vehicle?",
+        "options": [
+            "A. Only during daytime hours",
+            "B. Only on highways",
+            "C. When its lights and sirens are activated",
+            "D. Only at intersections"
+        ],
+        "answer": "C",
+        "explanation": "Not yielding to emergency vehicles? That's negative aura points bestie! When those lights and sirens start their slay moment, you better be a whole brat and pull over respectfully! The way some drivers act like they didn't hear the sirens is giving major yapper energy fr fr! No cap, just yield! 🚨"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "What is the minimum liability insurance coverage required in Virginia for bodily injury or death of one person?",
+        "options": [
+            "A. $25,000",
+            "B. $30,000",
+            "C. $50,000",
+            "D. $100,000"
+        ],
+        "answer": "B",
+        "explanation": "The way some people think skipping insurance is a money move? Major ick behavior bestie! $30k is the minimum coverage and that's period! Not having proper insurance? That's giving 'I make bad financial decisions' energy fr fr! Stay covered and slay, that's the tea! 💅💰"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What should you do if you experience a tire blowout while driving?",
+        "options": [
+            "A. Brake hard immediately",
+            "B. Grip the wheel firmly and gradually slow down",
+            "C. Turn sharply toward the shoulder",
+            "D. Accelerate to maintain control"
+        ],
+        "answer": "B",
+        "explanation": "Not the tire going into its flop era! 😩 Gripping that wheel and slowing down gradually? That's the real rizz right there! Slamming brakes or making sharp turns? Giving major 'I learned driving from Fast & Furious' energy fr fr! Keep it very demure and controlled, bestie - that's how you ate this situation! 🛞✨"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "In Virginia, what is the maximum speed limit on interstate highways in rural areas?",
+        "options": [
+            "A. 65 mph",
+            "B. 70 mph",
+            "C. 75 mph",
+            "D. 80 mph"
+        ],
+        "answer": "B",
+        "explanation": "The speed limit said 70 and you thought it was giving options? Naur bestie! Going over 70 is negative aura points and your insurance company gonna be a whole yapper about it! Stay in your lane (literally) and keep that speed limit compliance energy - it's a whole vibe fr fr! 🚗💨"
+    },
+    {
+        "category": "Alcohol and Drugs",
+        "question": "What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?",
+        "options": [
+            "A. 0.08%",
+            "B. 0.05%",
+            "C. 0.02%",
+            "D. 0.00%"
+        ],
+        "answer": "C",
+        "explanation": "Not you thinking you can drive after drinking! 🚫 The limit is 0.02% for under 21 and that's on period! Trying to drive after drinking is giving major L behavior fr fr! Keep it clean bestie - being sober behind the wheel? That's the real slay! Your life matters more than that aux cord moment! 🚫🍺"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "When driving in heavy rain, what is the recommended following distance?",
+        "options": [
+            "A. 2 seconds",
+            "B. 3 seconds",
+            "C. 4 seconds",
+            "D. 6 seconds or more"
+        ],
+        "answer": "D",
+        "explanation": "Bestie, this ain't the time to be giving 'I learned spacing from a conga line' energy! 💀 Following too close in the rain? Major ick behavior fr fr! 6 seconds is the vibe - anything less and you're about to find out why your insurance agent's been acting like a whole yapper! Keep it very demure with that following distance or end up catching an L in the emergency room no cap! 🌧️"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When merging onto a highway, what is the correct procedure?",
+        "options": [
+            "A. Stop and wait for a large gap",
+            "B. Speed up or slow down to match traffic flow and merge safely",
+            "C. Always yield to vehicles behind you",
+            "D. Maintain a constant speed regardless of traffic"
+        ],
+        "answer": "B",
+        "explanation": "Not you trying to merge like a highlighter kid fr fr! 💅 Matching speed and finding your gap? That's the real rizz right there bestie! The way some of y'all just yeet yourselves into traffic is giving 'main character in their flop era' energy! Keep that merge smooth like buttah or you'll end up as the tea in someone's dashcam compilation no cap! Ate and left no crumbs when you merge properly! 🚗"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "What is the penalty for driving without valid insurance in Virginia?",
+        "options": [
+            "A. License suspension and $500 fee",
+            "B. Written warning only",
+            "C. 30-day vehicle impoundment",
+            "D. No penalty for first offense"
+        ],
+        "answer": "A",
+        "explanation": "The way some of y'all think skipping insurance is giving money moves? Naurrr bestie! 💀 That $500 fee bout to have you in your menty b era fr fr! Not having insurance? Major delulu behavior! Your license getting suspended faster than your ex's stories! Keep it real and stay insured or catch that L from the DMV no cap! 💅"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What should you do if you encounter black ice while driving?",
+        "options": [
+            "A. Brake hard immediately",
+            "B. Turn the wheel sharply",
+            "C. Ease off gas and steer gently",
+            "D. Accelerate to maintain control"
+        ],
+        "answer": "C",
+        "explanation": "Not you trying to Tokyo Drift on black ice bestie! 😭✋ That's giving major 'I learned driving from Mario Kart' energy fr fr! ⚠️💀 Slow and steady ate and left no crumbs here! Slamming brakes? That's peak delulu behavior no cap! 🧊🚫 Keep it very demure with those controls or end up in your villain era fr! 📉😮‍💨"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "When must you stop for a school bus?",
+        "options": [
+            "A. Only when children are visible",
+            "B. When red lights are flashing and stop arm is out",
+            "C. Only during school hours",
+            "D. Only when on the same side of the road"
+        ],
+        "answer": "B",
+        "explanation": "NAURRR NOT YOU TRYING TO SPEED PAST A SCHOOL BUS! 🚌❌ The way some of y'all act when those red lights start flashing is giving zero rizz energy fr fr! 🚸😤 Passing a stopped school bus? That's straight up villain origin story + ratio + L + you fell off bestie! Your license about to be in its flop era! ⚠️😮‍💨"
+    },
+    {
+        "category": "Road Signs",
+        "question": "What does a yellow diamond sign with black arrows curving to the right mean?",
+        "options": [
+            "A. Road ends ahead",
+            "B. Sharp curve to the right",
+            "C. Exit ramp",
+            "D. Merge right"
+        ],
+        "answer": "B",
+        "explanation": "Bestie this curve bout to hit harder than your Spotify Wrapped reveal fr fr! 📈😫 The way you're approaching this turn is giving 'I skip tutorial mode' energy ngl! 🎮💀 Better slow down or you'll be the tea in someone's BeReal post no cap! 🚗💨 Keep it smooth like buttah or end up catching that L! ⚠️😮‍💨"
+    },
+    {
+        "category": "Safe Driving",
+        "question": "What should you do if your brakes fail while driving?",
+        "options": [
+            "A. Pump brakes and use emergency brake",
+            "B. Open the door and jump out",
+            "C. Call your insurance company",
+            "D. Turn up the radio to drown out noise"
+        ],
+        "answer": "A",
+        "explanation": "NOT YOU TRYING TO YEET YOURSELF OUT THE CAR! 😱🚪🏃‍♂️ The way option B is giving 'action movie protagonist' energy fr fr! 💅✨ Pump those brakes like it's a TikTok dance challenge bestie! 🦿🔨 Emergency brake understood the assignment and ate that! Using the radio to drown the noise? That's peak delulu behavior + ratio + L 🎵❌️ Keep it very demure with those controls or end up as someone's viral moment! 📱💀😮‍💨"
+    },
+    {
+        "category": "Rules of the Road",
+        "question": "What is the proper procedure when an emergency vehicle approaches with lights and sirens?",
+        "options": [
+            "A. Speed up to get out of the way",
+            "B. Pull to the right and stop",
+            "C. Continue at same speed",
+            "D. Stop immediately where you are"
+        ],
+        "answer": "B",
+        "explanation": "THE WAY SOME OF Y'ALL ACT WHEN YOU HEAR SIRENS! 🚨😫😤 Not pulling over? That's giving 'main character syndrome' energy fr fr! 🚑🙄💅 The ambulance said 'move bestie' and you chose to be in your flop era?? 🚓😒✋ Pull to the right and stop - it ate and left no crumbs! Emergency vehicles are in their slay era and you're just an NPC in their story! 🚒💫🤌 No cap, just move! 📸🤡💀"
+    },
+    {
+        "category": "Penalties and Insurance",
+        "question": "What happens if you're caught street racing in Virginia?",
+        "options": [
+            "A. Written warning only",
+            "B. Small fine and points",
+            "C. License suspension and jail time possible",
+            "D. No penalty for first offense"
+        ],
+        "answer": "C",
+        "explanation": "NOT YOU THINKING THIS IS FAST & FURIOUS FR FR! 🏎️💨😭 Street racing? That's giving 'I peaked in Need for Speed' energy bestie! 🎮🚫💅 Your license bout to ghost you faster than your ex! 📄❌️😫 The judge gonna put you in timeout era with jail time no cap! 👮‍♂️⚖️💀 Keep it legal or catch that L + ratio + you fell off + touch grass! 🌱🚔😮‍💨 The way you thought this was Tokyo Drift... I can't with y'all! 🎬🤦‍♀️✋"
+    }
+]

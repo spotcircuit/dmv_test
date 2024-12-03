@@ -208,19 +208,6 @@
     },
     {
         "category": "Road Signs",
-        "question": "What does a blue sign with a white 'H' symbolize?",
-        "options": [
-            "A. Highway exit",
-            "B. Hospital ahead",
-            "C. Helicopter landing zone",
-            "D. Hazardous material area"
-        ],
-        "image": "hospital.jpg",
-        "answer": "B",
-        "explanation": "The way some of y'all thought H was for helicopter?? 💀 It's giving hospital bestie! Not the helipad, not the highway, just straight up hospital vibes! Keep driving like that and you might find out what's inside fr fr! This sign is your 'in case you crash trying to be main character' location check ⚕️"
-    },
-    {
-        "category": "Road Signs",
         "question": "What does this sign with a truck going downhill indicate?",
         "options": [
             "A. Truck parking area ahead",
@@ -309,18 +296,6 @@
     },
     {
         "category": "Safe Driving",
-        "question": "What should you do if your brakes fail?",
-        "options": [
-            "A. Pump the brake pedal and use emergency brake",
-            "B. Jump out of the car",
-            "C. Close your eyes and hope for the best",
-            "D. Turn up the radio to drown out the noise"
-        ],
-        "answer": "A",
-        "explanation": "Bestie this ain't the time for a TikTok challenge! 😱 Pump those brakes like it's a beat drop and use that emergency brake! Jumping out? That's giving major NPC energy fr fr! Keep it calm and controlled or you'll end up as a viral moment for all the wrong reasons no cap! 🚫"
-    },
-    {
-        "category": "Safe Driving",
         "question": "When are you required to use your headlights in Virginia?",
         "options": [
             "A. Only at night",
@@ -366,18 +341,6 @@
         ],
         "answer": "B",
         "explanation": "0.08% is the limit for 21+ bestie and that's on period! 🚫 (0.02% if you're under 21 btw!) Drinking and driving? That's giving major L behavior! Your Uber rating >>>> a DUI charge fr fr! Stay safe and keep your BAC at 0% when driving or end up in jail's story time era no cap! 😤"
-    },
-    {
-        "category": "Alcohol and Drugs",
-        "question": "What is the BAC limit for drivers under 21 in Virginia?",
-        "options": [
-            "A. 0.08%",
-            "B. 0.05%",
-            "C. 0.02%",
-            "D. 0.00%"
-        ],
-        "answer": "C",
-        "explanation": "Listen up bestie! Virginia said if you're under 21, anything over 0.02% is giving 'I make bad decisions' energy! 🚫 This ain't a regular BAC, it's a ~zero tolerance~ BAC! Getting caught? That's straight up origin story for losing your license fr fr! Call an Uber or get ratio'd by the law no cap! 😤"
     },
     {
         "category": "Safe Driving",
@@ -564,18 +527,6 @@
         ],
         "answer": "A",
         "explanation": "Solid white line is giving 'strongly suggest you stay in your lane' energy fr fr! 🚗 It's not illegal to cross but it's giving risky behavior vibes! Like when your bestie says 'maybe don't text your ex' - you CAN but should you? Keep it in your lane unless it's absolutely necessary no cap! ⚪"
-    },
-    {
-        "category": "Safe Driving",
-        "question": "When driving in fog, you should:",
-        "options": [
-            "A. Use high beam headlights",
-            "B. Use low beam headlights",
-            "C. Use hazard lights while driving",
-            "D. Follow closely behind other vehicles"
-        ],
-        "answer": "B",
-        "explanation": "Fog giving low visibility check fr fr! 😤 High beams? That's just gonna blind you with the reflection bestie - major self-sabotage energy! Low beams are the move or you'll end up looking like you're trying to catch Pokemon in the mist no cap! Stay safe and slay that foggy journey! 🌫️"
     },
     {
         "category": "Safe Driving",
@@ -888,18 +839,6 @@
         ],
         "answer": "B",
         "explanation": "The speed limit said 70 and you thought it was giving options? Naur bestie! Going over 70 is negative aura points and your insurance company gonna be a whole yapper about it! Stay in your lane (literally) and keep that speed limit compliance energy - it's a whole vibe fr fr! 🚗💨"
-    },
-    {
-        "category": "Alcohol and Drugs",
-        "question": "What is the blood alcohol concentration (BAC) limit for drivers under 21 in Virginia?",
-        "options": [
-            "A. 0.08%",
-            "B. 0.05%",
-            "C. 0.02%",
-            "D. 0.00%"
-        ],
-        "answer": "C",
-        "explanation": "Not you thinking you can drive after drinking! 🚫 The limit is 0.02% for under 21 and that's on period! Trying to drive after drinking is giving major L behavior fr fr! Keep it clean bestie - being sober behind the wheel? That's the real slay! Your life matters more than that aux cord moment! 🚫🍺"
     },
     {
         "category": "Safe Driving",

@@ -326,7 +326,27 @@ virginia_permit_test/
 
 ## Version History
 
-### Version 1.16 (Current)
+### Version 1.17 (Current)
+- Cleaned up question database:
+  - Removed duplicate BAC limit questions
+  - Identified questions needing proper categorization
+  - Added question analysis tools:
+    * check_duplicates.py for finding similar questions
+    * clean_questions_v2.py for automated cleanup
+- Current question status:
+  * Road Signs: 23 questions
+  * Rules of the Road: 15 questions
+  * Safe Driving: 15 questions
+  * Penalties and Insurance: 12 questions
+  * Alcohol and Drugs: 7 questions
+  * Traffic Signals: 4 questions
+  * General Knowledge: 1 question (to be recategorized)
+- Prepared for next phase:
+  * Need to add Traffic Signal questions
+  * Need to recategorize General Knowledge
+  * Need to verify image attachments
+
+### Version 1.16
 - Updated test to match official VA DMV requirements:
   - Increased total questions to 45 (from 35)
   - Set passing criteria to 38 correct answers (84%)

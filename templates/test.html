@@ -439,18 +439,25 @@
             })
             .then(data => {
                 console.log('Response:', data);  // Debug log
+                
+                // Always show the result first
+                showResult(data.correct, data.explanation);
+                
+                // Handle test failure
+                if (data.test_failed) {
+                    resultText.textContent = "Test Failed! You got more than 3 wrong answers. 😔";
+                    nextBtn.textContent = "See Results";
+                    nextBtn.onclick = () => {
+                        window.location.href = '/results';
+                    };
+                    return;
+                }
+                
+                // Handle quiz completion
                 if (data.quiz_complete) {
-                    if (data.test_failed) {
-                        // Show failure message before redirecting
-                        showResult(false, data.explanation);
-                        resultText.textContent = "Test Failed! You got more than 3 wrong answers. 😔";
-                        nextBtn.textContent = "See Results";
-                    }
                     setTimeout(() => {
                         window.location.href = '/results';
                     }, 2000);
-                } else {
-                    showResult(data.correct, data.explanation);
                 }
             })
             .catch(error => {
