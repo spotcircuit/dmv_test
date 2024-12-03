@@ -35,9 +35,6 @@ QUESTION_DISTRIBUTION = {
 PRACTICE_MODE = 'practice'
 TEST_MODE = 'test'
 
-# Initialize sections as None
-sections = None
-
 # Load questions from JSON file
 def load_questions():
     try:
@@ -100,43 +97,18 @@ def load_questions():
         logging.error(f'Error loading questions: {str(e)}')
         return None
 
-def get_wrong_answer_roast(wrong_count):
-    """Get progressively spicier roasts based on number of wrong answers"""
-    roasts = {
-        1: "Hmm... that's not it bestie. But we move! 💅",
-        2: "The way you're getting these wrong... giving very much learner's permit energy 😩",
-        3: "Three wrong? You're collecting L's like they're Pokemon cards bestie! 😭",
-        4: "The DMV manual is not a choose-your-own-adventure book! 📚",
-        5: "At this point, you're just guessing based on the vibes... and the vibes are OFF! 🤦‍♀️",
-        6: "You're giving 'I only read the picture captions' energy rn... 👀",
-        7: "The way you're failing... it's giving main character energy, but in a flop era 😔",
-        8: "Bestie did you study this in your dreams? Because you're sleeping on these answers! 😴",
-        9: "Your answers are more random than my Spotify shuffle! 🎵",
-        10: "You're collecting wrong answers like they're limited edition! Make it stop! 😭",
-        11: "The DMV test is not a TikTok challenge bestie... you can't just wing it! 📱",
-        12: "Your test strategy is giving 'close my eyes and hope for the best' 👀",
-        13: "The way you're missing these... it's giving 'I learned driving from GTA' energy 🎮",
-        14: "Bestie, this is a DMV test, not a game of 'Wrong Answers Only'! 🚫",
-        15: "Your wrong answers could fill a whole season of driving fails compilation! 📺"
-    }
-    # If they've got more wrong than our specific roasts, start cycling through random savage ones
-    if wrong_count > 15:
-        savage_roasts = [
-            "At this point, just get a bus pass bestie... 🚌",
-            "Your test performance is giving public transportation for life! 🚶‍♂️",
-            "The way you're failing... uber drivers are breathing a sigh of relief! 🚗",
-            "Walking is underrated anyway bestie! 👟",
-            "Bicycle companies LOVE test takers like you! 🚲"
-        ]
-        return random.choice(savage_roasts)
-    
-    return roasts.get(wrong_count, "Oops! That's not correct!")
+# Initialize sections with fallback
+sections = load_questions() or []  
 
 # Defining the Index Route
 @app.route('/')
 def index():
-    # Always start at mode selection if no mode or sections not loaded
-    if 'mode' not in session or sections is None:
+    return redirect(url_for('select_mode'))
+
+# Defining the Test Route
+@app.route('/test')
+def test():
+    if 'mode' not in session:
         return redirect(url_for('select_mode'))
     
     # Get current position
@@ -170,10 +142,8 @@ def index():
 
 @app.route('/select_mode')
 def select_mode():
-    # Clear everything and reset sections
+    # Clear mode from session to ensure fresh start
     session.clear()
-    global sections
-    sections = None
     return render_template('select_mode.html')
 
 @app.route('/set_mode/<mode>')
@@ -181,24 +151,15 @@ def set_mode(mode):
     if mode not in [PRACTICE_MODE, TEST_MODE]:
         return redirect(url_for('select_mode'))
     
-    # Load questions
-    global sections
-    sections = load_questions()
-    if sections is None:
-        return "Error: Failed to load questions. Check logs for details.", 500
-    
-    # Initialize session
-    session.clear()
+    # Set mode in session
     session['mode'] = mode
-    session['current_section'] = 0
-    session['current_question'] = 0
-    session['score'] = 0
-    session['wrong_count'] = 0
-    session['total_answered'] = 0
-    session['streak'] = 0
-    session['max_streak'] = 0
     
-    return redirect(url_for('index'))
+    # Initialize sections if needed
+    global sections
+    if not sections:
+        sections = load_questions() or []
+    
+    return redirect(url_for('test'))
 
 @app.route('/reload_questions')
 def reload_questions():
@@ -213,63 +174,81 @@ def reload_questions():
     if sections is None:  # If loading failed
         return "Error: Failed to load questions. Check logs for details.", 500
     
-    return redirect(url_for('index'))
+    return redirect(url_for('test'))
 
 @app.route('/submit_answer', methods=['POST'])
 def submit_answer():
+    if 'mode' not in session:
+        return jsonify({
+            'error': 'No mode selected'
+        }), 400
+
     data = request.get_json()
+    if not data or 'selected_answer' not in data:
+        return jsonify({
+            'error': 'No answer provided'
+        }), 400
+
     selected_answer = int(data['selected_answer'])
-    
-    current_section = session['current_section']
-    current_question = session['current_question']
-    
-    if current_section >= len(sections):
-        return jsonify({'quiz_complete': True})
-        
+    current_section = session.get('current_section', 0)
+    current_question = session.get('current_question', 0)
+
+    # Get current question
     question_id = sections[current_section]['question_ids'][current_question]
     question = app.questions_dict[question_id]
+    correct_answer = question['correct_index']  
     
-    is_correct = selected_answer == question['correct_index']
-    session['total_answered'] += 1
+    # Check if answer is correct
+    is_correct = selected_answer == correct_answer
+    
+    # Update session stats
+    session['total_answered'] = session.get('total_answered', 0) + 1
     
     if is_correct:
-        session['score'] += 1
-        session['streak'] += 1
-        session['max_streak'] = max(session['streak'], session['max_streak'])
+        session['score'] = session.get('score', 0) + 1
+        session['streak'] = session.get('streak', 0) + 1
+        session['max_streak'] = max(session.get('max_streak', 0), session['streak'])
     else:
-        session['wrong_count'] += 1
+        session['wrong_count'] = session.get('wrong_count', 0) + 1
         session['streak'] = 0
     
-    # Always advance in test mode, only advance if correct in practice mode
+    # In test mode, always move to next question
+    # In practice mode, only move on if correct
     should_advance = session['mode'] == TEST_MODE or is_correct
     
     if should_advance:
-        session['current_question'] += 1
-        if session['current_question'] >= len(sections[current_section]['question_ids']):
-            session['current_section'] += 1
-            session['current_question'] = 0
+        # Move to next question
+        current_question += 1
+        if current_question >= len(sections[current_section]['question_ids']):
+            current_section += 1
+            current_question = 0
+        
+        session['current_section'] = current_section
+        session['current_question'] = current_question
     
-    session.modified = True
-    
-    quiz_complete = session['current_section'] >= len(sections)
+    # Check if quiz is complete
+    quiz_complete = current_section >= len(sections)
     
     return jsonify({
         'correct': is_correct,
-        'explanation': question.get('explanation', 'No explanation available'),
-        'quiz_complete': quiz_complete,
-        'mode': session['mode']
+        'explanation': question.get('explanation', ''),
+        'quiz_complete': quiz_complete
     })
 
 # Serve static images
 @app.route('/static/images/<path:filename>')
 def serve_image(filename):
-    return send_from_directory('static/images', filename)
+    try:
+        return send_from_directory('static/images', filename)
+    except Exception as e:
+        logging.error(f'Error serving image {filename}: {str(e)}')
+        return '', 404  # Return empty response if image not found
 
 # Defining the Results Route
 @app.route('/results')
 def results():
     if 'current_section' not in session:
-        return redirect(url_for('index'))
+        return redirect(url_for('test'))
     
     correct_count = session.get('score', 0)
     wrong_count = session.get('wrong_count', 0)
@@ -314,7 +293,7 @@ def results():
 @app.route('/regenerate')
 def regenerate():
     session.clear()
-    return redirect(url_for('index'))
+    return redirect(url_for('test'))
 
 # Running the App
 if __name__ == '__main__':

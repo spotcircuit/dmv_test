@@ -324,27 +324,71 @@ virginia_permit_test/
 ### Contact
 [Project maintainer contact information]
 
-## Current Status
+## Version History
 
-- **Image Loading Issue**: The image `railroad_crossing.jpg` is not displaying on the `test.html` page despite being served correctly by the server.
-- **Server Configuration**: The server is correctly configured to serve static files, and the image is accessible via direct URL.
-- **HTML and CSS**: The HTML structure is correct, and CSS has been minimized to rule out styling issues.
+### Version 1.15 (Current)
+- Fixed modal popup functionality in both practice and test modes
+- Improved button text to correctly reflect current mode ("Try Again" in practice, "Next Question" in test)
+- Enhanced modal animations and transitions
+- Fixed score tracking and display
+- Improved error handling in answer submission
 
-## Problems Identified
+### Version 1.14
+- Initial mode selection implementation
+- Added Gen Z themed feedback
+- Implemented streak tracking
+- Basic question loading
 
-1. **Image Not Displaying**: The image is not rendering on the page, although it is accessible directly.
-2. **Potential JavaScript or Rendering Issues**: There might be issues with how the image is being handled or rendered in the browser.
+### Version 1.13
+#### Route Structure Changes
+- Separated routes for better flow:
+  - `/` → Mode selection splash screen
+  - `/test` → Question display
+  - `/static/images/<filename>` → Image serving
 
-## Next Steps
+#### Session Management
+- Modified session handling:
+  - Clear session only when entering mode selection
+  - Maintain session data while switching modes
+  - Added fallback for sections: `sections = load_questions() or []`
 
-1. **Verify Template Rendering**: Ensure the template is being rendered by Flask and not served as a static file.
-2. **Check Console and Network**: Use browser developer tools to inspect console logs and network requests for any errors.
-3. **Investigate JavaScript**: Ensure no JavaScript is interfering with the image loading.
-4. **Cross-Origin Issues**: Verify there are no CORS issues if the app is running on a different domain or port.
+#### Mode Behavior
+- Practice Mode:
+  - Stay on question until correct answer
+  - Track wrong attempts
+  - Show explanations
+- Test Mode:
+  - Move to next question regardless of answer
+  - Track score and streak
+  - One attempt per question
 
-## Recommendations
+### Current Issues (1.13)
+1. **Modal Popups**: Not displaying after answer submission
+   - Attempted fixes:
+     - Simplified modal CSS
+     - Added debug logging
+     - Modified modal display logic
+     - Changed JavaScript event handling
 
-- **Use `url_for`**: Ensure all static file URLs are generated using Flask's `url_for` for consistency.
-- **Browser Testing**: Test in different browsers and clear cache to rule out browser-specific issues.
+2. **Image Loading**: Intermittent issues with first image
+   - Added error handling for image serving
+   - Logging for failed image loads
 
-This documentation should help guide the next session in resolving the image loading issue and ensuring the application functions as expected.
+### Next Steps
+1. Investigate modal popup issues:
+   - Check JavaScript console for errors
+   - Verify event handling
+   - Consider alternative popup implementation
+
+2. Monitor and improve:
+   - Image loading reliability
+   - Session state management
+   - Mode switching behavior
+
+### Technical Notes
+- Flask backend with session management
+- JavaScript frontend for interactivity
+- Static file serving for images
+- JSON-based question storage
+
+This documentation tracks the evolution of the application and current focus areas for improvement.
