@@ -326,7 +326,24 @@ virginia_permit_test/
 
 ## Version History
 
-### Version 1.15 (Current)
+### Version 1.16 (Current)
+- Updated test to match official VA DMV requirements:
+  - Increased total questions to 45 (from 35)
+  - Set passing criteria to 38 correct answers (84%)
+  - Implemented immediate failure after 3 wrong answers
+  - Adjusted category distribution:
+    * Road Signs: 12
+    * Traffic Signals: 6
+    * Rules of the Road: 10
+    * Safe Driving: 8
+    * Penalties and Insurance: 5
+    * Alcohol and Drugs: 4
+- Enhanced test mode behavior:
+  - Shows failure message when exceeding wrong answer limit
+  - Improved results page with accurate pass/fail criteria
+  - Updated progress tracking for 45-question format
+
+### Version 1.15
 - Fixed modal popup functionality in both practice and test modes
 - Improved button text to correctly reflect current mode ("Try Again" in practice, "Next Question" in test)
 - Enhanced modal animations and transitions

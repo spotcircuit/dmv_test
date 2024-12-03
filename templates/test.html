@@ -348,7 +348,7 @@
         }
     </style>
 </head>
-<body>
+<body data-mode="{{ mode }}">
     <div class="question-container">
         <div class="test-header">
             <div class="mode-indicator {% if mode == 'test' %}test-mode{% else %}practice-mode{% endif %}">
@@ -440,7 +440,15 @@
             .then(data => {
                 console.log('Response:', data);  // Debug log
                 if (data.quiz_complete) {
-                    window.location.href = '/results';
+                    if (data.test_failed) {
+                        // Show failure message before redirecting
+                        showResult(false, data.explanation);
+                        resultText.textContent = "Test Failed! You got more than 3 wrong answers. 😔";
+                        nextBtn.textContent = "See Results";
+                    }
+                    setTimeout(() => {
+                        window.location.href = '/results';
+                    }, 2000);
                 } else {
                     showResult(data.correct, data.explanation);
                 }
@@ -499,15 +507,14 @@
             modal.classList.remove('show');
             overlay.classList.remove('show');
 
-            // Don't redirect if answer was wrong
-            if (modal.classList.contains('wrong')) {
-                return;
+            // In test mode, always go to next question
+            // In practice mode, only go next if answer was correct
+            if (document.body.dataset.mode === 'test' || !modal.classList.contains('wrong')) {
+                // Add slight delay before redirect
+                setTimeout(() => {
+                    window.location.href = '/test';
+                }, 300);
             }
-
-            // Add slight delay before redirect
-            setTimeout(() => {
-                window.location.href = '/test';
-            }, 300);
         }
 
         // Close modal when clicking outside

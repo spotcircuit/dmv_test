@@ -21,14 +21,14 @@ app = Flask(__name__,
            static_folder='static')
 app.secret_key = 'dev'
 
-# VA DMV test distribution
+# VA DMV test distribution (total 45 questions)
 QUESTION_DISTRIBUTION = {
-    'Road Signs': 9,
-    'Traffic Signals': 5,
-    'Rules of the Road': 7,
-    'Safe Driving': 7,
-    'Penalties and Insurance': 4,
-    'Alcohol and Drugs': 3
+    'Road Signs': 12,
+    'Traffic Signals': 6,
+    'Rules of the Road': 10,
+    'Safe Driving': 8,
+    'Penalties and Insurance': 5,
+    'Alcohol and Drugs': 4
 }
 
 # Mode constants
@@ -151,13 +151,22 @@ def set_mode(mode):
     if mode not in [PRACTICE_MODE, TEST_MODE]:
         return redirect(url_for('select_mode'))
     
-    # Set mode in session
+    # Clear session and set new mode
+    session.clear()
     session['mode'] = mode
     
-    # Initialize sections if needed
+    # Force reload questions for new randomization
     global sections
-    if not sections:
-        sections = load_questions() or []
+    sections = load_questions() or []
+    
+    # Initialize session variables
+    session['current_section'] = 0
+    session['current_question'] = 0
+    session['score'] = 0
+    session['wrong_count'] = 0
+    session['total_answered'] = 0
+    session['streak'] = 0
+    session['max_streak'] = 0
     
     return redirect(url_for('test'))
 
@@ -211,6 +220,15 @@ def submit_answer():
     else:
         session['wrong_count'] = session.get('wrong_count', 0) + 1
         session['streak'] = 0
+        
+        # Check for test failure (more than 3 wrong answers in test mode)
+        if session['mode'] == TEST_MODE and session['wrong_count'] > 3:
+            return jsonify({
+                'correct': is_correct,
+                'explanation': question.get('explanation', ''),
+                'quiz_complete': True,
+                'test_failed': True
+            })
     
     # In test mode, always move to next question
     # In practice mode, only move on if correct
@@ -232,7 +250,8 @@ def submit_answer():
     return jsonify({
         'correct': is_correct,
         'explanation': question.get('explanation', ''),
-        'quiz_complete': quiz_complete
+        'quiz_complete': quiz_complete,
+        'test_failed': False
     })
 
 # Serve static images
@@ -247,47 +266,40 @@ def serve_image(filename):
 # Defining the Results Route
 @app.route('/results')
 def results():
-    if 'current_section' not in session:
-        return redirect(url_for('test'))
-    
-    correct_count = session.get('score', 0)
+    total_questions = sum(QUESTION_DISTRIBUTION.values())  # Should be 45
+    score = session.get('score', 0)
     wrong_count = session.get('wrong_count', 0)
-    total_questions = sum(len(section['question_ids']) for section in sections)
-    passed = correct_count >= 30  # Need at least 30 out of 35 correct to pass
     
-    # Final results roast based on overall performance
+    # Calculate percentage
+    percentage = (score / total_questions) * 100 if total_questions > 0 else 0
+    
+    # Check if passed (need 38 correct answers, which is ~84%)
+    passed = score >= 38 and wrong_count <= 3
+    
+    # Get fun message based on result
     if passed:
-        if correct_count == 35:
-            message = "PERIODT! YOU DEVOURED THIS TEST AND LEFT NO CRUMBS! 💅✨ DMV QUEEN/KING BEHAVIOR!"
-        elif correct_count >= 33:
-            message = "THE SERVE! Almost perfect bestie, you really ate that! 💃✨"
-        else:
-            message = "You passed! Not the most glamorous performance, but we take those! 💁‍♀️✨"
+        message = random.choice([
+            "Yasss Queen! You crushed it! ",
+            "Slay! You're ready for the road! ",
+            "Main character energy! You passed! ",
+            "No cap, you're a driving genius! "
+        ])
     else:
-        if wrong_count >= 25:
-            message = (
-                "The way you failed... it's actually impressive? 😭 "
-                "Like you had to TRY to get this many wrong! "
-                "See you in 15 days after you actually READ the manual! 📚"
-            )
-        elif wrong_count >= 15:
-            message = (
-                "Bestie... your performance is giving 'I learned driving from Mario Kart'! 🎮 "
-                "The DMV said 'Thank u, next!' Try again in 15 days! 😩"
-            )
-        else:
-            message = (
-                f"SO CLOSE YET SO FAR! Only needed {30 - correct_count} more right! "
-                "You're giving 'almost ate' but the DMV said 'still hungry'! "
-                "Come back in 15 days bestie! 😔✨"
-            )
+        message = random.choice([
+            "Oof, not this time bestie... ",
+            "It's giving learner energy... Try again! ",
+            "L + ratio... but you got this next time! ",
+            "Not the slay we were hoping for... "
+        ])
     
     return render_template('results.html',
+                         score=score,
+                         total=total_questions,
+                         percentage=percentage,
                          passed=passed,
                          message=message,
-                         correct_count=correct_count,
                          wrong_count=wrong_count,
-                         total_questions=total_questions)
+                         max_streak=session.get('max_streak', 0))
 
 # Defining the Regenerate Route
 @app.route('/regenerate')
