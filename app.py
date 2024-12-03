@@ -1,5 +1,5 @@
 # Importing Libraries
-from flask import Flask, render_template, session, redirect, url_for, request, jsonify, send_file
+from flask import Flask, render_template, session, redirect, url_for, request, jsonify, send_file, send_from_directory
 from io import BytesIO
 import json
 import random
@@ -34,6 +34,9 @@ QUESTION_DISTRIBUTION = {
 # Mode constants
 PRACTICE_MODE = 'practice'
 TEST_MODE = 'test'
+
+# Initialize sections as None
+sections = None
 
 # Load questions from JSON file
 def load_questions():
@@ -97,8 +100,6 @@ def load_questions():
         logging.error(f'Error loading questions: {str(e)}')
         return None
 
-sections = load_questions()
-
 def get_wrong_answer_roast(wrong_count):
     """Get progressively spicier roasts based on number of wrong answers"""
     roasts = {
@@ -134,56 +135,45 @@ def get_wrong_answer_roast(wrong_count):
 # Defining the Index Route
 @app.route('/')
 def index():
-    # If mode not set, redirect to mode selection
-    if 'mode' not in session:
+    # Always start at mode selection if no mode or sections not loaded
+    if 'mode' not in session or sections is None:
         return redirect(url_for('select_mode'))
-        
-    global sections
     
-    # If sections failed to load, try again
-    if not sections:
-        sections = load_questions()
-        if not sections:
-            return "Error: Failed to load questions. Check logs for details.", 500
+    # Get current position
+    current_section = session.get('current_section', 0)
+    current_question = session.get('current_question', 0)
     
-    # Initialize session if needed
-    if 'current_section' not in session:
-        session['current_section'] = 0
-        session['current_question'] = 0
-        session['sections'] = sections
-        session['score'] = 0
-        session['wrong_count'] = 0
-        session.modified = True
-    
-    logging.debug(f"Sections loaded: {sections}")
-    logging.debug(f"Session data: {session.items()}")
-    
-    current_section_idx = session['current_section']
-    current_question_idx = session['current_question']
-    
-    logging.debug(f"Current section index: {current_section_idx}, Total sections: {len(sections)}")
-    logging.debug(f"Current question index: {current_question_idx}, Total questions in current section: {len(sections[current_section_idx]['question_ids'])}")
-    
-    if current_section_idx >= len(sections):
+    # Check if we're done
+    if current_section >= len(sections):
         return redirect(url_for('results'))
-        
-    current_section = sections[current_section_idx]
-    question_id = current_section['question_ids'][current_question_idx]
     
-    try:
-        question = app.questions_dict[question_id]
-    except KeyError:
-        logging.warning(f"Invalid question ID: {question_id}")
-        return redirect(url_for('results'))
+    # Get current question
+    question_id = sections[current_section]['question_ids'][current_question]
+    question = app.questions_dict[question_id]
+    
+    # Prepare progress data
+    progress = {
+        'current': session.get('total_answered', 0),
+        'total': sum(len(section['question_ids']) for section in sections),
+        'correct': session.get('score', 0),
+        'wrong': session.get('wrong_count', 0),
+        'streak': session.get('streak', 0),
+        'max_streak': session.get('max_streak', 0)
+    }
     
     return render_template('test.html',
                          question=question['question'],
                          choices=question['choices'],
                          image_path=question.get('image', ''),
-                         mode=session['mode'])
+                         mode=session['mode'],
+                         progress=progress)
 
 @app.route('/select_mode')
 def select_mode():
+    # Clear everything and reset sections
+    session.clear()
+    global sections
+    sections = None
     return render_template('select_mode.html')
 
 @app.route('/set_mode/<mode>')
@@ -191,27 +181,37 @@ def set_mode(mode):
     if mode not in [PRACTICE_MODE, TEST_MODE]:
         return redirect(url_for('select_mode'))
     
-    # Clear any existing session data
-    session.clear()
-    session['mode'] = mode
-    
-    # Load new questions
+    # Load questions
     global sections
     sections = load_questions()
+    if sections is None:
+        return "Error: Failed to load questions. Check logs for details.", 500
+    
+    # Initialize session
+    session.clear()
+    session['mode'] = mode
+    session['current_section'] = 0
+    session['current_question'] = 0
+    session['score'] = 0
+    session['wrong_count'] = 0
+    session['total_answered'] = 0
+    session['streak'] = 0
+    session['max_streak'] = 0
     
     return redirect(url_for('index'))
 
 @app.route('/reload_questions')
 def reload_questions():
-    # Preserve the current mode
+    # Keep only the mode
     current_mode = session.get('mode', PRACTICE_MODE)
-    
-    # Clear session and reload questions
     session.clear()
     session['mode'] = current_mode
     
+    # Force questions to reload
     global sections
     sections = load_questions()
+    if sections is None:  # If loading failed
+        return "Error: Failed to load questions. Check logs for details.", 500
     
     return redirect(url_for('index'))
 
@@ -230,26 +230,24 @@ def submit_answer():
     question = app.questions_dict[question_id]
     
     is_correct = selected_answer == question['correct_index']
+    session['total_answered'] += 1
     
     if is_correct:
         session['score'] += 1
-    
-    if session['mode'] == PRACTICE_MODE:
-        # In practice mode, only advance if correct
-        if is_correct:
-            session['current_question'] += 1
-            if session['current_question'] >= len(sections[current_section]['question_ids']):
-                session['current_section'] += 1
-                session['current_question'] = 0
+        session['streak'] += 1
+        session['max_streak'] = max(session['streak'], session['max_streak'])
     else:
-        # In test mode, always advance
+        session['wrong_count'] += 1
+        session['streak'] = 0
+    
+    # Always advance in test mode, only advance if correct in practice mode
+    should_advance = session['mode'] == TEST_MODE or is_correct
+    
+    if should_advance:
         session['current_question'] += 1
         if session['current_question'] >= len(sections[current_section]['question_ids']):
             session['current_section'] += 1
             session['current_question'] = 0
-    
-    if not is_correct:
-        session['wrong_count'] += 1
     
     session.modified = True
     
@@ -261,6 +259,11 @@ def submit_answer():
         'quiz_complete': quiz_complete,
         'mode': session['mode']
     })
+
+# Serve static images
+@app.route('/static/images/<path:filename>')
+def serve_image(filename):
+    return send_from_directory('static/images', filename)
 
 # Defining the Results Route
 @app.route('/results')

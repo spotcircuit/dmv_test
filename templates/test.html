@@ -157,31 +157,81 @@
         }
 
         .test-header {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
             align-items: center;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-            gap: 1rem;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
         }
 
         .mode-indicator {
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-weight: 600;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 0.6rem 1.2rem;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .mode-indicator.test-mode {
-            background: var(--primary);
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
             color: white;
         }
 
         .mode-indicator.practice-mode {
-            background: var(--secondary);
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1);
             color: white;
+        }
+
+        .stats-container {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .correct-count {
+            color: var(--correct);
+            margin-right: 0.5rem;
+        }
+
+        .wrong-count {
+            color: var(--wrong);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
         }
 
         .reload-btn, .mode-btn {
@@ -214,6 +264,57 @@
         .modal-content.wrong .next-btn {
             display: {% if mode == 'practice' %}block{% else %}none{% endif %};
         }
+
+        .practice-info {
+            text-align: center;
+            background: linear-gradient(135deg, #ffd6e7, #c8f7ff);
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .practice-message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .emoji-vibe {
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+        }
+
+        .vibe-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0;
+            background: linear-gradient(45deg, #ff6b6b, #45b7d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: lowercase;
+        }
+
+        .sub-vibe {
+            font-size: 0.9rem;
+            margin: 0;
+            color: #666;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .test-header {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -223,12 +324,43 @@
                 <i class="fas {% if mode == 'test' %}fa-clipboard-check{% else %}fa-book{% endif %}"></i>
                 {{ mode|title }} Mode
             </div>
-            <button onclick="window.location.href='{{ url_for('reload_questions') }}'" class="reload-btn">
-                <i class="fas fa-sync-alt"></i> New Questions
-            </button>
-            <button onclick="window.location.href='{{ url_for('select_mode') }}'" class="mode-btn">
-                <i class="fas fa-exchange-alt"></i> Change Mode
-            </button>
+            
+            {% if mode == 'test' %}
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-label">Progress</span>
+                    <span class="stat-value">{{ progress.current }}/{{ progress.total }}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value">
+                        <span class="correct-count">✨ {{ progress.correct }}</span>
+                        <span class="wrong-count">💀 {{ progress.wrong }}</span>
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Streak</span>
+                    <span class="stat-value">🔥 {{ progress.streak }}{% if progress.max_streak > progress.streak %} (Best: {{ progress.max_streak }}){% endif %}</span>
+                </div>
+            </div>
+            {% else %}
+            <div class="practice-info">
+                <div class="practice-message">
+                    <span class="emoji-vibe">📚 ✨</span>
+                    <p class="vibe-text">no pressure bestie! stay on each q until you get it right!</p>
+                    <p class="sub-vibe">fr fr this is your time to learn & slay 💅</p>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="action-buttons">
+                <button onclick="window.location.href='{{ url_for('reload_questions') }}'" class="reload-btn">
+                    <i class="fas fa-sync-alt"></i> New Questions
+                </button>
+                <button onclick="window.location.href='{{ url_for('select_mode') }}'" class="mode-btn">
+                    <i class="fas fa-exchange-alt"></i> Change Mode
+                </button>
+            </div>
         </div>
 
         <h3>{{ question }}</h3>
