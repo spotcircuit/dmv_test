@@ -40,11 +40,14 @@
         }
 
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 300px;  
+            max-height: 300px; 
+            width: auto;       
+            height: auto;      
             border-radius: 10px;
-            margin: 1rem 0;
+            margin: 1rem auto; 
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: block;    
         }
 
         ul {
@@ -139,6 +142,7 @@
             font-size: 1.1rem;
             cursor: pointer;
             transition: all 0.3s ease;
+            display: none;
         }
 
         .next-btn:hover {
@@ -192,7 +196,13 @@
                 if (data.quiz_complete) {
                     window.location.href = '/results';
                 } else {
-                    showResult(data.correct, data.explanation || "No explanation available");
+                    showResult(data.correct, data.explanation);
+                    // Only proceed to next question if answer is correct
+                    if (data.correct) {
+                        setTimeout(() => {
+                            window.location.href = '/';
+                        }, 2000); // Wait 2 seconds before moving to next question
+                    }
                 }
             });
         }
@@ -202,15 +212,20 @@
             const resultIcon = document.getElementById('resultIcon');
             const resultText = document.getElementById('resultText');
             const explanationEl = document.getElementById('explanation');
+            const nextBtn = document.querySelector('.next-btn');
 
             if (correct) {
                 resultIcon.innerHTML = '<i class="fas fa-check-circle"></i> <span class="emoji">🎉</span>';
                 resultText.textContent = "Yasss! You got it right!";
                 modal.querySelector('.modal-content').className = 'modal-content correct';
+                nextBtn.textContent = "Next Question";
+                nextBtn.style.display = 'block';
             } else {
                 resultIcon.innerHTML = '<i class="fas fa-times-circle"></i> <span class="emoji">😅</span>';
-                resultText.textContent = "Oof! Not quite right...";
+                resultText.textContent = "Oof! Try again...";
                 modal.querySelector('.modal-content').className = 'modal-content wrong';
+                nextBtn.textContent = "Try Again";
+                nextBtn.style.display = 'block';
             }
 
             explanationEl.textContent = explanation;
@@ -220,6 +235,10 @@
         function nextQuestion() {
             const modal = document.getElementById('resultModal');
             modal.classList.remove('show');
+            // Don't redirect, just close the modal if answer was wrong
+            if (modal.querySelector('.modal-content').classList.contains('wrong')) {
+                return;
+            }
             window.location.href = '/';
         }
     </script>

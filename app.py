@@ -192,13 +192,13 @@ def submit_answer():
     
     if is_correct:
         session['score'] += 1
+        # Only advance to next question if answer is correct
+        session['current_question'] += 1
+        if session['current_question'] >= len(sections[current_section]['question_ids']):
+            session['current_section'] += 1
+            session['current_question'] = 0
     else:
         session['wrong_count'] += 1
-    
-    session['current_question'] += 1
-    if session['current_question'] >= len(sections[current_section]['question_ids']):
-        session['current_section'] += 1
-        session['current_question'] = 0
     
     session.modified = True
     
