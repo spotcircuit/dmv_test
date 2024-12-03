@@ -1,0 +1,526 @@
+2024-11-27 16:34:16,378 - INFO - ====== WebDriver manager ======
+2024-11-27 16:34:17,292 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:34:17,296 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:34:17,625 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:34:17,635 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:34:17,637 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:34:18,036 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:34:18,041 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:34:18,041 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe
+2024-11-27 16:34:18,047 - DEBUG - Started executable: `C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe` in a child process with pid: 37144 using 0 to output -3
+2024-11-27 16:34:18,565 - DEBUG - POST http://localhost:49330/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-11-27 16:34:18,565 - DEBUG - Starting new HTTP connection (1): localhost:49330
+2024-11-27 16:34:19,280 - DEBUG - http://localhost:49330 "POST /session HTTP/1.1" 200 0
+2024-11-27 16:34:19,280 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.86","chrome":{"chromedriverVersion":"131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285})","userDataDir":"C:\\Users\\BIGDAD~1\\AppData\\Local\\Temp\\scoped_dir37144_1587793195"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:49334"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"e5b5e9c0ff5019346412914de0e833f3"}} | headers=HTTPHeaderDict({'Content-Length': '885', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:19,281 - DEBUG - Finished Request
+2024-11-27 16:34:19,281 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/url {'url': 'https://transactions.dmv.virginia.gov/dmv-manuals/#/sections/manual/1'}
+2024-11-27 16:34:20,886 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/url HTTP/1.1" 200 0
+2024-11-27 16:34:20,886 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:20,886 - DEBUG - Finished Request
+2024-11-27 16:34:25,887 - INFO - 
+=== Initial Page State ===
+2024-11-27 16:34:25,887 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/url {}
+2024-11-27 16:34:25,891 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/url HTTP/1.1" 200 0
+2024-11-27 16:34:25,891 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/section/2/subsection/2.1"} | headers=HTTPHeaderDict({'Content-Length': '97', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,891 - DEBUG - Finished Request
+2024-11-27 16:34:25,891 - INFO - 
+Current URL: https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/section/2/subsection/2.1
+2024-11-27 16:34:25,891 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element {'using': 'tag name', 'value': 'body'}
+2024-11-27 16:34:25,900 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/element HTTP/1.1" 200 0
+2024-11-27 16:34:25,900 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.40"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,901 - DEBUG - Finished Request
+2024-11-27 16:34:25,901 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.40/text {}
+2024-11-27 16:34:25,927 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.40/text HTTP/1.1" 200 0
+2024-11-27 16:34:25,927 - DEBUG - Remote response: status=200 | data={"value":"Virginia Department of Motor Vehicles\n2.1 - Traffic Signals\n  Traffic signals, signs and pavement markings are used for traffic control to provide a smooth, orderly flow of traffic. It is important to understand and obey them. It is illegal to avoid these traffic controls by cutting through a parking lot or field.\n  Obey all signs and signals unless directed by a police officer. Always follow the officer's direction.\nTraffic signals apply to drivers, motorcycle riders, bicyclists, moped riders and pedestrians.\n  Red light: At a red light, come to a complete stop at the stop line or, if there is no stop line, before entering the intersection or before reaching the crosswalk. Remain stopped as long as the signal is red, unless turns are allowed.\n   Right turn on red: You may turn right while the traffic signal displays a red light. Before turning, you must come to a complete stop. Look both ways and yield the right-of-way to pedestrians and other traffic. Be sure to check for less visible vehicles such as motorcycles, bicycles and mopeds. You may not turn right on red if signs are posted at the intersection that read \"No Turn on Red,\" or if a red arrow pointing to the right is displayed.\n  Left turn on red: You may turn left at a red light if you are on a one-way street and turning left onto another one-way street while the traffic signal displays a red light. Before turning, you must come to a complete stop. Look both ways and yield the right-of-way to pedestrians and other traffic. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. You may not turn left on red if signs are posted at the intersection that read \"No Turn on Red,\" or if a red arrow pointing to the left is displayed.\n  Red arrow: A red arrow means you must stop if you intend to move in the direction of the arrow. You may not proceed in the direction of the arrow as long as the red arrow is displayed, unless signs are posted at the intersection that read \"Right on Red Arrow After Stop\" or \"Left on Red Arrow After Stop.\" Virginia law prohibits right and left turns at red arrow lights.\n  Note: If you are traveling in another state, make sure you know its laws for right and left turns at red and red arrow lights.\n    Flashing red light: At a flashing red light, come to a complete stop and yield to oncoming vehicles and pedestrians. You may go when the way is clear. At a railroad crossing, you must come to a complete stop even if you don't see a train.\n  Flashing red arrow: At a flashing red arrow, come to a complete stop, yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection, and proceed in the direction of the arrow when the way is clear.\n  Yellow light or arrow: A yellow light or arrow are cautions warning that the light is about to change. If you have not entered  the intersection, stop or, if unsafe to stop, cautiously go through it. If you are already in the intersection, go through it cautiously. Do not speed up to beat the light.\n  Flashing yellow light: A flashing yellow light means slow down and proceed with caution. Flashing yellow lights are at locations with higher-than-normal hazardous conditions.\n  Flashing yellow arrow: At a flashing yellow arrow, you may turn in the direction of the arrow, if the way is clear. Yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. If a traffic light changes from red to flashing yellow arrow while a pedestrian is in the intersection, allow the pedestrian to cross the street before turning.\n  Green light or arrow: At a green light, you may go if the way is clear. At a green arrow, you may go in the direction of the arrow if the way is clear. If you are turning without a green arrow, you must yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. If a traffic light changes from red to green while a pedestrian is in the street, allow the pedestrian to cross the street before turning.\n  Out of service signals: When traffic signals are not working because of a power outage or other problem and not displaying any lights, you are required to stop, proceeding through the intersection as though it were an all-way stop. This does not apply if a law enforcement officer or other authorized person is directing traffic at the intersection, or if portable stop signs are in use.\n  Lane use signals indicate lanes where you can and cannot drive during different hours of the day.\n  Red X: Never drive in a lane marked with a red X signal.\n  Yellow X or Yellow Diagonal Downward Arrow: These signals mean that you should move out of the lane as soon as safely possible.\n  Green Arrow: You are permitted to drive in a lane marked with a green arrow signal.\n  Left-turn Arrow: You are permitted to enter in a lane marked with a one-way or two-way arrow only to turn in the direction of the arrow.\nSection 2.1 Quiz"} | headers=HTTPHeaderDict({'Content-Length': '5174', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,927 - DEBUG - Finished Request
+2024-11-27 16:34:25,927 - INFO - 
+Page Text Content:
+2024-11-27 16:34:25,927 - INFO - Virginia Department of Motor Vehicles
+2.1 - Traffic Signals
+  Traffic signals, signs and pavement markings are used for traffic control to provide a smooth, orderly flow of traffic. It is important to understand and obey them. It is illegal to avoid these traffic controls by cutting through a parking lot or field.
+  Obey all signs and signals unless directed by a police officer. Always follow the officer's direction.
+Traffic signals apply to drivers, motorcycle riders, bicyclists, moped riders and pedestrians.
+  Red light: At a red light, come to a complete stop at the stop line or, if there is no stop line, before entering the intersection or before reaching the crosswalk. Remain stopped as long as the signal is red, unless turns are allowed.
+   Right turn on red: You may turn right while the traffic signal displays a red light. Before turning, you must come to a complete stop. Look both ways and yield the right-of-way to pedestrians and other traffic. Be sure to check for less visible vehicles such as motorcycles, bicycles and mopeds. You may not turn right on red if signs are posted at the intersection that read "No Turn on Red," or if a red arrow pointing to the right is displayed.
+  Left turn on red: You may turn left at a red light if you are on a one-way street and turning left onto another one-way street while the traffic signal displays a red light. Before turning, you must come to a complete stop. Look both ways and yield the right-of-way to pedestrians and other traffic. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. You may not turn left on red if signs are posted at the intersection that read "No Turn on Red," or if a red arrow pointing to the left is displayed.
+  Red arrow: A red arrow means you must stop if you intend to move in the direction of the arrow. You may not proceed in the direction of the arrow as long as the red arrow is displayed, unless signs are posted at the intersection that read "Right on Red Arrow After Stop" or "Left on Red Arrow After Stop." Virginia law prohibits right and left turns at red arrow lights.
+  Note: If you are traveling in another state, make sure you know its laws for right and left turns at red and red arrow lights.
+    Flashing red light: At a flashing red light, come to a complete stop and yield to oncoming vehicles and pedestrians. You may go when the way is clear. At a railroad crossing, you must come to a complete stop even if you don't see a train.
+  Flashing red arrow: At a flashing red arrow, come to a complete stop, yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection, and proceed in the direction of the arrow when the way is clear.
+  Yellow light or arrow: A yellow light or arrow are cautions warning that the light is about to change. If you have not entered  the intersection, stop or, if unsafe to stop, cautiously go through it. If you are already in the intersection, go through it cautiously. Do not speed up to beat the light.
+  Flashing yellow light: A flashing yellow light means slow down and proceed with caution. Flashing yellow lights are at locations with higher-than-normal hazardous conditions.
+  Flashing yellow arrow: At a flashing yellow arrow, you may turn in the direction of the arrow, if the way is clear. Yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. If a traffic light changes from red to flashing yellow arrow while a pedestrian is in the intersection, allow the pedestrian to cross the street before turning.
+  Green light or arrow: At a green light, you may go if the way is clear. At a green arrow, you may go in the direction of the arrow if the way is clear. If you are turning without a green arrow, you must yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. If a traffic light changes from red to green while a pedestrian is in the street, allow the pedestrian to cross the street before turning.
+  Out of service signals: When traffic signals are not working because of a power outage or other problem and not displaying any lights, you are required to stop, proceeding through the intersection as though it were an all-way stop. This does not apply if a law enforcement officer or other authorized person is directing traffic at the intersection, or if portable stop signs are in use.
+  Lane use signals indicate lanes where you can and cannot drive during different hours of the day.
+  Red X: Never drive in a lane marked with a red X signal.
+  Yellow X or Yellow Diagonal Downward Arrow: These signals mean that you should move out of the lane as soon as safely possible.
+  Green Arrow: You are permitted to drive in a lane marked with a green arrow signal.
+  Left-turn Arrow: You are permitted to enter in a lane marked with a one-way or two-way arrow only to turn in the direction of the arrow.
+Section 2.1 Quiz
+2024-11-27 16:34:25,927 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/elements {'using': 'css selector', 'value': "[role='button'], button"}
+2024-11-27 16:34:25,936 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/elements HTTP/1.1" 200 0
+2024-11-27 16:34:25,936 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.110"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.79"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.441"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.526"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.442"}]} | headers=HTTPHeaderDict({'Content-Length': '600', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,936 - DEBUG - Finished Request
+2024-11-27 16:34:25,936 - INFO - 
+Buttons found:
+2024-11-27 16:34:25,936 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.110/text {}
+2024-11-27 16:34:25,943 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.110/text HTTP/1.1" 200 0
+2024-11-27 16:34:25,943 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,943 - DEBUG - Finished Request
+2024-11-27 16:34:25,943 - INFO - Button text: 
+2024-11-27 16:34:25,944 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.110'}, 'outerHTML']}
+2024-11-27 16:34:25,949 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:25,949 - DEBUG - Remote response: status=200 | data={"value":"\u003Ci class=\"icon-list-ul left-off-canvas-toggle ng-scope\" ng-click=\"removeClass('move-left');\" ng-if=\"contentmenu !== 'false'\" role=\"button\" style=\"display: block;\">\u003C/i>"} | headers=HTTPHeaderDict({'Content-Length': '199', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,949 - DEBUG - Finished Request
+2024-11-27 16:34:25,950 - INFO - Button HTML: <i class="icon-list-ul left-off-canvas-toggle ng-scope" ng-click="removeClass('move-left');" ng-if="contentmenu !== 'false'" role="button" style="display: block;"></i>
+2024-11-27 16:34:25,950 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.79/text {}
+2024-11-27 16:34:25,956 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.79/text HTTP/1.1" 200 0
+2024-11-27 16:34:25,956 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,956 - DEBUG - Finished Request
+2024-11-27 16:34:25,956 - INFO - Button text: 
+2024-11-27 16:34:25,956 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.79'}, 'outerHTML']}
+2024-11-27 16:34:25,962 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:25,962 - DEBUG - Remote response: status=200 | data={"value":"\u003Ci class=\"icon-bars right-off-canvas-toggle\" ng-click=\"removeClass('move-right');\" role=\"button\" aria-controls=\"navigation\">\u003C/i>"} | headers=HTTPHeaderDict({'Content-Length': '158', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,962 - DEBUG - Finished Request
+2024-11-27 16:34:25,962 - INFO - Button HTML: <i class="icon-bars right-off-canvas-toggle" ng-click="removeClass('move-right');" role="button" aria-controls="navigation"></i>
+2024-11-27 16:34:25,962 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.441/text {}
+2024-11-27 16:34:25,968 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.441/text HTTP/1.1" 200 0
+2024-11-27 16:34:25,968 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,968 - DEBUG - Finished Request
+2024-11-27 16:34:25,968 - INFO - Button text: 
+2024-11-27 16:34:25,969 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.441'}, 'outerHTML']}
+2024-11-27 16:34:25,973 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:25,973 - DEBUG - Remote response: status=200 | data={"value":"\u003Ci class=\"icon-chevron-left\" role=\"button\" tabindex=\"0\" aria-label=\"previous section\">\u003C/i>"} | headers=HTTPHeaderDict({'Content-Length': '120', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,973 - DEBUG - Finished Request
+2024-11-27 16:34:25,973 - INFO - Button HTML: <i class="icon-chevron-left" role="button" tabindex="0" aria-label="previous section"></i>
+2024-11-27 16:34:25,974 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.526/text {}
+2024-11-27 16:34:25,980 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.526/text HTTP/1.1" 200 0
+2024-11-27 16:34:25,981 - DEBUG - Remote response: status=200 | data={"value":"Section 2.1 Quiz"} | headers=HTTPHeaderDict({'Content-Length': '28', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:25,981 - DEBUG - Finished Request
+2024-11-27 16:34:25,981 - INFO - Button text: Section 2.1 Quiz
+2024-11-27 16:34:25,982 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.526'}, 'outerHTML']}
+2024-11-27 16:34:26,025 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,025 - DEBUG - Remote response: status=200 | data={"value":"\u003Cspan class=\"button btn primary ng-binding\" ng-click=\"startQuiz()\" role=\"button\" aria-label=\"Section Quiz\">Section 2.1 Quiz\u003C/span>"} | headers=HTTPHeaderDict({'Content-Length': '160', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,026 - DEBUG - Finished Request
+2024-11-27 16:34:26,026 - INFO - Button HTML: <span class="button btn primary ng-binding" ng-click="startQuiz()" role="button" aria-label="Section Quiz">Section 2.1 Quiz</span>
+2024-11-27 16:34:26,026 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.442/text {}
+2024-11-27 16:34:26,040 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.442/text HTTP/1.1" 200 0
+2024-11-27 16:34:26,040 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,040 - DEBUG - Finished Request
+2024-11-27 16:34:26,040 - INFO - Button text: 
+2024-11-27 16:34:26,040 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.442'}, 'outerHTML']}
+2024-11-27 16:34:26,048 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,048 - DEBUG - Remote response: status=200 | data={"value":"\u003Cdiv class=\"small-3 next columns nav-container\" ng-click=\"vm.next()\" role=\"button\" tabindex=\"0\" aria-label=\"next section\">\n\t\u003C!-- ngIf: !last -->\u003Ci class=\"icon-chevron-right ng-scope\" ng-if=\"!last\">\u003C/i>\u003C!-- end ngIf: !last -->\n\u003C/div>"} | headers=HTTPHeaderDict({'Content-Length': '291', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,049 - DEBUG - Finished Request
+2024-11-27 16:34:26,049 - INFO - Button HTML: <div class="small-3 next columns nav-container" ng-click="vm.next()" role="button" tabindex="0" aria-label="next section">
+	<!-- ngIf: !last --><i class="icon-chevron-right ng-scope" ng-if="!last"></i><!-- end ngIf: !last -->
+</div>
+2024-11-27 16:34:26,049 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/elements {'using': 'css selector', 'value': '.question-text'}
+2024-11-27 16:34:26,067 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/elements HTTP/1.1" 200 0
+2024-11-27 16:34:26,067 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,067 - DEBUG - Finished Request
+2024-11-27 16:34:26,067 - INFO - 
+Question content:
+2024-11-27 16:34:26,067 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/elements {'using': 'css selector', 'value': '.option-text'}
+2024-11-27 16:34:26,080 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/elements HTTP/1.1" 200 0
+2024-11-27 16:34:26,080 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,080 - DEBUG - Finished Request
+2024-11-27 16:34:26,081 - INFO - 
+Answer options:
+2024-11-27 16:34:26,081 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/elements {'using': 'css selector', 'value': '.feedback-text'}
+2024-11-27 16:34:26,093 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/elements HTTP/1.1" 200 0
+2024-11-27 16:34:26,093 - DEBUG - Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,093 - DEBUG - Finished Request
+2024-11-27 16:34:26,093 - INFO - 
+Feedback messages:
+2024-11-27 16:34:26,093 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/elements {'using': 'tag name', 'value': 'img'}
+2024-11-27 16:34:26,107 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/elements HTTP/1.1" 200 0
+2024-11-27 16:34:26,107 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.454"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.468"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.474"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.482"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.483"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.488"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.496"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.497"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.508"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.513"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.514"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.519"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.524"},{"element-6066-11e4-a52e-4f735466cecf":"f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.525"}]} | headers=HTTPHeaderDict({'Content-Length': '1663', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,107 - DEBUG - Finished Request
+2024-11-27 16:34:26,107 - INFO - 
+Images found:
+2024-11-27 16:34:26,107 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.454'}, 'src']}
+2024-11-27 16:34:26,123 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,123 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redLight.jpg"} | headers=HTTPHeaderDict({'Content-Length': '92', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,123 - DEBUG - Finished Request
+2024-11-27 16:34:26,124 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.454'}, 'alt']}
+2024-11-27 16:34:26,138 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,139 - DEBUG - Remote response: status=200 | data={"value":"Red Light"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,139 - DEBUG - Finished Request
+2024-11-27 16:34:26,139 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redLight.jpg
+2024-11-27 16:34:26,139 - INFO - Image alt: Red Light
+2024-11-27 16:34:26,139 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.468'}, 'src']}
+2024-11-27 16:34:26,154 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,154 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redArrow.jpg"} | headers=HTTPHeaderDict({'Content-Length': '92', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,154 - DEBUG - Finished Request
+2024-11-27 16:34:26,154 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.468'}, 'alt']}
+2024-11-27 16:34:26,165 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,165 - DEBUG - Remote response: status=200 | data={"value":"Red Arrow"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,165 - DEBUG - Finished Request
+2024-11-27 16:34:26,165 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redArrow.jpg
+2024-11-27 16:34:26,165 - INFO - Image alt: Red Arrow
+2024-11-27 16:34:26,165 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.474'}, 'src']}
+2024-11-27 16:34:26,172 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,173 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redFlash.jpg"} | headers=HTTPHeaderDict({'Content-Length': '92', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,173 - DEBUG - Finished Request
+2024-11-27 16:34:26,173 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.474'}, 'alt']}
+2024-11-27 16:34:26,185 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,185 - DEBUG - Remote response: status=200 | data={"value":"Red Flashing Light"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,185 - DEBUG - Finished Request
+2024-11-27 16:34:26,185 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redFlash.jpg
+2024-11-27 16:34:26,186 - INFO - Image alt: Red Flashing Light
+2024-11-27 16:34:26,186 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.482'}, 'src']}
+2024-11-27 16:34:26,194 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,194 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowLight.jpg"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,195 - DEBUG - Finished Request
+2024-11-27 16:34:26,195 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.482'}, 'alt']}
+2024-11-27 16:34:26,203 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,203 - DEBUG - Remote response: status=200 | data={"value":"Yellow Light"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,204 - DEBUG - Finished Request
+2024-11-27 16:34:26,204 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowLight.jpg
+2024-11-27 16:34:26,204 - INFO - Image alt: Yellow Light
+2024-11-27 16:34:26,204 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.483'}, 'src']}
+2024-11-27 16:34:26,212 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,212 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow.jpg"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,212 - DEBUG - Finished Request
+2024-11-27 16:34:26,212 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.483'}, 'alt']}
+2024-11-27 16:34:26,219 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,219 - DEBUG - Remote response: status=200 | data={"value":"Yellow Arrow"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,220 - DEBUG - Finished Request
+2024-11-27 16:34:26,220 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow.jpg
+2024-11-27 16:34:26,220 - INFO - Image alt: Yellow Arrow
+2024-11-27 16:34:26,220 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.488'}, 'src']}
+2024-11-27 16:34:26,228 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,229 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowFlash.jpg"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,229 - DEBUG - Finished Request
+2024-11-27 16:34:26,229 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.488'}, 'alt']}
+2024-11-27 16:34:26,237 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,237 - DEBUG - Remote response: status=200 | data={"value":"Yellow Flashing Light"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,238 - DEBUG - Finished Request
+2024-11-27 16:34:26,238 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowFlash.jpg
+2024-11-27 16:34:26,238 - INFO - Image alt: Yellow Flashing Light
+2024-11-27 16:34:26,238 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.496'}, 'src']}
+2024-11-27 16:34:26,248 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,248 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenLight.jpg"} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,248 - DEBUG - Finished Request
+2024-11-27 16:34:26,248 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.496'}, 'alt']}
+2024-11-27 16:34:26,256 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,256 - DEBUG - Remote response: status=200 | data={"value":"Green Light"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,256 - DEBUG - Finished Request
+2024-11-27 16:34:26,256 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenLight.jpg
+2024-11-27 16:34:26,256 - INFO - Image alt: Green Light
+2024-11-27 16:34:26,256 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.497'}, 'src']}
+2024-11-27 16:34:26,264 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,264 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrow.jpg"} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,264 - DEBUG - Finished Request
+2024-11-27 16:34:26,264 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.497'}, 'alt']}
+2024-11-27 16:34:26,274 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,274 - DEBUG - Remote response: status=200 | data={"value":"Green Arrow"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,274 - DEBUG - Finished Request
+2024-11-27 16:34:26,274 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrow.jpg
+2024-11-27 16:34:26,274 - INFO - Image alt: Green Arrow
+2024-11-27 16:34:26,274 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.508'}, 'src']}
+2024-11-27 16:34:26,284 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,284 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redX.jpg"} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,284 - DEBUG - Finished Request
+2024-11-27 16:34:26,284 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.508'}, 'alt']}
+2024-11-27 16:34:26,291 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,291 - DEBUG - Remote response: status=200 | data={"value":"Red X"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,292 - DEBUG - Finished Request
+2024-11-27 16:34:26,292 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redX.jpg
+2024-11-27 16:34:26,292 - INFO - Image alt: Red X
+2024-11-27 16:34:26,292 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.513'}, 'src']}
+2024-11-27 16:34:26,304 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,304 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowX.jpg"} | headers=HTTPHeaderDict({'Content-Length': '91', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,305 - DEBUG - Finished Request
+2024-11-27 16:34:26,305 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.513'}, 'alt']}
+2024-11-27 16:34:26,313 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,313 - DEBUG - Remote response: status=200 | data={"value":"Yellow X"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,313 - DEBUG - Finished Request
+2024-11-27 16:34:26,313 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowX.jpg
+2024-11-27 16:34:26,313 - INFO - Image alt: Yellow X
+2024-11-27 16:34:26,313 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.514'}, 'src']}
+2024-11-27 16:34:26,321 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,322 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow2.jpg"} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,322 - DEBUG - Finished Request
+2024-11-27 16:34:26,322 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.514'}, 'alt']}
+2024-11-27 16:34:26,331 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,331 - DEBUG - Remote response: status=200 | data={"value":"Yellow Arrow"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,331 - DEBUG - Finished Request
+2024-11-27 16:34:26,331 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow2.jpg
+2024-11-27 16:34:26,331 - INFO - Image alt: Yellow Arrow
+2024-11-27 16:34:26,331 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.519'}, 'src']}
+2024-11-27 16:34:26,338 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,338 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrowdown.jpg"} | headers=HTTPHeaderDict({'Content-Length': '98', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,339 - DEBUG - Finished Request
+2024-11-27 16:34:26,339 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.519'}, 'alt']}
+2024-11-27 16:34:26,349 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,349 - DEBUG - Remote response: status=200 | data={"value":"Green Down Arrow"} | headers=HTTPHeaderDict({'Content-Length': '28', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,350 - DEBUG - Finished Request
+2024-11-27 16:34:26,350 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrowdown.jpg
+2024-11-27 16:34:26,350 - INFO - Image alt: Green Down Arrow
+2024-11-27 16:34:26,350 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.524'}, 'src']}
+2024-11-27 16:34:26,357 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,357 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow1.jpg"} | headers=HTTPHeaderDict({'Content-Length': '98', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,357 - DEBUG - Finished Request
+2024-11-27 16:34:26,357 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.524'}, 'alt']}
+2024-11-27 16:34:26,370 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,370 - DEBUG - Remote response: status=200 | data={"value":"Left Turn Arrow"} | headers=HTTPHeaderDict({'Content-Length': '27', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,370 - DEBUG - Finished Request
+2024-11-27 16:34:26,370 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow1.jpg
+2024-11-27 16:34:26,370 - INFO - Image alt: Left Turn Arrow
+2024-11-27 16:34:26,370 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.525'}, 'src']}
+2024-11-27 16:34:26,381 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,382 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow2.jpg"} | headers=HTTPHeaderDict({'Content-Length': '98', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,382 - DEBUG - Finished Request
+2024-11-27 16:34:26,382 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.525'}, 'alt']}
+2024-11-27 16:34:26,389 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,389 - DEBUG - Remote response: status=200 | data={"value":"Left Turn Arrow"} | headers=HTTPHeaderDict({'Content-Length': '27', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,389 - DEBUG - Finished Request
+2024-11-27 16:34:26,389 - INFO - Image src: https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow2.jpg
+2024-11-27 16:34:26,389 - INFO - Image alt: Left Turn Arrow
+2024-11-27 16:34:26,389 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.110/text {}
+2024-11-27 16:34:26,403 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.110/text HTTP/1.1" 200 0
+2024-11-27 16:34:26,403 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,403 - DEBUG - Finished Request
+2024-11-27 16:34:26,403 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.110'}, 'outerHTML']}
+2024-11-27 16:34:26,412 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,412 - DEBUG - Remote response: status=200 | data={"value":"\u003Ci class=\"icon-list-ul left-off-canvas-toggle ng-scope\" ng-click=\"removeClass('move-left');\" ng-if=\"contentmenu !== 'false'\" role=\"button\" style=\"display: block;\">\u003C/i>"} | headers=HTTPHeaderDict({'Content-Length': '199', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,412 - DEBUG - Finished Request
+2024-11-27 16:34:26,412 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.79/text {}
+2024-11-27 16:34:26,427 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.79/text HTTP/1.1" 200 0
+2024-11-27 16:34:26,427 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,428 - DEBUG - Finished Request
+2024-11-27 16:34:26,428 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.79'}, 'outerHTML']}
+2024-11-27 16:34:26,437 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,437 - DEBUG - Remote response: status=200 | data={"value":"\u003Ci class=\"icon-bars right-off-canvas-toggle\" ng-click=\"removeClass('move-right');\" role=\"button\" aria-controls=\"navigation\">\u003C/i>"} | headers=HTTPHeaderDict({'Content-Length': '158', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,438 - DEBUG - Finished Request
+2024-11-27 16:34:26,438 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.441/text {}
+2024-11-27 16:34:26,446 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.441/text HTTP/1.1" 200 0
+2024-11-27 16:34:26,446 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,447 - DEBUG - Finished Request
+2024-11-27 16:34:26,447 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.441'}, 'outerHTML']}
+2024-11-27 16:34:26,453 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,453 - DEBUG - Remote response: status=200 | data={"value":"\u003Ci class=\"icon-chevron-left\" role=\"button\" tabindex=\"0\" aria-label=\"previous section\">\u003C/i>"} | headers=HTTPHeaderDict({'Content-Length': '120', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,453 - DEBUG - Finished Request
+2024-11-27 16:34:26,454 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.526/text {}
+2024-11-27 16:34:26,464 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.526/text HTTP/1.1" 200 0
+2024-11-27 16:34:26,464 - DEBUG - Remote response: status=200 | data={"value":"Section 2.1 Quiz"} | headers=HTTPHeaderDict({'Content-Length': '28', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,464 - DEBUG - Finished Request
+2024-11-27 16:34:26,464 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.526'}, 'outerHTML']}
+2024-11-27 16:34:26,470 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,471 - DEBUG - Remote response: status=200 | data={"value":"\u003Cspan class=\"button btn primary ng-binding\" ng-click=\"startQuiz()\" role=\"button\" aria-label=\"Section Quiz\">Section 2.1 Quiz\u003C/span>"} | headers=HTTPHeaderDict({'Content-Length': '160', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,471 - DEBUG - Finished Request
+2024-11-27 16:34:26,471 - DEBUG - GET http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.442/text {}
+2024-11-27 16:34:26,479 - DEBUG - http://localhost:49330 "GET /session/e5b5e9c0ff5019346412914de0e833f3/element/f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.442/text HTTP/1.1" 200 0
+2024-11-27 16:34:26,479 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,479 - DEBUG - Finished Request
+2024-11-27 16:34:26,479 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.442'}, 'outerHTML']}
+2024-11-27 16:34:26,486 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,486 - DEBUG - Remote response: status=200 | data={"value":"\u003Cdiv class=\"small-3 next columns nav-container\" ng-click=\"vm.next()\" role=\"button\" tabindex=\"0\" aria-label=\"next section\">\n\t\u003C!-- ngIf: !last -->\u003Ci class=\"icon-chevron-right ng-scope\" ng-if=\"!last\">\u003C/i>\u003C!-- end ngIf: !last -->\n\u003C/div>"} | headers=HTTPHeaderDict({'Content-Length': '291', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,486 - DEBUG - Finished Request
+2024-11-27 16:34:26,486 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.454'}, 'src']}
+2024-11-27 16:34:26,491 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,491 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redLight.jpg"} | headers=HTTPHeaderDict({'Content-Length': '92', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,491 - DEBUG - Finished Request
+2024-11-27 16:34:26,491 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.454'}, 'alt']}
+2024-11-27 16:34:26,497 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,497 - DEBUG - Remote response: status=200 | data={"value":"Red Light"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,497 - DEBUG - Finished Request
+2024-11-27 16:34:26,497 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.468'}, 'src']}
+2024-11-27 16:34:26,501 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,502 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redArrow.jpg"} | headers=HTTPHeaderDict({'Content-Length': '92', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,502 - DEBUG - Finished Request
+2024-11-27 16:34:26,502 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.468'}, 'alt']}
+2024-11-27 16:34:26,507 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,507 - DEBUG - Remote response: status=200 | data={"value":"Red Arrow"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,507 - DEBUG - Finished Request
+2024-11-27 16:34:26,507 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.474'}, 'src']}
+2024-11-27 16:34:26,512 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,512 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redFlash.jpg"} | headers=HTTPHeaderDict({'Content-Length': '92', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,512 - DEBUG - Finished Request
+2024-11-27 16:34:26,512 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.474'}, 'alt']}
+2024-11-27 16:34:26,519 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,519 - DEBUG - Remote response: status=200 | data={"value":"Red Flashing Light"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,519 - DEBUG - Finished Request
+2024-11-27 16:34:26,519 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.482'}, 'src']}
+2024-11-27 16:34:26,525 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,525 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowLight.jpg"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,525 - DEBUG - Finished Request
+2024-11-27 16:34:26,525 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.482'}, 'alt']}
+2024-11-27 16:34:26,532 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,533 - DEBUG - Remote response: status=200 | data={"value":"Yellow Light"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,533 - DEBUG - Finished Request
+2024-11-27 16:34:26,533 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.483'}, 'src']}
+2024-11-27 16:34:26,539 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,539 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow.jpg"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,539 - DEBUG - Finished Request
+2024-11-27 16:34:26,539 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.483'}, 'alt']}
+2024-11-27 16:34:26,548 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,549 - DEBUG - Remote response: status=200 | data={"value":"Yellow Arrow"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,549 - DEBUG - Finished Request
+2024-11-27 16:34:26,549 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.488'}, 'src']}
+2024-11-27 16:34:26,555 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,556 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowFlash.jpg"} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,556 - DEBUG - Finished Request
+2024-11-27 16:34:26,556 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.488'}, 'alt']}
+2024-11-27 16:34:26,564 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,564 - DEBUG - Remote response: status=200 | data={"value":"Yellow Flashing Light"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,565 - DEBUG - Finished Request
+2024-11-27 16:34:26,565 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.496'}, 'src']}
+2024-11-27 16:34:26,571 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,571 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenLight.jpg"} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,572 - DEBUG - Finished Request
+2024-11-27 16:34:26,572 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.496'}, 'alt']}
+2024-11-27 16:34:26,581 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,581 - DEBUG - Remote response: status=200 | data={"value":"Green Light"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,581 - DEBUG - Finished Request
+2024-11-27 16:34:26,581 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.497'}, 'src']}
+2024-11-27 16:34:26,587 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,587 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrow.jpg"} | headers=HTTPHeaderDict({'Content-Length': '94', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,588 - DEBUG - Finished Request
+2024-11-27 16:34:26,588 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.497'}, 'alt']}
+2024-11-27 16:34:26,596 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,596 - DEBUG - Remote response: status=200 | data={"value":"Green Arrow"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,596 - DEBUG - Finished Request
+2024-11-27 16:34:26,597 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.508'}, 'src']}
+2024-11-27 16:34:26,603 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,604 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redX.jpg"} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,604 - DEBUG - Finished Request
+2024-11-27 16:34:26,604 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.508'}, 'alt']}
+2024-11-27 16:34:26,611 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,611 - DEBUG - Remote response: status=200 | data={"value":"Red X"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,611 - DEBUG - Finished Request
+2024-11-27 16:34:26,611 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.513'}, 'src']}
+2024-11-27 16:34:26,620 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,620 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowX.jpg"} | headers=HTTPHeaderDict({'Content-Length': '91', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,620 - DEBUG - Finished Request
+2024-11-27 16:34:26,621 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.513'}, 'alt']}
+2024-11-27 16:34:26,627 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,627 - DEBUG - Remote response: status=200 | data={"value":"Yellow X"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,627 - DEBUG - Finished Request
+2024-11-27 16:34:26,627 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.514'}, 'src']}
+2024-11-27 16:34:26,636 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,636 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow2.jpg"} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,636 - DEBUG - Finished Request
+2024-11-27 16:34:26,636 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.514'}, 'alt']}
+2024-11-27 16:34:26,644 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,644 - DEBUG - Remote response: status=200 | data={"value":"Yellow Arrow"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,644 - DEBUG - Finished Request
+2024-11-27 16:34:26,644 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.519'}, 'src']}
+2024-11-27 16:34:26,673 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,674 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrowdown.jpg"} | headers=HTTPHeaderDict({'Content-Length': '98', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,674 - DEBUG - Finished Request
+2024-11-27 16:34:26,674 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.519'}, 'alt']}
+2024-11-27 16:34:26,684 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,684 - DEBUG - Remote response: status=200 | data={"value":"Green Down Arrow"} | headers=HTTPHeaderDict({'Content-Length': '28', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,684 - DEBUG - Finished Request
+2024-11-27 16:34:26,684 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.524'}, 'src']}
+2024-11-27 16:34:26,693 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,693 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow1.jpg"} | headers=HTTPHeaderDict({'Content-Length': '98', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,693 - DEBUG - Finished Request
+2024-11-27 16:34:26,693 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.524'}, 'alt']}
+2024-11-27 16:34:26,706 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,706 - DEBUG - Remote response: status=200 | data={"value":"Left Turn Arrow"} | headers=HTTPHeaderDict({'Content-Length': '27', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,706 - DEBUG - Finished Request
+2024-11-27 16:34:26,706 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.525'}, 'src']}
+2024-11-27 16:34:26,715 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,715 - DEBUG - Remote response: status=200 | data={"value":"https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow2.jpg"} | headers=HTTPHeaderDict({'Content-Length': '98', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,715 - DEBUG - Finished Request
+2024-11-27 16:34:26,715 - DEBUG - POST http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.55FFA8984BCA2090359C0497F2722340.d.716639D5CE7EDDA101A4AB2C0F2C0378.e.525'}, 'alt']}
+2024-11-27 16:34:26,728 - DEBUG - http://localhost:49330 "POST /session/e5b5e9c0ff5019346412914de0e833f3/execute/sync HTTP/1.1" 200 0
+2024-11-27 16:34:26,728 - DEBUG - Remote response: status=200 | data={"value":"Left Turn Arrow"} | headers=HTTPHeaderDict({'Content-Length': '27', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,728 - DEBUG - Finished Request
+2024-11-27 16:34:26,729 - ERROR - Error in observation: EOF when reading a line
+2024-11-27 16:34:26,729 - DEBUG - DELETE http://localhost:49330/session/e5b5e9c0ff5019346412914de0e833f3 {}
+2024-11-27 16:34:26,779 - DEBUG - http://localhost:49330 "DELETE /session/e5b5e9c0ff5019346412914de0e833f3 HTTP/1.1" 200 0
+2024-11-27 16:34:26,779 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:34:26,779 - DEBUG - Finished Request
+2024-11-27 16:38:40,307 - INFO - ====== WebDriver manager ======
+2024-11-27 16:38:41,218 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:38:41,221 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:38:41,575 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:38:41,587 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:38:41,588 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:38:41,944 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:38:41,952 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:38:41,952 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe
+2024-11-27 16:38:41,958 - DEBUG - Started executable: `C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe` in a child process with pid: 18676 using 0 to output -3
+2024-11-27 16:38:42,472 - DEBUG - POST http://localhost:49935/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-11-27 16:38:42,473 - DEBUG - Starting new HTTP connection (1): localhost:49935
+2024-11-27 16:38:43,017 - DEBUG - http://localhost:49935 "POST /session HTTP/1.1" 200 0
+2024-11-27 16:38:43,018 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.86","chrome":{"chromedriverVersion":"131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285})","userDataDir":"C:\\Users\\BIGDAD~1\\AppData\\Local\\Temp\\scoped_dir18676_2011497135"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:49938"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9464238ee2d3770a056d1e7438f74ab2"}} | headers=HTTPHeaderDict({'Content-Length': '885', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:38:43,018 - DEBUG - Finished Request
+2024-11-27 16:38:43,018 - DEBUG - POST http://localhost:49935/session/9464238ee2d3770a056d1e7438f74ab2/timeouts {'implicit': 10000}
+2024-11-27 16:38:43,020 - DEBUG - http://localhost:49935 "POST /session/9464238ee2d3770a056d1e7438f74ab2/timeouts HTTP/1.1" 200 0
+2024-11-27 16:38:43,020 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:38:43,020 - DEBUG - Finished Request
+2024-11-27 16:38:43,020 - DEBUG - POST http://localhost:49935/session/9464238ee2d3770a056d1e7438f74ab2/url {'url': 'https://transactions.dmv.virginia.gov/dmv-manuals/#/sections/manual/1'}
+2024-11-27 16:38:43,932 - DEBUG - http://localhost:49935 "POST /session/9464238ee2d3770a056d1e7438f74ab2/url HTTP/1.1" 200 0
+2024-11-27 16:38:43,932 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:38:43,932 - DEBUG - Finished Request
+2024-11-27 16:38:48,933 - INFO - Page loaded
+2024-11-27 16:38:48,933 - ERROR - Error in quiz observation: EOF when reading a line
+2024-11-27 16:38:48,933 - DEBUG - DELETE http://localhost:49935/session/9464238ee2d3770a056d1e7438f74ab2 {}
+2024-11-27 16:38:48,980 - DEBUG - http://localhost:49935 "DELETE /session/9464238ee2d3770a056d1e7438f74ab2 HTTP/1.1" 200 0
+2024-11-27 16:38:48,981 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:38:48,981 - DEBUG - Finished Request
+2024-11-27 16:39:24,461 - INFO - ====== WebDriver manager ======
+2024-11-27 16:39:25,337 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:39:25,340 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:39:25,740 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:39:25,752 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:39:25,753 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:39:26,085 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:39:26,091 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:39:26,091 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe
+2024-11-27 16:39:26,097 - DEBUG - Started executable: `C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe` in a child process with pid: 39056 using 0 to output -3
+2024-11-27 16:39:26,607 - DEBUG - POST http://localhost:50083/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-11-27 16:39:26,607 - DEBUG - Starting new HTTP connection (1): localhost:50083
+2024-11-27 16:39:27,172 - DEBUG - http://localhost:50083 "POST /session HTTP/1.1" 200 0
+2024-11-27 16:39:27,172 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.86","chrome":{"chromedriverVersion":"131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285})","userDataDir":"C:\\Users\\BIGDAD~1\\AppData\\Local\\Temp\\scoped_dir39056_769805343"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:50086"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"caf090ef7e96270559ec564ae7d5eb72"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:39:27,172 - DEBUG - Finished Request
+2024-11-27 16:39:27,172 - DEBUG - POST http://localhost:50083/session/caf090ef7e96270559ec564ae7d5eb72/timeouts {'implicit': 10000}
+2024-11-27 16:39:27,173 - DEBUG - http://localhost:50083 "POST /session/caf090ef7e96270559ec564ae7d5eb72/timeouts HTTP/1.1" 200 0
+2024-11-27 16:39:27,174 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:39:27,174 - DEBUG - Finished Request
+2024-11-27 16:39:27,175 - DEBUG - POST http://localhost:50083/session/caf090ef7e96270559ec564ae7d5eb72/url {'url': 'https://transactions.dmv.virginia.gov/dmv-manuals/#/sections/manual/1'}
+2024-11-27 16:39:28,839 - DEBUG - http://localhost:50083 "POST /session/caf090ef7e96270559ec564ae7d5eb72/url HTTP/1.1" 200 0
+2024-11-27 16:39:28,839 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:39:28,839 - DEBUG - Finished Request
+2024-11-27 16:39:33,840 - INFO - Page loaded
+2024-11-27 16:39:33,840 - ERROR - Error in quiz observation: EOF when reading a line
+2024-11-27 16:39:33,840 - DEBUG - DELETE http://localhost:50083/session/caf090ef7e96270559ec564ae7d5eb72 {}
+2024-11-27 16:39:33,885 - DEBUG - http://localhost:50083 "DELETE /session/caf090ef7e96270559ec564ae7d5eb72 HTTP/1.1" 200 0
+2024-11-27 16:39:33,885 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:39:33,886 - DEBUG - Finished Request
+2024-11-27 16:40:02,741 - INFO - ====== WebDriver manager ======
+2024-11-27 16:40:03,645 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:40:03,649 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:40:04,010 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:40:04,021 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:40:04,022 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-11-27 16:40:04,397 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 8429
+2024-11-27 16:40:04,405 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:40:04,406 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe
+2024-11-27 16:40:04,414 - DEBUG - Started executable: `C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe` in a child process with pid: 13732 using 0 to output -3
+2024-11-27 16:40:04,927 - DEBUG - POST http://localhost:50199/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-11-27 16:40:04,927 - DEBUG - Starting new HTTP connection (1): localhost:50199
+2024-11-27 16:40:05,466 - DEBUG - http://localhost:50199 "POST /session HTTP/1.1" 200 0
+2024-11-27 16:40:05,466 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.86","chrome":{"chromedriverVersion":"131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285})","userDataDir":"C:\\Users\\BIGDAD~1\\AppData\\Local\\Temp\\scoped_dir13732_947176317"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:50202"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"673bf095920a6b0b8ca1ae226c458ed1"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:40:05,466 - DEBUG - Finished Request
+2024-11-27 16:40:05,467 - DEBUG - POST http://localhost:50199/session/673bf095920a6b0b8ca1ae226c458ed1/timeouts {'implicit': 10000}
+2024-11-27 16:40:05,468 - DEBUG - http://localhost:50199 "POST /session/673bf095920a6b0b8ca1ae226c458ed1/timeouts HTTP/1.1" 200 0
+2024-11-27 16:40:05,468 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:40:05,468 - DEBUG - Finished Request
+2024-11-27 16:40:05,468 - DEBUG - POST http://localhost:50199/session/673bf095920a6b0b8ca1ae226c458ed1/url {'url': 'https://transactions.dmv.virginia.gov/dmv-manuals/#/sections/manual/1'}
+2024-11-27 16:40:07,058 - DEBUG - http://localhost:50199 "POST /session/673bf095920a6b0b8ca1ae226c458ed1/url HTTP/1.1" 200 0
+2024-11-27 16:40:07,058 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:40:07,058 - DEBUG - Finished Request
+2024-11-27 16:40:12,060 - INFO - Page loaded
+2024-11-27 16:40:12,060 - INFO - Input stream ended. Exiting...
+2024-11-27 16:40:12,060 - DEBUG - DELETE http://localhost:50199/session/673bf095920a6b0b8ca1ae226c458ed1 {}
+2024-11-27 16:40:12,102 - DEBUG - http://localhost:50199 "DELETE /session/673bf095920a6b0b8ca1ae226c458ed1 HTTP/1.1" 200 0
+2024-11-27 16:40:12,102 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-27 16:40:12,103 - DEBUG - Finished Request

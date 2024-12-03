@@ -1,0 +1,39 @@
+﻿from flask import Flask, render_template, session, redirect, url_for, request, jsonify
+import json
+import random
+from datetime import datetime, timedelta
+
+app = Flask(__name__)
+app.secret_key = 'dev'
+
+# Load questions from JSON file
+def load_questions():
+    try:
+        with open('new_questions.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f'Error loading questions: {e}')
+        return []
+
+ALL_QUESTIONS = load_questions()
+
+@app.route('/')
+def index():
+    # Get a random question for testing
+    if ALL_QUESTIONS:
+        question = random.choice(ALL_QUESTIONS)
+    else:
+        question = {
+            'question': 'Test Question',
+            'options': ['A. Test1', 'B. Test2', 'C. Test3', 'D. Test4'],
+            'answer': 'A',
+            'image': None
+        }
+    
+    return render_template('test.html',
+                         question=question,
+                         current_question=0,
+                         total_questions=1)
+
+if __name__ == '__main__':
+    app.run(port=3022, debug=True)

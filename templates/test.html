@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMV Practice Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --secondary: #5c6bc0;
+            --accent: #ff6b6b;
+            --background: #f5f6fa;
+            --text: #2c3e50;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        .question-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: var(--background);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container">
+        <h3>{{ question }}</h3>
+        
+        {% if image_path %}
+            <img src="/static/{{ image_path }}" alt="Question Image">
+        {% endif %}
+        
+        <ul>
+            {% for choice in choices %}
+                <li onclick="submitAnswer('{{ loop.index0 }}')" class="choice">
+                    {{ choice }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script>
+        function submitAnswer(answer) {
+            fetch('/submit_answer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ selected_answer: answer })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.quiz_complete) {
+                    window.location.href = '/results';
+                } else {
+                    window.location.href = '/';
+                }
+            });
+        }
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const choices = document.querySelectorAll('.choice');
+            if (e.key >= '1' && e.key <= choices.length.toString()) {
+                const index = parseInt(e.key) - 1;
+                submitAnswer(index.toString());
+            }
+        });
+    </script>
+</body>
+</html>

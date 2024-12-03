@@ -1,0 +1,90 @@
+[
+  {
+    "timestamp": "2024-11-27 16:34:26",
+    "url": "https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/section/2/subsection/2.1",
+    "page_text": "Virginia Department of Motor Vehicles\n2.1 - Traffic Signals\n  Traffic signals, signs and pavement markings are used for traffic control to provide a smooth, orderly flow of traffic. It is important to understand and obey them. It is illegal to avoid these traffic controls by cutting through a parking lot or field.\n  Obey all signs and signals unless directed by a police officer. Always follow the officer's direction.\nTraffic signals apply to drivers, motorcycle riders, bicyclists, moped riders and pedestrians.\n  Red light: At a red light, come to a complete stop at the stop line or, if there is no stop line, before entering the intersection or before reaching the crosswalk. Remain stopped as long as the signal is red, unless turns are allowed.\n   Right turn on red: You may turn right while the traffic signal displays a red light. Before turning, you must come to a complete stop. Look both ways and yield the right-of-way to pedestrians and other traffic. Be sure to check for less visible vehicles such as motorcycles, bicycles and mopeds. You may not turn right on red if signs are posted at the intersection that read \"No Turn on Red,\" or if a red arrow pointing to the right is displayed.\n  Left turn on red: You may turn left at a red light if you are on a one-way street and turning left onto another one-way street while the traffic signal displays a red light. Before turning, you must come to a complete stop. Look both ways and yield the right-of-way to pedestrians and other traffic. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. You may not turn left on red if signs are posted at the intersection that read \"No Turn on Red,\" or if a red arrow pointing to the left is displayed.\n  Red arrow: A red arrow means you must stop if you intend to move in the direction of the arrow. You may not proceed in the direction of the arrow as long as the red arrow is displayed, unless signs are posted at the intersection that read \"Right on Red Arrow After Stop\" or \"Left on Red Arrow After Stop.\" Virginia law prohibits right and left turns at red arrow lights.\n  Note: If you are traveling in another state, make sure you know its laws for right and left turns at red and red arrow lights.\n    Flashing red light: At a flashing red light, come to a complete stop and yield to oncoming vehicles and pedestrians. You may go when the way is clear. At a railroad crossing, you must come to a complete stop even if you don't see a train.\n  Flashing red arrow: At a flashing red arrow, come to a complete stop, yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection, and proceed in the direction of the arrow when the way is clear.\n  Yellow light or arrow: A yellow light or arrow are cautions warning that the light is about to change. If you have not entered  the intersection, stop or, if unsafe to stop, cautiously go through it. If you are already in the intersection, go through it cautiously. Do not speed up to beat the light.\n  Flashing yellow light: A flashing yellow light means slow down and proceed with caution. Flashing yellow lights are at locations with higher-than-normal hazardous conditions.\n  Flashing yellow arrow: At a flashing yellow arrow, you may turn in the direction of the arrow, if the way is clear. Yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. If a traffic light changes from red to flashing yellow arrow while a pedestrian is in the intersection, allow the pedestrian to cross the street before turning.\n  Green light or arrow: At a green light, you may go if the way is clear. At a green arrow, you may go in the direction of the arrow if the way is clear. If you are turning without a green arrow, you must yield the right-of-way to vehicles coming from the other direction and pedestrians in the intersection. Be sure to check for less visible vehicles such as motorcycles, bicycles, and mopeds. If a traffic light changes from red to green while a pedestrian is in the street, allow the pedestrian to cross the street before turning.\n  Out of service signals: When traffic signals are not working because of a power outage or other problem and not displaying any lights, you are required to stop, proceeding through the intersection as though it were an all-way stop. This does not apply if a law enforcement officer or other authorized person is directing traffic at the intersection, or if portable stop signs are in use.\n  Lane use signals indicate lanes where you can and cannot drive during different hours of the day.\n  Red X: Never drive in a lane marked with a red X signal.\n  Yellow X or Yellow Diagonal Downward Arrow: These signals mean that you should move out of the lane as soon as safely possible.\n  Green Arrow: You are permitted to drive in a lane marked with a green arrow signal.\n  Left-turn Arrow: You are permitted to enter in a lane marked with a one-way or two-way arrow only to turn in the direction of the arrow.\nSection 2.1 Quiz",
+    "buttons": [
+      {
+        "text": "",
+        "html": "<i class=\"icon-list-ul left-off-canvas-toggle ng-scope\" ng-click=\"removeClass('move-left');\" ng-if=\"contentmenu !== 'false'\" role=\"button\" style=\"display: block;\"></i>"
+      },
+      {
+        "text": "",
+        "html": "<i class=\"icon-bars right-off-canvas-toggle\" ng-click=\"removeClass('move-right');\" role=\"button\" aria-controls=\"navigation\"></i>"
+      },
+      {
+        "text": "",
+        "html": "<i class=\"icon-chevron-left\" role=\"button\" tabindex=\"0\" aria-label=\"previous section\"></i>"
+      },
+      {
+        "text": "Section 2.1 Quiz",
+        "html": "<span class=\"button btn primary ng-binding\" ng-click=\"startQuiz()\" role=\"button\" aria-label=\"Section Quiz\">Section 2.1 Quiz</span>"
+      },
+      {
+        "text": "",
+        "html": "<div class=\"small-3 next columns nav-container\" ng-click=\"vm.next()\" role=\"button\" tabindex=\"0\" aria-label=\"next section\">\n\t<!-- ngIf: !last --><i class=\"icon-chevron-right ng-scope\" ng-if=\"!last\"></i><!-- end ngIf: !last -->\n</div>"
+      }
+    ],
+    "questions": [],
+    "options": [],
+    "feedback": [],
+    "images": [
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redLight.jpg",
+        "alt": "Red Light"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redArrow.jpg",
+        "alt": "Red Arrow"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redFlash.jpg",
+        "alt": "Red Flashing Light"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowLight.jpg",
+        "alt": "Yellow Light"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow.jpg",
+        "alt": "Yellow Arrow"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowFlash.jpg",
+        "alt": "Yellow Flashing Light"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenLight.jpg",
+        "alt": "Green Light"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrow.jpg",
+        "alt": "Green Arrow"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2redX.jpg",
+        "alt": "Red X"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowX.jpg",
+        "alt": "Yellow X"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2yellowArrow2.jpg",
+        "alt": "Yellow Arrow"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2greenArrowdown.jpg",
+        "alt": "Green Down Arrow"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow1.jpg",
+        "alt": "Left Turn Arrow"
+      },
+      {
+        "src": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/2leftTurnArrow2.jpg",
+        "alt": "Left Turn Arrow"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "title": "Virginia Driver's Manual",
+  "date_scraped": "2024-11-27T15:45:57.341889",
+  "sections": [
+    {
+      "number": 1,
+      "title": "About DMV Testing",
+      "file": "dmv_content/section_1.json"
+    },
+    {
+      "number": 2,
+      "title": "Signals, Signs and Pavement Markings",
+      "file": "dmv_content/section_2.json"
+    },
+    {
+      "number": 3,
+      "title": "Safe Driving",
+      "file": "dmv_content/section_3.json"
+    },
+    {
+      "number": 4,
+      "title": "Seat Belts, Airbags and Child Safety Seats",
+      "file": "dmv_content/section_4.json"
+    },
+    {
+      "number": 5,
+      "title": "Penalties",
+      "file": "dmv_content/section_5.json"
+    },
+    {
+      "number": 6,
+      "title": "License Types",
+      "file": "dmv_content/section_6.json"
+    },
+    {
+      "number": 7,
+      "title": "Other Information",
+      "file": "dmv_content/section_7.json"
+    },
+    {
+      "number": 8,
+      "title": "Table of Contents",
+      "file": "dmv_content/section_8.json"
+    }
+  ]
+}

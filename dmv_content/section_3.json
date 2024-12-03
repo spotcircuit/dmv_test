@@ -1,0 +1,55 @@
+{
+  "content": [
+    "Every time you get behind the wheel, you accept responsibility for your actions. You must obey Virginia's traffic laws, and ensure your safety and the safety of your passengers and other motorists, pedestrians and bicyclists on the roadways.",
+    "Sit straight but relaxed and place your hands on the steering wheel. If your steering wheel was a clock, your hands should be at the 8 o'clock and 4 o'clock positions. Hold the wheel with your fingers and thumbs. Avoid gripping it with your palms.",
+    "A speed limit is the maximum legal speed you can travel on a road under ideal conditions. You may drive slower than the posted speed, as long as you don't impede the normal movement of traffic, but it is illegal to drive any faster. By law you must drive slower where signs indicate a school zone speed limit or work zone speed limit is in effect, and/or if conditions such as road construction or bad weather make the posted speed unsafe.  According to Virginia law, if you are driving 20 or more miles per hour above the speed limit, or over 85 MPH, a law enforcement officer may charge you with reckless driving, regardless of the speed limit. If convicted of reckless driving, it is considered a misdemeanor criminal offense. The court may require a fine, suspend your driving privilege and/or impose a jail sentence. If the violation results in death and the operator's license was suspended or revoked at the time of the offense, it may be considered a felony, which carries more serious consequences. You are subject to an additional $100 fine if convicted of driving between 81 and 85 MPH in a 65-MPH zone. If the violation results in death, it may be considered a felony, which carries more serious consequences. It is illegal to use radar detectors in Virginia.",
+    "Unless there is a speed limit sign stating otherwise, the maximum speed limit for passenger vehicles and motorcycles is 25 mph for school, business and residential areas; 35 mph for unpaved roads and 55 mph for all other roads. Some school zones may have automated photo enforcement, as indicated by signs with the message \"Speed Photo Enforced\" or similar.",
+    "You must always stop your vehicle:",
+    "When approaching a stop sign and the car in front of you proceeds, stop at the sign and proceed when the way is clear.",
+    "In the following pictures, the red vehicles must stop and remain stopped until all children are clear of the roadway and the bus moves again.",
+    "Three factors determine the distance that it takes to stop your vehicle: perception time, reaction distance and braking distance.",
+    "Perception time: The time it takes you to recognize a hazard.",
+    "Reaction distance: The distance your vehicle travels between the time you recognize a problem and the time you apply the brakes.",
+    "Braking distance: The distance your car travels after you apply the brakes.",
+    "Perception time, reaction distance and braking distance are affected by weather, visibility, and your mental and physical condition. Braking distance is also affected by how fast your vehicle is traveling, the condition of your brakes and tires, and the pavement condition. For example, wet pavement can double your braking distance.",
+    "Average stopping distance on dry, level pavement.",
+    "Source: Code of Virginia section 46.2-880",
+    "Antilock Brakes",
+    "If your vehicle has antilock brakes, be sure that you understand how they work. Check your vehicle owner's manual and practice braking before you go out on the road. Remember, never pump antilock brakes."
+  ],
+  "images": [
+    {
+      "filename": "3handPosition_v1.jpg",
+      "alt": "Hand Position",
+      "url": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/3handPosition_v1.jpg"
+    },
+    {
+      "filename": "schoolzonespeed.jpg",
+      "alt": "Scool Zone Speed",
+      "url": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/schoolzonespeed.jpg"
+    },
+    {
+      "filename": "3redCar.jpg",
+      "alt": "Red Car",
+      "url": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/3redCar.jpg"
+    },
+    {
+      "filename": "3busRoad1_v1.jpg",
+      "alt": "Bus on Road",
+      "url": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/3busRoad1_v1.jpg"
+    },
+    {
+      "filename": "3busRoad2_v1.jpg",
+      "alt": "Bus on Road",
+      "url": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/3busRoad2_v1.jpg"
+    },
+    {
+      "filename": "3safeStop.jpg",
+      "alt": "Safe Stopping Distance",
+      "url": "https://transactions.dmv.virginia.gov/dmv-manuals/manuals/images/1/3safeStop.jpg"
+    }
+  ],
+  "title": "",
+  "section_number": 3,
+  "section_title": "Safe Driving"
+}

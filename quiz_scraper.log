@@ -1,0 +1,613 @@
+2024-11-27 16:20:09,478 - INFO - ====== WebDriver manager ======
+2024-11-27 16:20:10,617 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:20:11,033 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:20:11,395 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:20:12,570 - INFO - Scraping quiz: https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/quiz/2/subsection/2.1
+2024-11-27 16:20:27,435 - INFO - Scraping quiz: https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/quiz/2/subsection/2.2
+2024-11-27 16:20:40,596 - INFO - Scraping quiz: https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/quiz/2/subsection/2.3
+2024-11-27 16:22:10,836 - INFO - ====== WebDriver manager ======
+2024-11-27 16:22:11,718 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:22:12,107 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:22:12,482 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:22:13,915 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/2
+2024-11-27 16:22:28,937 - ERROR - Error navigating to quiz for section 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D8FD86]
+	(No symbol) [0x00D8FFCB]
+	(No symbol) [0x00DCD952]
+	(No symbol) [0x00DB1F44]
+	(No symbol) [0x00DCB51E]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:28,937 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/2
+2024-11-27 16:22:32,396 - ERROR - Error navigating to quiz for section 2: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,396 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/2
+2024-11-27 16:22:32,397 - ERROR - Error navigating to quiz for section 2: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,397 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/2
+2024-11-27 16:22:32,398 - ERROR - Error navigating to quiz for section 2: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,399 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/3
+2024-11-27 16:22:32,400 - ERROR - Error navigating to quiz for section 3: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,400 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/3
+2024-11-27 16:22:32,400 - ERROR - Error navigating to quiz for section 3: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,400 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/3
+2024-11-27 16:22:32,401 - ERROR - Error navigating to quiz for section 3: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,401 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/4
+2024-11-27 16:22:32,402 - ERROR - Error navigating to quiz for section 4: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,402 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/4
+2024-11-27 16:22:32,403 - ERROR - Error navigating to quiz for section 4: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,403 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/4
+2024-11-27 16:22:32,404 - ERROR - Error navigating to quiz for section 4: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,404 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/5
+2024-11-27 16:22:32,405 - ERROR - Error navigating to quiz for section 5: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,405 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/5
+2024-11-27 16:22:32,406 - ERROR - Error navigating to quiz for section 5: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,406 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/6
+2024-11-27 16:22:32,407 - ERROR - Error navigating to quiz for section 6: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,407 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/6
+2024-11-27 16:22:32,408 - ERROR - Error navigating to quiz for section 6: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:32,408 - INFO - Navigating to section: https://www.dmv.virginia.gov/drivers/#manual/section/7
+2024-11-27 16:22:32,409 - ERROR - Error navigating to quiz for section 7: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:22:34,476 - WARNING - Only found 0 questions. Need at least 35!
+2024-11-27 16:24:38,199 - INFO - ====== WebDriver manager ======
+2024-11-27 16:24:39,192 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:24:39,620 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:24:40,024 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:24:41,151 - INFO - Navigating to: https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/section/2/subsection/2.1
+2024-11-27 16:24:56,201 - ERROR - Error scraping section 2.2.1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D8FD86]
+	(No symbol) [0x00D8FFCB]
+	(No symbol) [0x00DCD952]
+	(No symbol) [0x00DB1F44]
+	(No symbol) [0x00DCB51E]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:26:12,405 - INFO - ====== WebDriver manager ======
+2024-11-27 16:26:13,474 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:26:13,844 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:26:14,269 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:26:15,351 - INFO - Navigating to: https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/section/2/subsection/2.1
+2024-11-27 16:28:05,449 - INFO - ====== WebDriver manager ======
+2024-11-27 16:28:06,427 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:28:06,811 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:28:07,212 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:28:08,523 - INFO - Navigating to: https://transactions.dmv.virginia.gov/dmv-manuals/#/manual/1/section/2/subsection/2.1
+2024-11-27 16:29:54,704 - INFO - ====== WebDriver manager ======
+2024-11-27 16:29:55,771 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:29:56,166 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:29:56,553 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:30:14,718 - ERROR - Error navigating to section 2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D8FD86]
+	(No symbol) [0x00D8FFCB]
+	(No symbol) [0x00DCD952]
+	(No symbol) [0x00DB1F44]
+	(No symbol) [0x00DCB51E]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:30:14,718 - ERROR - Error scraping section 2.2.1: Could not navigate to section 2
+2024-11-27 16:31:23,749 - INFO - ====== WebDriver manager ======
+2024-11-27 16:31:24,657 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:31:25,047 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:31:25,458 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:31:33,345 - INFO - Found section: Signals, Signs and Pavement Markings
+2024-11-27 16:31:35,424 - INFO - Found quiz button
+2024-11-27 16:31:47,652 - ERROR - Error scraping section 2.2.1: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D8FD86]
+	(No symbol) [0x00D8FFCB]
+	(No symbol) [0x00DCD952]
+	(No symbol) [0x00DB1F44]
+	(No symbol) [0x00DCB51E]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:42:31,514 - INFO - ====== WebDriver manager ======
+2024-11-27 16:42:32,555 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:42:32,941 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:42:33,319 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:42:41,296 - INFO - Quiz page loaded
+2024-11-27 16:43:41,906 - INFO - ====== WebDriver manager ======
+2024-11-27 16:43:42,955 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:43:43,341 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:43:43,712 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:43:51,714 - INFO - Main page loaded
+2024-11-27 16:44:02,285 - ERROR - Timeout waiting for element: //div[contains(text(), 'Section 2')]
+2024-11-27 16:44:12,790 - ERROR - Timeout waiting for element: //button[contains(text(), 'Quiz')]
+2024-11-27 16:44:15,791 - INFO - Quiz page loaded
+2024-11-27 16:44:15,793 - ERROR - Error recording quiz state: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D2D93B]
+	(No symbol) [0x00DB800F]
+	(No symbol) [0x00DCAE49]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:44:52,285 - INFO - ====== WebDriver manager ======
+2024-11-27 16:44:53,235 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:44:53,621 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:44:54,016 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:45:01,931 - INFO - Main page loaded
+2024-11-27 16:45:04,004 - INFO - Clicked sign icon
+2024-11-27 16:45:14,510 - ERROR - Timeout waiting for element: //div[contains(text(), 'Section 2')]
+2024-11-27 16:45:25,039 - ERROR - Timeout waiting for element: //button[contains(text(), 'Quiz')]
+2024-11-27 16:45:28,040 - INFO - Quiz page loaded
+2024-11-27 16:45:38,589 - ERROR - Timeout waiting for element: question-text
+2024-11-27 16:49:26,080 - INFO - ====== WebDriver manager ======
+2024-11-27 16:49:27,074 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:49:27,466 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:49:27,844 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:49:34,860 - INFO - Main page loaded
+2024-11-27 16:49:36,935 - INFO - Clicked sign icon
+2024-11-27 16:49:41,999 - INFO - Clicked Quiz button
+2024-11-27 16:49:45,000 - INFO - Quiz page loaded
+2024-11-27 16:49:55,543 - ERROR - Timeout waiting for element: question-text
+2024-11-27 16:51:25,073 - INFO - ====== WebDriver manager ======
+2024-11-27 16:51:26,079 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:51:26,438 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:51:26,809 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:51:34,322 - INFO - Main page loaded
+2024-11-27 16:51:36,398 - INFO - Clicked sign icon
+2024-11-27 16:51:41,451 - INFO - Clicked Quiz button
+2024-11-27 16:51:44,452 - INFO - Quiz page loaded
+2024-11-27 16:51:54,989 - ERROR - Timeout waiting for element: //div[contains(@class, 'question')] | //p[contains(@class, 'question')]
+2024-11-27 16:51:54,989 - ERROR - Error handling question: EOF when reading a line
+2024-11-27 16:52:36,706 - INFO - ====== WebDriver manager ======
+2024-11-27 16:52:37,707 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:52:38,088 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:52:38,499 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:52:51,418 - WARNING - Timeout waiting for Angular
+2024-11-27 16:53:01,540 - WARNING - Timeout waiting for Angular
+2024-11-27 16:53:01,554 - ERROR - Error navigating to quiz: Message: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00EE33E3+25059]
+	(No symbol) [0x00E6CDE4]
+	(No symbol) [0x00D4BEC3]
+	(No symbol) [0x00D519D1]
+	(No symbol) [0x00D538EA]
+	(No symbol) [0x00D53967]
+	(No symbol) [0x00D8F999]
+	(No symbol) [0x00D8FFCB]
+	(No symbol) [0x00DCD952]
+	(No symbol) [0x00DB1F44]
+	(No symbol) [0x00DCB51E]
+	(No symbol) [0x00DB1C96]
+	(No symbol) [0x00D83FAC]
+	(No symbol) [0x00D84F3D]
+	GetHandleVerifier [0x011D5543+3113795]
+	GetHandleVerifier [0x011EA20A+3198986]
+	GetHandleVerifier [0x011E29E2+3168226]
+	GetHandleVerifier [0x00F83250+680016]
+	(No symbol) [0x00E7572D]
+	(No symbol) [0x00E729D8]
+	(No symbol) [0x00E72B75]
+	(No symbol) [0x00E657D0]
+	BaseThreadInitThunk [0x75E47BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2024-11-27 16:53:01,555 - ERROR - Failed to navigate to quiz
+2024-11-27 16:53:48,566 - INFO - ====== WebDriver manager ======
+2024-11-27 16:53:49,543 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:53:49,902 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-27 16:53:50,287 - INFO - Driver [C:\Users\Big Daddy Pyatt\.wdm\drivers\chromedriver\win64\131.0.6778.85\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-27 16:54:03,258 - WARNING - Timeout waiting for Angular
+2024-11-27 16:54:13,373 - WARNING - Timeout waiting for Angular

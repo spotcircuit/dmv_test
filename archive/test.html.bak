@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virginia DMV Practice Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Virginia DMV Practice Test 🚗</h1>
+            <div class="test-progress">
+                <div class="progress-info">
+                    <span>Question {{ current_question }}/{{ total_questions }}</span>
+                    <span>Score: {{ correct_answers }}/{{ total_questions }}</span>
+                    <div id="timer" data-time="{{ time_limit }}">Time Remaining: 50:00</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: {{ progress }}%"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="section-info">
+            <div class="section-header">
+                <h2>{{ section_emoji }} {{ section_title }}</h2>
+                <p class="section-description">{{ section_description }}</p>
+            </div>
+            <div class="section-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Required Questions:</span>
+                    <span class="stat-value">{{ section_questions }}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Current Score:</span>
+                    <span class="stat-value">{{ correct_answers }}/{{ current_question - 1 }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <p class="question-text">{{ question.question }}</p>
+            <div class="options">
+                {% for option in question.options %}
+                <button class="option" onclick="submitAnswer('{{ option }}')">{{ option }}</button>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn" onclick="previousQuestion()" {% if current_question == 1 %}disabled{% endif %}>Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()" {% if current_question == total_questions %}disabled{% endif %}>Next</button>
+            <button id="regenerateBtn" onclick="window.location.href='/regenerate'" class="regenerate-btn">New Quiz 🔄</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        let currentQuestion = {{ current_question }};
+        let totalQuestions = {{ total_questions }};
+        
+        function updateQuestion(data) {
+            document.querySelector('.question-text').textContent = data.question.question;
+            const optionsContainer = document.querySelector('.options');
+            optionsContainer.innerHTML = '';
+            data.question.options.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'option';
+                button.textContent = option;
+                button.onclick = () => submitAnswer(option);
+                optionsContainer.appendChild(button);
+            });
+
+            // Update section information
+            document.querySelector('.section-header h2').textContent = `${data.section_emoji} ${data.section_title}`;
+            document.querySelector('.section-description').textContent = data.section_description;
+
+            // Update progress
+            document.querySelector('.progress-info span:first-child').textContent = 
+                `Question ${data.current_question}/${data.total_questions}`;
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = data.current_question === 1;
+            document.getElementById('nextBtn').disabled = data.current_question === data.total_questions;
+        }
+
+        function submitAnswer(answer) {
+            fetch('/submit_answer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    answer: answer,
+                    question_number: currentQuestion
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const result = document.getElementById('result');
+                result.textContent = data.message;
+                result.className = `result ${data.correct ? 'correct' : 'incorrect'}`;
+                
+                if (data.correct) {
+                    result.innerHTML += ' ✅';
+                } else {
+                    result.innerHTML += ' ❌';
+                }
+                
+                // Update score
+                document.querySelector('.progress-info span:nth-child(2)').textContent = 
+                    `Score: ${data.correct_answers}/${totalQuestions}`;
+                
+                // Auto-advance to next question after a delay
+                setTimeout(() => {
+                    if (currentQuestion < totalQuestions) {
+                        nextQuestion();
+                    }
+                }, 1500);
+            });
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 1) {
+                currentQuestion--;
+                fetch(`/question/${currentQuestion}`)
+                    .then(response => response.json())
+                    .then(data => updateQuestion(data));
+            }
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < totalQuestions) {
+                currentQuestion++;
+                fetch(`/question/${currentQuestion}`)
+                    .then(response => response.json())
+                    .then(data => updateQuestion(data));
+            }
+        }
+
+        // Timer functionality
+        function startTimer(duration) {
+            let timer = duration;
+            const timerDisplay = document.getElementById('timer');
+            
+            const interval = setInterval(() => {
+                const minutes = parseInt(timer / 60, 10);
+                const seconds = parseInt(timer % 60, 10);
+
+                timerDisplay.textContent = `Time Remaining: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    timerDisplay.textContent = "Time's up!";
+                    // Disable all option buttons
+                    document.querySelectorAll('.option').forEach(button => {
+                        button.disabled = true;
+                    });
+                }
+            }, 1000);
+        }
+
+        // Start the timer when the page loads
+        window.onload = () => {
+            const timeLimit = document.getElementById('timer').dataset.time;
+            startTimer(timeLimit);
+        };
+    </script>
+</body>
+</html>

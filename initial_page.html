@@ -1,0 +1,86 @@
+<html class="no-js" lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	 <!-- Google Tag Manager -->
+	 <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-13XQ3VP601&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4bk0v9115265904za200"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-62DD2VDF1B&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4bk0v9115265904za200"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PBZSJKT"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PBZSJKT');</script>
+		<!-- End Google Tag Manager -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Manuals - Virginia Department of Motor Vehicles</title>
+	<meta name="description" content="Virginia DMV Driver's Manuals">
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon-152x152.png">
+	<link rel="icon" href="apple-touch-icon-152x152.png">
+	<link rel="icon" href="manuals.ico">
+
+	<link rel="stylesheet" href="https://transactions.dmv.virginia.gov/dmv-manuals/main.css">
+	<style>
+		.es-btn{
+			background: orange;
+			border-radius: 4px;
+			color: #FFF !important;
+			font-weight: 800;
+			opacity: 0.75;
+			text-decoration: none !important;
+			text-transform: uppercase;
+			padding: 10px 15px;
+			margin-bottom: 0;
+			margin-left: 18px;
+			transition: all 0.5s ease;
+		}
+		.es-btn:hover{
+			opacity: 1;
+			margin-bottom: 10px;
+		}
+	</style>
+<script async="" src="https://siteimproveanalytics.com/js/siteanalyze_6289812.js"></script><style type="text/css"></style></head>
+
+<body id="ng-app" data-ng-app="Manual" class="manuals ng-scope">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZSJKT"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <b><a href="http://browsehappy.com/">upgrade
+	your browser</a></b> to use this study guide, or view the Driver's Manual in <b><a href="https://www.dmv.virginia.gov/webdoc/pdf/dmv39.pdf" alt="PDF format">PDF Format</a></b>.</p>
+<![endif]-->
+<dmv-brand contentmenu="true" class="ng-isolate-scope"><div class="off-canvas-wrap ng-isolate-scope" data-offcanvas=""><header role="banner" dmv-header="" contentmenu="true" class="ng-isolate-scope"><div class="small-12 columns global-header manual-header"><!-- ngIf: contentmenu !== 'false' --><i class="icon-list-ul left-off-canvas-toggle ng-scope" ng-click="removeClass('move-left');" ng-if="contentmenu !== 'false'" role="button" style="display: none;"></i><!-- end ngIf: contentmenu !== 'false' --><i class="icon-dmv"></i><small class="small-12">Virginia Department of Motor Vehicles</small><i class="icon-bars right-off-canvas-toggle" ng-click="removeClass('move-right');" role="button" aria-controls="navigation"></i></div></header><div class="inner-wrap"><aside class="left-off-canvas-menu" role="navigation" label="Manual Sections" aria-expanded="false"><ul data-content-menu="" class="ng-isolate-scope"><!-- ngRepeat: section in model.sections --></ul></aside><aside class="right-off-canvas-menu" role="navigation" label="Main Navigation" aria-expanded="false"><div ng-transclude="">
+	<main-menu class="ng-scope ng-isolate-scope"><ul><li><a href="https://www.dmv.virginia.gov"><i class="icon-home"></i>DMV Home</a></li><!-- ngIf: !allManuals && !manualHome && !comments --><!-- ngIf: !allManuals --><!-- ngIf: loggedIn && !contactUs && !comments --><!-- ngIf: loggedIn --></ul></main-menu>
+</div></aside><a class="exit-off-canvas"></a></div></div></dmv-brand>
+<div class="dmvNow-view-container">
+	<!-- uiView:  --><div data-ui-view="" data-autoscroll="false" class="viewleft margin-top-3 ng-scope" role="main" style=""><!-- ngIf: vm.isLoading -->
+
+<!-- ngIf: !vm.isLoading --><div class="row app-container ng-scope" ng-if="!vm.isLoading">
+	<div class="small-12 medium-8 medium-offset-2 columns body-copy">
+		<div class="manual-copy row">
+			<div manual-panels="" user="vm.user" class="ng-isolate-scope"><!-- ngRepeat: manual in vm.model.manualData --><div class="small-12 medium-6 large-4 columns end ng-scope" ng-repeat="manual in vm.model.manualData"><div class="panel" ng-class="{'user' : user}" role="button" ng-click="vm.goTo(manual.manualID)" aria-label=""><div class="row"><div class="small-10 small-offset-1 columns section-number"><b class="ng-binding">Driver's Study Guide</b><!-- ngIf: vm.model.sectionID === 'TBOC' --></div><div class="small-12 columns section-title"><p class="ng-binding"></p><i class="icon-dmv-car"></i></div><!-- ngIf: !manual.isComplete && vm.user._id --><!-- ngIf: manual.isComplete --></div></div></div><!-- end ngRepeat: manual in vm.model.manualData --><div class="small-12 medium-6 large-4 columns end ng-scope" ng-repeat="manual in vm.model.manualData"><div class="panel" ng-class="{'user' : user}" role="button" ng-click="vm.goTo(manual.manualID)" aria-label=""><div class="row"><div class="small-10 small-offset-1 columns section-number"><b class="ng-binding">Motorcycle Study Guide</b><!-- ngIf: vm.model.sectionID === 'TBOC' --></div><div class="small-12 columns section-title"><p class="ng-binding"></p><i class="icon-motorcycle"></i></div><!-- ngIf: !manual.isComplete && vm.user._id --><!-- ngIf: manual.isComplete --></div></div></div><!-- end ngRepeat: manual in vm.model.manualData --></div>
+		<!-- ngIf: !vm.isLoading --><div class="small-12 medium-6 large-4 columns end ng-scope" ng-if="!vm.isLoading">
+			<div class="panel" role="button" ui-sref="oldexams">
+				<div class="small-10 small-offset-1 columns section-number" style="line-height:1rem;padding-bottom:0.375rem;"><b>Other Practice Exams</b></div>
+				<div class="small-12 columns section-title" style="margin-top:0.875rem;"><i class="icon-list-ul"></i></div>
+			</div>
+		</div><!-- end ngIf: !vm.isLoading -->
+	</div>
+	</div>
+</div><!-- end ngIf: !vm.isLoading -->
+</div>
+</div>
+
+	<iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><script src="https://transactions.dmv.virginia.gov/dmv-manuals/dmv.core.libs.js"></script>
+	<script src="https://transactions.dmv.virginia.gov/dmv-manuals/dmvCore.min.js"></script>
+	<script src="https://transactions.dmv.virginia.gov/dmv-manuals/dmvmanuals.all.js"></script>
+
+	  <!-- Google tag (gtag.js) -->
+	  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-13XQ3VP601"></script>
+	  <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	  
+		gtag('config', 'G-13XQ3VP601');
+	  </script>
+
+
+</body></html>

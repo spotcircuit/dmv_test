@@ -1,0 +1,4 @@
+flask>=3.0.0
+flask-session>=0.8.0
+Pillow==9.5.0  # For image handling
+requests==2.31.0  # For HTTP requests
