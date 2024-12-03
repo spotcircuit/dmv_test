@@ -46,8 +46,12 @@ def load_questions():
                 logging.info(f"Processing question {i}: {q.get('question', 'NO QUESTION FOUND')}")
                 q['id'] = str(i)
                 q['choices'] = q['options']
-                q['correct_index'] = int(q['answer'])
-                app.questions_dict[q['id']] = q
+                app.questions_dict[str(i)] = q  # Add this line to store the question in the dictionary
+                
+                answer_map = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
+                q['correct_index'] = answer_map.get(q['answer'], -1)  # Default to -1 if not found
+                if q['correct_index'] == -1:
+                    logging.warning(f"Invalid answer for question {i}: {q['answer']}")
                 
                 if 'image' in q and q['image'] and q['image'].strip():
                     q['image'] = f'dmv_images/{q["image"].strip()}'
@@ -143,15 +147,26 @@ def index():
         session['wrong_count'] = 0
         session.modified = True
     
+    logging.debug(f"Sections loaded: {sections}")
+    logging.debug(f"Session data: {session.items()}")
+    
     current_section_idx = session['current_section']
     current_question_idx = session['current_question']
+    
+    logging.debug(f"Current section index: {current_section_idx}, Total sections: {len(sections)}")
+    logging.debug(f"Current question index: {current_question_idx}, Total questions in current section: {len(sections[current_section_idx]['question_ids'])}")
     
     if current_section_idx >= len(sections):
         return redirect(url_for('results'))
         
     current_section = sections[current_section_idx]
     question_id = current_section['question_ids'][current_question_idx]
-    question = app.questions_dict[question_id]
+    
+    try:
+        question = app.questions_dict[question_id]
+    except KeyError:
+        logging.warning(f"Invalid question ID: {question_id}")
+        return redirect(url_for('results'))
     
     return render_template('test.html',
                          question=question['question'],
@@ -161,54 +176,38 @@ def index():
 # Defining the Submit Answer Route
 @app.route('/submit_answer', methods=['POST'])
 def submit_answer():
-    if 'current_section' not in session:
-        return jsonify({'error': 'Session expired'}), 400
-    
     data = request.get_json()
-    selected_index = int(data.get('selected_answer', -1))
+    selected_answer = int(data['selected_answer'])
     
-    current_section_idx = session['current_section']
-    current_question_idx = session['current_question']
-    sections = session['sections']
+    current_section = session['current_section']
+    current_question = session['current_question']
     
-    if current_section_idx >= len(sections):
-        return jsonify({'error': 'Quiz complete'})
-    
-    current_section = sections[current_section_idx]
-    question_id = current_section['question_ids'][current_question_idx]
+    if current_section >= len(sections):
+        return jsonify({'quiz_complete': True})
+        
+    question_id = sections[current_section]['question_ids'][current_question]
     question = app.questions_dict[question_id]
     
-    is_correct = selected_index == question['correct_index']
+    is_correct = selected_answer == question['correct_index']
     
     if is_correct:
-        session['score'] = session.get('score', 0) + 1
-        feedback = "PERIODT! That's correct! 💅✨"
+        session['score'] += 1
     else:
-        session['wrong_count'] = session.get('wrong_count', 0) + 1
-        feedback = get_wrong_answer_roast(session['wrong_count'])
+        session['wrong_count'] += 1
     
-    next_question_idx = current_question_idx + 1
-    next_section_idx = current_section_idx
+    session['current_question'] += 1
+    if session['current_question'] >= len(sections[current_section]['question_ids']):
+        session['current_section'] += 1
+        session['current_question'] = 0
     
-    if next_question_idx >= len(current_section['question_ids']):
-        next_question_idx = 0
-        next_section_idx = current_section_idx + 1
-    
-    session['current_question'] = next_question_idx
-    session['current_section'] = next_section_idx
     session.modified = True
     
-    if next_section_idx >= len(sections):
-        return jsonify({
-            'is_correct': is_correct,
-            'feedback': feedback,
-            'quiz_complete': True
-        })
+    quiz_complete = session['current_section'] >= len(sections)
     
     return jsonify({
-        'is_correct': is_correct,
-        'feedback': feedback,
-        'quiz_complete': False
+        'correct': is_correct,
+        'explanation': question.get('explanation', 'No explanation available'),
+        'quiz_complete': quiz_complete
     })
 
 # Defining the Results Route
