@@ -1,25 +1,37 @@
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
+*.py[cod]
+*$py.class
+
+# Logs
 *.log
+logs/
+app_debug.log
+
+# Environment
 .env
-flask_session/
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
 *.bak
-*.bak2
+*.swp
+*.swo
+*.tmp
+
+# Session files
+flask_session/
+
+# Local development
+*.sqlite
+*.db
+
+# Backup files
+*_backup.*
+*.bak
