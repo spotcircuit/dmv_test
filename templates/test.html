@@ -385,11 +385,11 @@
             {% endif %}
 
             <div class="action-buttons">
-                <button onclick="window.location.href='{{ url_for('reload_questions') }}'" class="reload-btn">
-                    <i class="fas fa-sync-alt"></i> New Questions
-                </button>
                 <button onclick="window.location.href='{{ url_for('select_mode') }}'" class="mode-btn">
                     <i class="fas fa-exchange-alt"></i> Change Mode
+                </button>
+                <button onclick="window.location.href='{{ url_for('reload_questions') }}'" class="reload-btn">
+                    <i class="fas fa-sync-alt"></i> New Questions
                 </button>
             </div>
         </div>

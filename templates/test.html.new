@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMV Practice Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* ... existing styles ... */
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .mode-btn, .reload-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .mode-btn {
+            background: var(--accent);
+            color: white;
+        }
+        .reload-btn {
+            background: var(--secondary);
+            color: white;
+        }
+    </style>
+</head>
+<body data-mode="{{ mode }}">
+    <div class="question-container">
+        <div class="test-header">
+            <div class="mode-indicator {% if mode == 'test' %}test-mode{% else %}practice-mode{% endif %}">
+                <i class="fas {% if mode == 'test' %}fa-clipboard-check{% else %}fa-book{% endif %}"></i>
+                {{ mode|title }} Mode
+            </div>
+            
+            {% if mode == 'test' %}
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-label">Progress</span>
+                    <span class="stat-value">{{ progress.current }}/{{ progress.total }}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value">
+                        <span class="correct-count">✨ {{ progress.correct }}</span>
+                        <span class="wrong-count">💀 {{ progress.wrong }}</span>
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Streak</span>
+                    <span class="stat-value">🔥 {{ progress.streak }}{% if progress.max_streak > progress.streak %} (Best: {{ progress.max_streak }}){% endif %}</span>
+                </div>
+            </div>
+            {% else %}
+            <div class="practice-info">
+                <div class="practice-message">
+                    <span class="emoji-vibe">📚 ✨</span>
+                    <p class="vibe-text">no pressure bestie! stay on each q until you get it right!</p>
+                    <p class="sub-vibe">fr fr this is your time to learn & slay 💅</p>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="action-buttons">
+                <button onclick="window.location.href='{{ url_for('select_mode') }}'" class="mode-btn">
+                    <i class="fas fa-exchange-alt"></i> Change Mode
+                </button>
+                <button onclick="window.location.href='{{ url_for('reload_questions') }}'" class="reload-btn">
+                    <i class="fas fa-sync-alt"></i> New Questions
+                </button>
+            </div>
+        </div>
+
+        <h3>{{ question.text }}</h3>
+        
+        {% if question.image %}
+        <img src="{{ url_for('static', filename='dmv_images/' + question.image) }}" alt="Question Image">
+        {% endif %}
+        
+        <div class="options">
+            {% for option in question.options %}
+            <button class="option" onclick="submitAnswer({{ loop.index0 }})">{{ option }}</button>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <div id="resultIcon"></div>
+                <h2 id="resultText"></h2>
+                <p id="explanationText"></p>
+                <button id="nextButton" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitAnswer(answer) {
+            fetch('/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ answer: answer })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.redirect) {
+                    window.location.href = data.redirect;
+                } else {
+                    showResult(data.correct, data.explanation);
+                    if (!data.stay_on_question) {
+                        document.getElementById('nextButton').style.display = 'block';
+                    }
+                }
+            });
+        }
+
+        function showResult(correct, explanation) {
+            const modal = document.getElementById('resultModal');
+            const overlay = document.getElementById('modalOverlay');
+            const resultIcon = document.getElementById('resultIcon');
+            const resultText = document.getElementById('resultText');
+            const explanationText = document.getElementById('explanationText');
+            const nextButton = document.getElementById('nextButton');
+
+            resultIcon.innerHTML = correct ? '✨' : '💀';
+            resultText.textContent = correct ? 'Correct!' : 'Wrong Answer';
+            explanationText.textContent = explanation || '';
+            
+            modal.classList.add('show');
+            overlay.classList.add('show');
+            
+            if (!correct && document.body.dataset.mode === 'practice') {
+                nextButton.style.display = 'none';
+            }
+        }
+
+        function nextQuestion() {
+            window.location.reload();
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('modalOverlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                const modal = document.getElementById('resultModal');
+                const overlay = document.getElementById('modalOverlay');
+                modal.classList.remove('show');
+                overlay.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
