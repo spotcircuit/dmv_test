@@ -1,541 +1,113 @@
-# Virginia DMV Practice Test
+# Virginia DMV Practice Test 🚗
 
-A Flask-based web application that provides an interactive practice test for the Virginia DMV permit exam, featuring engaging feedback and a modern user interface.
+A modern, interactive web application built with Flask that helps users prepare for the Virginia DMV permit exam. Features an engaging user interface, detailed feedback system, and comprehensive test coverage of all DMV manual topics.
 
-## Project Structure
-```
-virginia_permit_test/
-├── static/
-│   ├── dmv_images/      # Test question images
-│   └── styles.css       # Application styling
-├── templates/
-│   ├── test.html        # Main test interface
-│   ├── results.html     # Test results page
-│   └── image_test.html  # Image loading test page
-├── app.py              # Flask application
-├── new_questions.json  # Test questions database
-└── requirements.txt    # Project dependencies
-```
+## ✨ Features
 
-## Current Features
-- Interactive question-by-question test interface
-- Dynamic feedback system with humorous responses
-- Progress tracking through test sections
-- Image-based questions for road signs and scenarios
-- Results page with score breakdown
+- **Interactive Test Interface**: Dynamic question-by-question progression
+- **Comprehensive Coverage**: Questions from all major DMV manual sections
+- **Smart Question Selection**: Balanced distribution across categories
+- **Visual Learning**: Integrated road sign and scenario images
+- **Detailed Feedback**: Explanations for both correct and incorrect answers
+- **Progress Tracking**: Section-by-section progress monitoring
+- **Mobile Responsive**: Optimized for both desktop and mobile devices
+- **Score Analysis**: Detailed breakdown of performance by category
 
-## Installation
-1. Clone the repository
+## 🛠️ Tech Stack
+
+- **Backend**: Python 3.x with Flask
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Data Storage**: JSON-based question bank
+- **Image Processing**: Python Pillow for image optimization
+- **Testing**: Python unittest framework
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/spotcircuit/dmv_test.git
+   cd dmv_test
+   ```
+
 2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 3. Run the application:
-```bash
-python app.py
+   ```bash
+   python app.py
+   ```
+
+4. Access at http://localhost:3022
+
+## 📚 Project Structure
+
 ```
-4. Access the application at http://localhost:3022
-
-## Current Challenges
-- Image loading issues in the main test interface
-- Need to implement proper error handling for missing images
-- Further testing needed for question progression and scoring
-- Session management issues causing "Session expired" errors
-- Image path not being correctly set in the HTML template
-
-## Next Steps
-1. Debug and fix image loading in the main test interface
-2. Implement error handling for missing or corrupted images
-3. Add comprehensive test coverage
-4. Enhance mobile responsiveness
-5. Add user session management
-6. Implement question randomization within sections
-7. Verify Flask session settings and ensure proper session management
-8. Ensure image keys in question data match those in the `IMAGES` dictionary
-
-## Dependencies
-- Flask
-- Python 3.x
-- Additional requirements listed in requirements.txt
-
-## Testing
-- Test route available at /image_test for verifying image loading
-- Main test interface at /
-- Results page accessible after test completion
-
-## Data Structure
-
-### Test Sections Distribution
-The test is divided into specific categories with question allocations:
-- Road Signs: 9 questions (25%)
-- Rules of the Road: 9 questions (25%)
-- Safe Driving: 7 questions (20%)
-- Penalties and Insurance: 5 questions (15%)
-- Alcohol and Drugs: 5 questions (15%)
-
-### Question Format
-Questions are stored in `new_questions.json` with the following structure:
-```json
-{
-    "category": "Road Signs",
-    "question": "What does a red octagonal sign indicate?",
-    "options": [
-        "A. Yield",
-        "B. Stop",
-        "C. Do not enter",
-        "D. No parking"
-    ],
-    "image": "stop.jpg",
-    "answer": "B",
-    "explanation": "Engaging feedback message..."
-}
+dmv_test/
+├── app.py                 # Main Flask application
+├── static/               # Static assets
+│   ├── dmv_images/      # Test images
+│   └── styles.css       # CSS styling
+├── templates/           # HTML templates
+├── quiz_data/          # Question data and configurations
+└── utils/              # Utility scripts and helpers
 ```
 
-### Session Management
-- Questions are randomly selected within their categories
-- Progress is tracked per section
-- Scores are maintained throughout the session
-- Feedback is provided after each answer
+## 🎯 Test Content
 
-## Application Flow
-1. User starts test at root URL (/)
-2. Questions are presented one at a time
-3. User selects answer and receives immediate feedback
-4. "Next Question" button appears after answering
-5. Results page shows after completing all sections
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Windows OS
-- Python 3.8+
-- PowerShell (Administrator access)
-- Web browser (Chrome/Firefox recommended)
-
-### Setup (First Time)
-1. Clone and navigate:
-```powershell
-git clone [repository-url]
-cd virginia_permit_test
-```
-
-2. Run setup script (as Administrator):
-```powershell
-.\dev_setup.ps1
-```
-
-3. Access application:
-```
-http://127.0.0.1:3022
-```
-
-### Daily Development
-```powershell
-.\venv\Scripts\Activate
-python app.py
-```
-
-## 📁 Project Structure
-
-### Active Components
-```
-virginia_permit_test/
-├── app.py                # Core application logic
-├── new_questions.json    # Question database
-├── requirements.txt      # Python dependencies
-├── dev_setup.ps1        # Setup automation
-├── static/
-│   └── styles.css       # Application styling
-├── templates/
-│   ├── test.html        # Quiz interface
-│   └── results.html     # Results page
-└── archive/             # Archived files (deprecated)
-```
-
-### Key Files
-- `app.py`: Flask application with quiz logic and routing
-- `new_questions.json`: Structured question data following VA DMV format
-- `dev_setup.ps1`: Automated environment setup and configuration
-
-## 🛠 Technical Stack
-
-### Backend
-- **Framework**: Flask 3.0.0+
-- **Session Management**: Flask-Session
-- **Port**: 3022 (Windows Defender compatible)
-- **Python Version**: 3.8+
-
-### Frontend
-- **HTML5**: Semantic markup
-- **CSS3**: Mobile-first responsive design
-- **JavaScript**: ES6+ standards
-- **Dependencies**: Listed in requirements.txt
-
-## 🔧 Configuration
-
-### Port Settings
-- Using port 3022 (3000-4000 range)
-- Windows Defender configured via dev_setup.ps1
-- Avoid common ports (80, 8080, 5000)
-
-### Session Configuration
-- Type: Filesystem
-- Lifetime: 30 minutes
-- Storage: Local filesystem
-- Cleanup: Automatic between tests
-
-## 📊 Data Structure
+### Categories
+- **Road Signs** (25%): Traffic signs, signals, and markings
+- **Rules of the Road** (25%): Traffic laws and regulations
+- **Safe Driving** (20%): Defensive driving techniques
+- **Penalties and Insurance** (15%): Legal requirements
+- **Alcohol and Drugs** (15%): Safety and legal implications
 
 ### Question Format
 ```json
 {
     "category": "Road Signs",
     "question": "What does this sign mean?",
-    "options": ["A", "B", "C", "D"],
+    "options": ["A. Stop", "B. Yield", "C. Merge", "D. Speed Limit"],
+    "image": "stop_sign.jpg",
     "answer": "A",
-    "explanation": "Detailed explanation",
-    "image": "optional_image.jpg"
+    "explanation": "The red octagonal sign always means STOP..."
 }
 ```
 
-### Categories (VA DMV Requirements)
-- Road Signs (25%): 9 questions
-- Rules of the Road (25%): 9 questions
-- Safe Driving (20%): 7 questions
-- Penalties/Insurance (15%): 5 questions
-- Alcohol/Drugs (15%): 5 questions
+## 🔧 Development Tools
 
-## 🐛 Known Issues & Roadmap
-
-### Current Issues
-- [ ] Navigation between questions needs repair
-- [ ] Question count verification needed
-- [ ] Session cleanup monitoring required
-
-### Planned Features
-- [ ] User authentication
-- [ ] Progress saving
-- [ ] Practice mode
-- [ ] Statistical tracking
-- [ ] Additional questions
-
-## 🔍 Troubleshooting
-
-### Common Issues
-1. **Port Access**
-   - Run PowerShell as Administrator
-   - Use dev_setup.ps1
-   - Check Windows Defender
-
-2. **Python Environment**
-   - Verify virtual environment
-   - Check requirements.txt
-   - Confirm Python version
-
-3. **Session Issues**
-   - Clear browser cache
-   - Check flask_session directory
-   - Restart application
-
-## 📝 Development Protocols
-
-### Code Standards
-- **Python**: PEP 8 compliance
-- **HTML/CSS**: BEM methodology
-- **JavaScript**: ES6+ standards
-- **Git**: Meaningful commit messages
-
-### File Management
-- Keep active files in main directory
-- Archive deprecated files
-- Document major changes
-- Maintain version control
-
-### Testing Requirements
-- Manual testing of quiz flow
-- Session persistence verification
-- Mobile responsiveness checks
-- Cross-browser compatibility
-
-## 🔒 Security Considerations
-
-### Windows Environment
-- Run PowerShell as Administrator
-- Configure Windows Defender
-- Use recommended port range
-- Follow security protocols
-
-### Data Protection
-- No sensitive data in sessions
-- Regular session cleanup
-- Secure question storage
-- Protected admin functions
-
-## 📚 Documentation Standards
-
-### Code Comments
-- Function purpose and parameters
-- Complex logic explanation
-- TODO markers for improvements
-- Version update notes
-
-### Git Commits
-- Descriptive messages
-- Reference issue numbers
-- Document breaking changes
-- Tag version releases
+The repository includes several utility scripts:
+- `auto_quiz_scraper.py`: Automated question collection
+- `image_verification.py`: Image validation tools
+- `clean_questions.py`: Data cleaning utilities
+- `test_dmv_questions.py`: Test suite
 
 ## 🤝 Contributing
 
-### Process
-1. Fork repository
-2. Create feature branch
-3. Follow code standards
-4. Submit pull request
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-### Guidelines
-- Test thoroughly
-- Update documentation
-- Follow security protocols
-- Maintain compatibility
+## 📝 License
 
-## 📋 Maintenance
+This project is open source and available under the MIT License.
 
-### Regular Tasks
-- Update dependencies
-- Clean session data
-- Monitor logs
-- Backup question database
+## 🔄 Version History
 
-### Version Control
-- Semantic versioning
-- Release notes
-- Change documentation
-- Backup procedures
+### Current Version (2.0)
+- Enhanced mobile responsiveness
+- Improved feedback system
+- Optimized image loading
+- Updated question bank
+- Added comprehensive test coverage
 
-## 🆘 Support
+## 📞 Support
 
-### Resources
-- Official VA DMV materials
-- Flask documentation
-- Python best practices
-- Web security guidelines
+For issues and feature requests, please use the GitHub issues tracker.
 
-### Contact
-[Project maintainer contact information]
+---
 
-## Version History
-
-### Version 1.17 (Current)
-- Cleaned up question database:
-  - Removed duplicate BAC limit questions
-  - Identified questions needing proper categorization
-  - Added question analysis tools:
-    * check_duplicates.py for finding similar questions
-    * clean_questions_v2.py for automated cleanup
-- Current question status:
-  * Road Signs: 23 questions
-  * Rules of the Road: 15 questions
-  * Safe Driving: 15 questions
-  * Penalties and Insurance: 12 questions
-  * Alcohol and Drugs: 7 questions
-  * Traffic Signals: 4 questions
-  * General Knowledge: 1 question (to be recategorized)
-- Prepared for next phase:
-  * Need to add Traffic Signal questions
-  * Need to recategorize General Knowledge
-  * Need to verify image attachments
-
-### Version 1.16
-- Updated test to match official VA DMV requirements:
-  - Increased total questions to 45 (from 35)
-  - Set passing criteria to 38 correct answers (84%)
-  - Implemented immediate failure after 3 wrong answers
-  - Adjusted category distribution:
-    * Road Signs: 12
-    * Traffic Signals: 6
-    * Rules of the Road: 10
-    * Safe Driving: 8
-    * Penalties and Insurance: 5
-    * Alcohol and Drugs: 4
-- Enhanced test mode behavior:
-  - Shows failure message when exceeding wrong answer limit
-  - Improved results page with accurate pass/fail criteria
-  - Updated progress tracking for 45-question format
-
-### Version 1.15
-- Fixed modal popup functionality in both practice and test modes
-- Improved button text to correctly reflect current mode ("Try Again" in practice, "Next Question" in test)
-- Enhanced modal animations and transitions
-- Fixed score tracking and display
-- Improved error handling in answer submission
-
-### Version 1.14
-- Initial mode selection implementation
-- Added Gen Z themed feedback
-- Implemented streak tracking
-- Basic question loading
-
-### Version 1.13
-#### Route Structure Changes
-- Separated routes for better flow:
-  - `/` → Mode selection splash screen
-  - `/test` → Question display
-  - `/static/images/<filename>` → Image serving
-
-#### Session Management
-- Modified session handling:
-  - Clear session only when entering mode selection
-  - Maintain session data while switching modes
-  - Added fallback for sections: `sections = load_questions() or []`
-
-#### Mode Behavior
-- Practice Mode:
-  - Stay on question until correct answer
-  - Track wrong attempts
-  - Show explanations
-- Test Mode:
-  - Move to next question regardless of answer
-  - Track score and streak
-  - One attempt per question
-
-### Current Issues (1.13)
-1. **Modal Popups**: Not displaying after answer submission
-   - Attempted fixes:
-     - Simplified modal CSS
-     - Added debug logging
-     - Modified modal display logic
-     - Changed JavaScript event handling
-
-2. **Image Loading**: Intermittent issues with first image
-   - Added error handling for image serving
-   - Logging for failed image loads
-
-### Next Steps
-1. Investigate modal popup issues:
-   - Check JavaScript console for errors
-   - Verify event handling
-   - Consider alternative popup implementation
-
-2. Monitor and improve:
-   - Image loading reliability
-   - Session state management
-   - Mode switching behavior
-
-### Technical Notes
-- Flask backend with session management
-- JavaScript frontend for interactivity
-- Static file serving for images
-- JSON-based question storage
-
-## Deployment to PythonAnywhere
-
-### Prerequisites
-1. Create a PythonAnywhere account (free tier works)
-2. Have your GitHub repository ready
-
-### Deployment Steps
-
-1. **Set Up PythonAnywhere**
-   - Log into PythonAnywhere
-   - Open a Bash console from the Dashboard
-   - Clone your repository:
-     ```bash
-     git clone https://github.com/YOUR_USERNAME/virginia_permit_test.git
-     ```
-
-2. **Create Virtual Environment**
-   ```bash
-   mkvirtualenv --python=/usr/bin/python3.8 virginia_test_env
-   workon virginia_test_env
-   cd virginia_permit_test
-   pip install -r requirements.txt
-   ```
-
-3. **Configure Web App**
-   - Go to Web tab in PythonAnywhere
-   - Create new web app
-   - Choose Manual Configuration
-   - Select Python 3.8
-   - Set source code directory to `/home/YOUR_USERNAME/virginia_permit_test`
-   - Set working directory to `/home/YOUR_USERNAME/virginia_permit_test`
-
-4. **Update WSGI File**
-   - Click on WSGI configuration file link
-   - Replace contents with:
-   ```python
-   import sys
-   path = '/home/YOUR_USERNAME/virginia_permit_test'
-   if path not in sys.path:
-       sys.path.append(path)
-   
-   from app import app as application
-   ```
-
-5. **Static Files**
-   - In Web tab, add static files mapping:
-     - URL: /static/
-     - Directory: /home/YOUR_USERNAME/virginia_permit_test/static
-
-6. **Environment Variables**
-   - Add any necessary environment variables in the Web tab
-
-7. **Final Steps**
-   - Reload the web app
-   - Your app will be available at: YOUR_USERNAME.pythonanywhere.com
-
-### Maintenance
-- To update the app after changes:
-  ```bash
-  cd ~/virginia_permit_test
-  git pull
-  touch /var/www/YOUR_USERNAME_pythonanywhere_com_wsgi.py
-  ```
-
-## Current Status (v2.0.2)
-
-### What's Working
-- Complete question database with images
-- Practice mode with learning-focused feedback
-- Test mode with score tracking
-- Session-based progress tracking
-- All static files (images, sounds, styles) properly organized
-- Fully version controlled with git
-
-### Version History
-- v1.0: Initial implementation
-- v1.1-1.17: Progressive improvements and bug fixes
-- v2.0: UI improvements and test flow consolidation
-- v2.0.1: Added deployment instructions
-- v2.0.2: File organization and git structure finalized
-
-### Next Steps for v3.0
-1. Server-Side Implementation
-   - Migrate to server-side sessions
-   - Implement proper database structure
-   - Add error recovery system
-
-2. Deployment
-   - Deploy to PythonAnywhere
-   - Set up proper logging
-   - Configure production environment
-
-3. Future Enhancements
-   - Add user accounts (optional)
-   - Implement progress tracking
-   - Add statistics dashboard
-
-### Repository Structure
-```
-virginia_permit_test/
-├── app.py              # Main application
-├── static/            
-│   ├── dmv_images/    # All test images
-│   ├── sounds/        # Audio feedback
-│   └── styles.css     # Styling
-├── templates/         # HTML templates
-├── dmv_content/       # JSON section data
-└── new_questions.json # Question database
-```
-
-All necessary files are tracked in git and ready for the next development phase.
+Made with ❤️ by SpotCircuit
