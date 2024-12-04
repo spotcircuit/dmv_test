@@ -428,4 +428,68 @@ virginia_permit_test/
 - Static file serving for images
 - JSON-based question storage
 
+## Deployment to PythonAnywhere
+
+### Prerequisites
+1. Create a PythonAnywhere account (free tier works)
+2. Have your GitHub repository ready
+
+### Deployment Steps
+
+1. **Set Up PythonAnywhere**
+   - Log into PythonAnywhere
+   - Open a Bash console from the Dashboard
+   - Clone your repository:
+     ```bash
+     git clone https://github.com/YOUR_USERNAME/virginia_permit_test.git
+     ```
+
+2. **Create Virtual Environment**
+   ```bash
+   mkvirtualenv --python=/usr/bin/python3.8 virginia_test_env
+   workon virginia_test_env
+   cd virginia_permit_test
+   pip install -r requirements.txt
+   ```
+
+3. **Configure Web App**
+   - Go to Web tab in PythonAnywhere
+   - Create new web app
+   - Choose Manual Configuration
+   - Select Python 3.8
+   - Set source code directory to `/home/YOUR_USERNAME/virginia_permit_test`
+   - Set working directory to `/home/YOUR_USERNAME/virginia_permit_test`
+
+4. **Update WSGI File**
+   - Click on WSGI configuration file link
+   - Replace contents with:
+   ```python
+   import sys
+   path = '/home/YOUR_USERNAME/virginia_permit_test'
+   if path not in sys.path:
+       sys.path.append(path)
+   
+   from app import app as application
+   ```
+
+5. **Static Files**
+   - In Web tab, add static files mapping:
+     - URL: /static/
+     - Directory: /home/YOUR_USERNAME/virginia_permit_test/static
+
+6. **Environment Variables**
+   - Add any necessary environment variables in the Web tab
+
+7. **Final Steps**
+   - Reload the web app
+   - Your app will be available at: YOUR_USERNAME.pythonanywhere.com
+
+### Maintenance
+- To update the app after changes:
+  ```bash
+  cd ~/virginia_permit_test
+  git pull
+  touch /var/www/YOUR_USERNAME_pythonanywhere_com_wsgi.py
+  ```
+
 This documentation tracks the evolution of the application and current focus areas for improvement.
